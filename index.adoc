@@ -57,5 +57,6 @@ Techs in *bold* are sustenance techs
 == Map
 
 == Language
+The P'ufspæj language is currently thought to be a language isolate present in Gorgonea before the arrival of the Sasnak and Sasnak-Ra. It is highly fusional with a large number of verb and noun suffixes.
 
 == History
