@@ -49,6 +49,7 @@ Techs in *bold* are sustenance techs
 * *Duck Domestication*
 
 ==== Minor
+* *Fertiliser*
 * *Pondberry Domestication*
 * *Turkey & Duck Coops*
 * Shovels
