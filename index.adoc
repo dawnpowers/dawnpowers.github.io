@@ -60,4 +60,24 @@ Techs in *bold* are sustenance techs
 == Language
 The P'ufspæj language is currently thought to be a language isolate present in Gorgonea before the arrival of the Sasnak and Sasnak-Ra. It is highly fusional with a large number of verb and noun suffixes.
 
+=== Consonant Inventory
+|===
+| | Bilabial | Labiodental | Dental | Alveolar | Palato-alveolar | Retroflex| Alveolo-palatal | Palatal | Velar | Glottal
+| Nasal | m mʲ | | | n nʲ | | | | | ŋ | 
+| Stop  | p pʲ b bʲ | | | t tʲ d dʲ | | | | | k g |
+| Affricate | | | | | ʤ | ꭧ ꭦ | ʨ | | |
+| Fricative | | f fʲ v vʲ | θ ð | s sʲ z zʲ | ʃ | ʂ | | x | h |
+| Approximant | |  | | ɹ | | | | j | ʍ ʍʲ w wʲ | |
+|===
+
+=== Vowel Inventory
+|===
+| | | tense | lax | tense | lax
+| high | short | | ɪ | | ʊ
+| | long | iː | ɪə̯ː | uː | ʊə̯ː
+| mid | short | | eɪ̯ | | oʊ̯
+| | long | ɛː | ɛə̯ː | ɔː | ɔə̯ː
+| low | short | æ | æɪ̯ | ɑ | ɑʊ̯
+|===
+
 == History
