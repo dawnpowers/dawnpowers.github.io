@@ -1,0 +1,61 @@
+= P'ufspæj'
+:author: tjmoores/1rre
+:toclevels: 5
+:toc:
+
+== Post & Comment Archive
+
+== Tech
+Techs in *bold* are sustenance techs
+
+=== Regional
+==== Main
+* Basic Carpentry
+* *Basic Irrigation*
+* Bronze
+* *Intercropping*
+* *Maize*
+* Masonry
+* *Mattocks*
+* Plank Boats
+* *Tournettes*
+* *Turkeys*
+
+==== Minor
+* Adzes
+* Annealing
+* Atlatls
+* Basic Smelting
+* *Beans*
+* *Bell Pepper*
+* *Cassava*
+* *Chili Pepper*
+* Cold-Working
+* Domed Ovens
+* *Irrigation Canals*
+* *Nixtamalization*
+* Pit Ovens
+* *Raised Fields*
+* *Sickles*
+* *Squash*
+* *Sweet Potatoes*
+
+=== Starter
+==== Key
+* *Terraces*
+
+==== Main
+* *Granaries*
+* *Duck Domestication*
+
+==== Minor
+* *Pondberry Domestication*
+* *Turkey & Duck Coops*
+* Shovels
+* Basic Rudders
+
+== Map
+
+== Language
+
+== History
