@@ -167,7 +167,7 @@ The Pufspæj language is currently thought to be a language isolate present in G
 === Verb affixes
 
 ==== Singular
-[cols="h,d,d,d"]
+[cols="h,d,d,d", options="header"]
 |===
 | | Definite | Indefinite | Irreal
 | Past | -an | -ask' | -aus
@@ -177,7 +177,7 @@ The Pufspæj language is currently thought to be a language isolate present in G
 |===
 
 ==== Plural
-[cols="h,d,d,d"]
+[cols="h,d,d,d", options="header"]
 |===
 | | Definite | Indefinite | Irreal
 | Past | -apt | -aukt | -aupz
