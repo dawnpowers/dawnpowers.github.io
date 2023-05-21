@@ -1,9 +1,10 @@
-= P'ufspæj'
+= Pufspæj'
 :author: tjmoores/1rre
 :toclevels: 5
 :toc:
 
 == Post & Comment Archive
+* *21/05/2023*: link:https://www.reddit.com/r/DawnPowers/comments/13nwx1b/claim_pufspæj[[Claim\] Pufspæj']
 
 == Tech
 Techs in *bold* are sustenance techs
@@ -58,16 +59,53 @@ Techs in *bold* are sustenance techs
 == Map
 
 == Language
-The P'ufspæj language is currently thought to be a language isolate present in Gorgonea before the arrival of the Sasnak and Sasnak-Ra. It is highly fusional with a large number of verb and noun suffixes.
+The Pufspæj language is currently thought to be a language isolate present in Gorgonea before the arrival of the Sasnak and Sasnak-Ra. It is highly fusional with a large number of verb and noun suffixes.
 
 === Consonant Inventory
+[cols="h,d,d,d,d,d,d,d,d,d,d", options="header"]
 |===
 | | Bilabial | Labiodental | Dental | Alveolar | Palato-alveolar | Retroflex| Alveolo-palatal | Palatal | Velar | Glottal
-| Nasal | m mʲ | | | n nʲ | | | | | ŋ | 
-| Stop  | p pʲ b bʲ | | | t tʲ d dʲ | | | | | k g |
-| Affricate | | | | | ʤ | ꭧ ꭦ | ʨ | | |
-| Fricative | | f fʲ v vʲ | θ ð | s sʲ z zʲ | ʃ | ʂ | | x | h |
-| Approximant | |  | | ɹ | | | | j | ʍ ʍʲ w wʲ | |
+| Nasal | m | | n | n | n | | | | ŋ | 
+| Stop  | p b | | t d | t d | t d | ʈ ɖ | | | k g |
+| Affricate | | | | | ʧ ʤ | ꭧ ꭦ | ʨ ʥ | | |
+| Fricative | | f v | θ ð | s z | ʃ | ʂ | | x | | h
+| Approximant | |  | | ɹ | | | | j | w | |
+|===
+
+==== Spelling
+[options="header"]
+|===
+| IPA | Spelling
+| m | m
+| n | n
+| ŋ | ŋ
+| p | p
+| b | b
+| t | t
+| d | d
+| ʈ | t'
+| ɖ | d'
+| k | k
+| g | g
+| ʧ | č'
+| ʤ | j'
+| ꭧ | č
+| ꭦ | j
+| ʨ | k'
+| ʥ | g'
+| f | f
+| v | v
+| θ | þ
+| ð | ð
+| s | s
+| z | z
+| ʃ | š'
+| ʂ | š
+| x | x
+| h | h
+| ɹ | r
+| j | j
+| w | w
 |===
 
 === Vowel Inventory
@@ -79,5 +117,77 @@ The P'ufspæj language is currently thought to be a language isolate present in 
 | | long | ɛː | ɛə̯ː | ɔː | ɔə̯ː
 | low | short | æ | æɪ̯ | ɑ | ɑʊ̯
 |===
+
+==== Spelling
+[options="header"]
+|===
+| IPA | Spelling
+| ɪ | i
+| ʊ | u
+| iː | ii
+| ɪə̯ː | ia
+| uː | uu
+| ʊə̯ː | ua
+| eɪ̯ | ei
+| oʊ̯ | o
+| ɛː | ea
+| ɛə̯ː | eu
+| ɔː | oo
+| ɔə̯ː | oa
+| æ | æ
+| æɪ̯ | ai
+| ɑ | a
+| ɑʊ̯ | au
+|===
+
+=== Key words
+[options="header"]
+|===
+| Word | Translation
+| Gorgonea | Yeupfotsnuaŋa
+| Gorgon Bay | Yeupfotsa
+| Southernmost Island | Twaiptšroþ
+| Northermost Island | Ŋyænšroþ
+| 1st person singular pronoun | fust
+| 2nd person singular pronoun | šust
+| 3rd person singular pronoun | čuað
+|===
+
+=== Gender affixes
+*Applied to nouns & pronouns*
+[cols="h,d"]
+|===
+| Masculine | -uč
+| Feminine | -upt
+| Neuter | -
+| Plural | -aid
+|===
+
+=== Verb affixes
+
+==== Singular
+[cols="h,d,d,d"]
+|===
+| | Definite | Indefinite | Irreal
+| Past | -an | -ask' | -aus
+| Present | - | -oaþs | -oos
+| Habitual Present | -un | -uask' | -uus
+| Future | -ir | -iaþs | -iis
+|===
+
+==== Plural
+[cols="h,d,d,d"]
+|===
+| | Definite | Indefinite | Irreal
+| Past | -apt | -aukt | -aupz
+| Present | -op | -oaks | -ook
+| Habitual Present | -uapt | -uakt | -uupz
+| Future | -ip | -iaks | -iik
+|===
+
+=== Details
+* Structure: *\(C)\(C)\(C)CVC\(C)*
+* Word order: *SOV*
+* Stress: *initial*
 
 == History

@@ -1,0 +1,10 @@
+{
+    "value": [
+        "ref:c984eca8:/home/tm/Documents/dawn/dawnpowers.github.io/lang/resources",
+        "ref:999d5a35:/home/tm/Documents/dawn/dawnpowers.github.io/out/lang/compile.dest/classes",
+        "qref:8d2f77e2:/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2.jar",
+        "qref:a94bfc28:/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
+    ],
+    "valueHash": 748254781,
+    "inputsHash": 89804527
+}
