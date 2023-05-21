@@ -109,6 +109,7 @@ The Pufspæj language is currently thought to be a language isolate present in G
 |===
 
 === Vowel Inventory
+[cols="h,h,d,d,d,d", options="header"]
 |===
 | | | tense | lax | tense | lax
 | high | short | | ɪ | | ʊ
