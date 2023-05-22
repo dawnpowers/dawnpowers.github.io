@@ -27,11 +27,12 @@ object Main extends App {
     letters.flatten
   }
 
-  val init = generateWords()
-  println(init.mkString("X = ", " ", ""))
-  println(vowels.mkString("V = ", " ", ""))
-  println(generateWords2().mkString("Y = ", " ", ""))
+  // val init = generateWords()
+  // println(init.mkString("X = ", " ", ""))
+  // println(vowels.mkString("V = ", " ", ""))
+  // println(generateWords2().mkString("Y = ", " ", ""))
 
   //val pick = for (i <- 0 until 250) yield words(util.Random.nextInt(words.size))
   //println(pick.mkString(" "))
+  println(consonants.mkString("(\"", "\", \"", "\")"))
 }

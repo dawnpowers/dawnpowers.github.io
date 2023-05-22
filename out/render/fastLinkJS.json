@@ -1,0 +1,17 @@
+{
+    "value": {
+        "publicModules": [
+            {
+                "moduleID": "main",
+                "jsFileName": "main.js",
+                "sourceMapName": [
+                    "main.js.map"
+                ],
+                "moduleKind": "mill.scalajslib.api.ModuleKind.NoModule"
+            }
+        ],
+        "dest": "ref:88b0e39a:/home/tm/Documents/dawn/dawnpowers.github.io/out/render/fastLinkJS.dest"
+    },
+    "valueHash": 622053156,
+    "inputsHash": -245227814
+}

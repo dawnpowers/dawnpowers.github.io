@@ -1,0 +1,7 @@
+{
+    "value": {
+        "$type": "mill.scalajslib.api.JsEnvConfig.NodeJs"
+    },
+    "valueHash": 1922910591,
+    "inputsHash": 665858484
+}

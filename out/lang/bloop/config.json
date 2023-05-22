@@ -20,8 +20,8 @@
                 
             ],
             "classpath": [
-                "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.1.2/scala3-library_3-3.1.2.jar",
-                "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2.jar",
+                "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
             ],
             "out": "/home/tm/Documents/dawn/dawnpowers.github.io/.bloop/out/lang",
             "classesDir": "/home/tm/Documents/dawn/dawnpowers.github.io/.bloop/out/lang/classes",
@@ -34,21 +34,21 @@
                 {
                     "organization": "org.scala-lang",
                     "name": "scala-compiler",
-                    "version": "3.1.2",
+                    "version": "3.2.2",
                     "options": [
                         
                     ],
                     "jars": [
-                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.1.2/scala3-compiler_3-3.1.2.jar",
-                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.1.2/scala3-library_3-3.1.2.jar",
-                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.1.2/scala3-interfaces-3.1.2.jar",
-                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.1.2/tasty-core_3-3.1.2.jar",
-                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.1.0-scala-1/scala-asm-9.1.0-scala-1.jar",
+                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-compiler_3/3.2.2/scala3-compiler_3-3.2.2.jar",
+                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2.jar",
+                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-interfaces/3.2.2/scala3-interfaces-3.2.2.jar",
+                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/tasty-core_3/3.2.2/tasty-core_3-3.2.2.jar",
+                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-asm/9.3.0-scala-1/scala-asm-9.3.0-scala-1.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/compiler-interface/1.3.5/compiler-interface-1.3.5.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-reader/3.19.0/jline-reader-3.19.0.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal/3.19.0/jline-terminal-3.19.0.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline-terminal-jna/3.19.0/jline-terminal-jna-3.19.0.jar",
-                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar",
+                        "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.7.0/protobuf-java-3.7.0.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/util-interface/1.3.0/util-interface-1.3.0.jar",
                         "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
@@ -94,8 +94,8 @@
                     ],
                     "classpath": [
                         [
-                            "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.1.2/scala3-library_3-3.1.2.jar",
-                            "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                            "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2.jar",
+                            "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
                         ]
                     ],
                     "resources": [
@@ -111,7 +111,7 @@
                         {
                             "organization": "org.scala-lang",
                             "name": "scala3-library_3",
-                            "version": "3.1.2",
+                            "version": "3.2.2",
                             "configurations": [
                                 
                             ],
@@ -124,7 +124,7 @@
                                     "checksum": [
                                         
                                     ],
-                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.1.2/scala3-library_3-3.1.2.jar"
+                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2.jar"
                                 },
                                 {
                                     "name": "scala3-library_3",
@@ -134,14 +134,14 @@
                                     "checksum": [
                                         
                                     ],
-                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.1.2/scala3-library_3-3.1.2-sources.jar"
+                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.2/scala3-library_3-3.2.2-sources.jar"
                                 }
                             ]
                         },
                         {
                             "organization": "org.scala-lang",
                             "name": "scala-library",
-                            "version": "2.13.8",
+                            "version": "2.13.10",
                             "configurations": [
                                 
                             ],
@@ -154,7 +154,7 @@
                                     "checksum": [
                                         
                                     ],
-                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8.jar"
+                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
                                 },
                                 {
                                     "name": "scala-library",
@@ -164,7 +164,7 @@
                                     "checksum": [
                                         
                                     ],
-                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.8/scala-library-2.13.8-sources.jar"
+                                    "path": "/home/tm/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10-sources.jar"
                                 }
                             ]
                         }
@@ -181,6 +181,6 @@
             ]
         }
     },
-    "valueHash": 976489220,
-    "inputsHash": 1410141931
+    "valueHash": -2031967694,
+    "inputsHash": -1631511062
 }

@@ -1,0 +1,10 @@
+{
+    "value": {
+        "allowBigIntsForLongs": false,
+        "avoidClasses": true,
+        "avoidLetsAndConsts": true,
+        "esVersion": "mill.scalajslib.api.ESVersion.ES2015"
+    },
+    "valueHash": 913703061,
+    "inputsHash": -1050000192
+}

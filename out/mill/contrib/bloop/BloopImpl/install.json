@@ -2,9 +2,13 @@
     "value": [
         [
             "lang",
-            "ref:fbd0c478:/home/tm/Documents/dawn/dawnpowers.github.io/.bloop/lang.json"
+            "ref:200929c8:/home/tm/Documents/dawn/dawnpowers.github.io/.bloop/lang.json"
+        ],
+        [
+            "render",
+            "ref:63d4662c:/home/tm/Documents/dawn/dawnpowers.github.io/.bloop/render.json"
         ]
     ],
-    "valueHash": 341066790,
-    "inputsHash": -897701117
+    "valueHash": -1401334491,
+    "inputsHash": 1379899859
 }

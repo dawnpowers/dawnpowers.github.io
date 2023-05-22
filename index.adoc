@@ -191,4 +191,23 @@ The Pufspæj language is currently thought to be a language isolate present in G
 * Word order: *SOV*
 * Stress: *initial*
 
+=== Modern Script
+==== Vowels
+image::vowels.webp[Vowels]
+
+==== Consonants
+image::consonants.webp[Consonants]
+
+==== Verb Suffixes
+image::verbs.webp[Verb Suffixes]
+
+==== Noun Suffixes
+image::nouns.webp[Noun Suffixes]
+
+==== Example
+
+++++
+include::language.html[]
+++++
+
 == History
