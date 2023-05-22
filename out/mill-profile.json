@@ -1,32 +1,32 @@
 [
     {
         "label": "mill.scalajslib.worker.ScalaJSWorkerExternalModule.scalaJSWorker",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.scalaJSVersion",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.scalaJSWorkerVersion",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.scalaJSWorkerClasspath",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.scalaJSBinaryVersion",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.jsEnvConfig",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -36,7 +36,7 @@
     },
     {
         "label": "render.scalaJSLinkerClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -61,7 +61,7 @@
     },
     {
         "label": "mill.scalalib.ZincWorkerModule.zincLogDebug",
-        "millis": 2,
+        "millis": 1,
         "cached": false
     },
     {
@@ -76,27 +76,27 @@
     },
     {
         "label": "render.sources",
-        "millis": 3,
+        "millis": 1,
         "cached": false
     },
     {
         "label": "render.generatedSources",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.allSources",
-        "millis": 2,
+        "millis": 1,
         "cached": false
     },
     {
         "label": "render.allSourceFiles",
-        "millis": 3,
+        "millis": 2,
         "cached": false
     },
     {
         "label": "render.transitiveLocalClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -106,12 +106,12 @@
     },
     {
         "label": "render.crossFullScalaJSVersion",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.artifactScalaJSVersion",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -121,22 +121,22 @@
     },
     {
         "label": "render.compileIvyDeps",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.transitiveCompileIvyDeps",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.ivyDeps",
-        "millis": 2,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.mandatoryIvyDeps.overridden.mill.scalalib.JavaModule.mandatoryIvyDeps",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -146,12 +146,12 @@
     },
     {
         "label": "render.scalaLibraryIvyDeps",
-        "millis": 2,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.mandatoryIvyDeps.overridden.mill.scalalib.ScalaModule.mandatoryIvyDeps",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -161,7 +161,7 @@
     },
     {
         "label": "render.transitiveIvyDeps",
-        "millis": 2,
+        "millis": 1,
         "cached": true
     },
     {
@@ -211,32 +211,32 @@
     },
     {
         "label": "render.allScalacOptions",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.scalaCompilerClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.scalacPluginClasspath",
-        "millis": 2,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.compile",
-        "millis": 1363,
+        "millis": 814,
         "cached": false
     },
     {
         "label": "render.localClasspath",
-        "millis": 3,
+        "millis": 2,
         "cached": false
     },
     {
         "label": "render.runIvyDeps",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -246,12 +246,12 @@
     },
     {
         "label": "render.upstreamAssemblyClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.runClasspath",
-        "millis": 2,
+        "millis": 3,
         "cached": false
     },
     {
@@ -261,7 +261,7 @@
     },
     {
         "label": "render.finalMainClassOpt",
-        "millis": 7,
+        "millis": 13,
         "cached": false
     },
     {
@@ -276,12 +276,12 @@
     },
     {
         "label": "render.useECMAScript2015",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.esFeatures",
-        "millis": 0,
+        "millis": 2,
         "cached": true
     },
     {
@@ -291,7 +291,7 @@
     },
     {
         "label": "render.fastOpt",
-        "millis": 469,
+        "millis": 514,
         "cached": false
     }
 ]

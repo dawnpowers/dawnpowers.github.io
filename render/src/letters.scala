@@ -369,7 +369,7 @@ object Letters {
       c2d.stroke()
       false
     }),
-    "ii" -> ((c2d, len, last) => {
+    "ia" -> ((c2d, len, last) => {
       if (last) {
         c2d.moveTo(-20, 525)
         c2d.lineTo(75, 525)

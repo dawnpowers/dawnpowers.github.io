@@ -21231,3 +21231,62 @@ Exception in thread "pool-14-thread-18" java.lang.InterruptedException
 2023.05.22 18:09:19 INFO  time: compiled render in 0.29s[0m
 2023.05.22 18:09:34 INFO  compiling render (1 scala source)[0m
 2023.05.22 18:09:34 INFO  time: compiled render in 0.28s[0m
+2023.05.22 18:11:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala[0m
+2023.05.22 18:11:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala[0m
+2023.05.22 18:11:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala[0m
+2023.05.22 18:11:57 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:11:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala[0m
+2023.05.22 18:11:57 INFO  time: compiled render in 0.23s[0m
+2023.05.22 18:13:43 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:13:43 INFO  time: compiled render in 0.3s[0m
+2023.05.22 18:14:19 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:14:19 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:14:19 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:14:19 INFO  time: compiled render in 0.32s[0m
+2023.05.22 18:15:32 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:15:32 INFO  time: compiled render in 0.25s[0m
+2023.05.22 18:15:36 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:15:36 INFO  time: compiled render in 0.31s[0m
+2023.05.22 18:15:42 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:15:42 INFO  time: compiled render in 0.28s[0m
+May 22, 2023 6:15:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 41563
+2023.05.22 18:16:05 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:16:05 INFO  time: compiled render in 0.39s[0m
+2023.05.22 18:16:11 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:16:11 INFO  time: compiled render in 0.33s[0m
+2023.05.22 18:16:43 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:16:43 INFO  time: compiled render in 0.3s[0m
+May 22, 2023 6:17:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 41701
+May 22, 2023 6:17:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 41835
+May 22, 2023 6:18:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 41909
+2023.05.22 18:18:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:18:13 INFO  time: compiled render in 0.19s[0m
+2023.05.22 18:18:21 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:18:21 INFO  time: compiled render in 0.19s[0m
+2023.05.22 18:18:28 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:18:28 INFO  time: compiled render in 0.12s[0m
+2023.05.22 18:18:36 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:18:36 INFO  time: compiled render in 0.26s[0m
+May 22, 2023 6:19:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 42138
+2023.05.22 18:19:20 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:19:20 INFO  time: compiled render in 0.46s[0m
+May 22, 2023 6:19:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: type of Apply(Select(New(Ident(JSExportTopLevel)),<init>),List(Literal(Constant(renderTextContent)))) is not assigned
+dotty.tools.dotc.ast.Trees$UnAssignedTypeException: type of Apply(Select(New(Ident(JSExportTopLevel)),<init>),List(Literal(Constant(renderTextContent)))) is not assigned
+	at dotty.tools.dotc.ast.Trees$Tree.tpe(Trees.scala:71)
+	at scala.meta.internal.mtags.MtagsEnrichments$.tryTail$1(MtagsEnrichments.scala:242)
+	at scala.meta.internal.mtags.MtagsEnrichments$.expandRangeToEnclosingApply(MtagsEnrichments.scala:259)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:48)
+
+2023.05.22 18:19:31 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:19:31 INFO  time: compiled render in 0.41s[0m
+2023.05.22 18:19:37 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:19:37 INFO  time: compiled render in 0.5s[0m
+2023.05.22 18:23:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:23:00 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:23:00 INFO  time: compiled render in 0.33s[0m

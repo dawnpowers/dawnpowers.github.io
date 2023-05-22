@@ -1436,7 +1436,7 @@ function $c_LLetters$() {
     c2d$32.stroke();
     return true
   }));
-  var $$x44 = new $c_T2("ii", y$31);
+  var $$x44 = new $c_T2("ia", y$31);
   var y$32 = new $c_sjsr_AnonFunction3(((c2d$33, len$3$1, last$3$1) => {
     $uI(len$3$1);
     var last$4 = $uZ(last$3$1);
@@ -5680,6 +5680,37 @@ function $m_sr_Statics$PFMarker$() {
   return $n_sr_Statics$PFMarker$
 }
 /** @constructor */
+function $c_sjs_js_timers_package$() {
+  /*<skip>*/
+}
+$c_sjs_js_timers_package$.prototype = new $h_O();
+$c_sjs_js_timers_package$.prototype.constructor = $c_sjs_js_timers_package$;
+/** @constructor */
+function $h_sjs_js_timers_package$() {
+  /*<skip>*/
+}
+$h_sjs_js_timers_package$.prototype = $c_sjs_js_timers_package$.prototype;
+$c_sjs_js_timers_package$.prototype.setTimeout__D__F0__sjs_js_timers_SetTimeoutHandle = (function(interval, body) {
+  return setTimeout((() => {
+    var this$2 = $n(body);
+    this$2.apply__O()
+  }), interval)
+});
+var $d_sjs_js_timers_package$ = new $TypeData().initClass({
+  sjs_js_timers_package$: 0
+}, false, "scala.scalajs.js.timers.package$", {
+  sjs_js_timers_package$: 1,
+  O: 1
+});
+$c_sjs_js_timers_package$.prototype.$classData = $d_sjs_js_timers_package$;
+var $n_sjs_js_timers_package$;
+function $m_sjs_js_timers_package$() {
+  if ((!$n_sjs_js_timers_package$)) {
+    $n_sjs_js_timers_package$ = new $c_sjs_js_timers_package$()
+  };
+  return $n_sjs_js_timers_package$
+}
+/** @constructor */
 function $c_s_util_DynamicVariable(init) {
   this.s_util_DynamicVariable__f_v = null;
   this.s_util_DynamicVariable__f_v = init
@@ -7333,9 +7364,11 @@ function $c_LMain$() {
   $n_LMain$ = this;
   $f_s_App__$init$__V(this);
   this.LMain$__f_input = document.getElementById("text-to-render");
-  this.LMain$__f_input.onkeypress = ((e) => (($uI(e.charCode) === 13) ? (this.renderTextContent__V(), (void 0)) : (void 0)));
+  this.LMain$__f_input.onkeydown = ((e) => $m_sjs_js_timers_package$().setTimeout__D__F0__sjs_js_timers_SetTimeoutHandle(50.0, new $c_sjsr_AnonFunction0((() => {
+    this.renderTextContent__V()
+  }))));
   this.LMain$__f_canvas = document.getElementById("render-canvas");
-  this.LMain$__f_canvas.height = 1050;
+  this.LMain$__f_canvas.height = 420;
   this.renderTextContent__V()
 }
 $c_LMain$.prototype = new $h_O();
@@ -7620,7 +7653,7 @@ $c_LMain$.prototype.renderOnCanvas__sci_Seq__Lorg_scalajs_dom_HTMLCanvasElement_
   var this$32 = $m_s_Console$();
   var this$33 = $n(this$32.out__Ljava_io_PrintStream());
   this$33.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-  canvas.width = length.sr_IntRef__f_elem;
+  canvas.width = ((200 + $doubleToInt((length.sr_IntRef__f_elem / 2.5))) | 0);
   var cl = new $c_sr_IntRef(0);
   var c2d = canvas.getContext("2d");
   c2d.fillStyle = "white";
@@ -7628,6 +7661,7 @@ $c_LMain$.prototype.renderOnCanvas__sci_Seq__Lorg_scalajs_dom_HTMLCanvasElement_
   var x$2 = $uI(canvas.height);
   c2d.fillRect(0.0, 0.0, x$1, x$2);
   c2d.translate(25.0, 0.0);
+  c2d.scale(0.4, 0.4);
   var last = new $c_sr_BooleanRef(false);
   $n($n($as_sc_IterableOps($n(text).zip__sc_IterableOnce__O(shapes))).withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((x$1$1) => {
     var x$1$2 = $as_T2(x$1$1);

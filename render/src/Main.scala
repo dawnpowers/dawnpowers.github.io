@@ -1,5 +1,6 @@
 import scala.scalajs.js.annotation.JSExportTopLevel
 import org.scalajs.dom.document
+import scalajs.js.timers.setTimeout
 import org.scalajs.dom.window.alert
 import org.scalajs.dom.html.{Input, Canvas}
 import org.scalajs.dom.CanvasRenderingContext2D
@@ -49,13 +50,13 @@ object Main extends App {
       }
     }
     println(s"Set canvas width to $length")
-    canvas.width = length
+    canvas.width = (length / 2.5).toInt + 200
     var cl = 0
     val c2d = canvas.getContext("2d").asInstanceOf[CanvasRenderingContext2D]
     c2d.fillStyle = "white"
     c2d.fillRect(0, 0, canvas.width, canvas.height)
     c2d.translate(25, 0)
-
+    c2d.scale(1/2.5d, 1/2.5d)
     var last = false
     for ((word, ww) <- text.zip(shapes)) {
       if (word.length == 3) {
@@ -96,11 +97,11 @@ object Main extends App {
   }
 
   val input = document.getElementById("text-to-render").asInstanceOf[Input]
-  input.onkeypress = (e) => {
-    if (e.charCode == 13) renderTextContent()
+  input.onkeydown = (e) => {
+    setTimeout(50)(renderTextContent())
   }
   val canvas = document.getElementById("render-canvas").asInstanceOf[Canvas]
-  canvas.height = 1050
+  canvas.height = (1050 / 2.5).toInt
   @JSExportTopLevel("renderTextContent")
   def renderTextContent(): Unit = {
     println("You clicked!")
