@@ -21204,3 +21204,6 @@ May 22, 2023 5:50:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 40946
 2023.05.22 17:50:45 INFO  compiling render (1 scala source)[0m
 2023.05.22 17:50:45 INFO  time: compiled render in 0.36s[0m
+2023.05.22 17:54:51 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 17:54:51 INFO  compiling render (1 scala source)[0m
+2023.05.22 17:54:51 INFO  time: compiled render in 0.26s[0m

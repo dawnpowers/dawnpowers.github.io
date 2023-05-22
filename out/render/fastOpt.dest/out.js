@@ -7334,7 +7334,8 @@ function $c_LMain$() {
   this.LMain$__f_input = document.getElementById("text-to-render");
   this.LMain$__f_input.onkeypress = ((e) => (($uI(e.charCode) === 13) ? (this.renderTextContent__V(), (void 0)) : (void 0)));
   this.LMain$__f_canvas = document.getElementById("render-canvas");
-  this.LMain$__f_canvas.height = 1050
+  this.LMain$__f_canvas.height = 1050;
+  this.renderTextContent__V()
 }
 $c_LMain$.prototype = new $h_O();
 $c_LMain$.prototype.constructor = $c_LMain$;

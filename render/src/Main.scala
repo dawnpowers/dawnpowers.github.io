@@ -107,4 +107,5 @@ object Main extends App {
     println(s"Input content: ${input.value}")
     renderOnCanvas(input.value.split(" ").toSeq.map(parseWord), canvas)
   }
+  renderTextContent()
 }
