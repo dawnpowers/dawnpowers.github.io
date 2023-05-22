@@ -42,7 +42,7 @@ object Main extends App {
         val es = end.map(size).sum + 50 * (end.length - 1)
         val is = init.map(size).sum + 50 * (init.length - 1)
         val ww = (es max is)
-        length += ww + 200
+        length += ww + 235
         ww
       } else {
         alert("Word found with incorrect structure")
@@ -59,8 +59,7 @@ object Main extends App {
     c2d.scale(1/2.5d, 1/2.5d)
     var last = false
     for ((word, ww) <- text.zip(shapes)) {
-      if (word.length == 3) {
-        val Seq(init, v, end) = word
+      def renderIn(init: Seq[String], v: Seq[String], end: Seq[String]) = {
         c2d.lineWidth = 40
         c2d.strokeStyle = "black"
         val es = end.map(size).sum
@@ -89,9 +88,18 @@ object Main extends App {
           i2 += size(letter) + 50
         }
         c2d.translate(ww + 200, 0)
+      }
+      if (word.length == 3) {
+        printf(s"Render: $word")
+        val Seq(init, v, end) = word
+        renderIn(init, v, end)
       } else {
         val Seq(init, v, end, suffix) = word
-        val c2d = canvas.getContext("2d")
+        printf(s"Render: $word")
+        renderIn(init, v, end)
+        c2d.translate(-200, 0)
+        Suffix.find(c2d, suffix.mkString)
+        c2d.translate(235, 0)
       }
     }
   }

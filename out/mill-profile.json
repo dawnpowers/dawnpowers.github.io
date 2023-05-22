@@ -6,22 +6,22 @@
     },
     {
         "label": "render.scalaJSVersion",
-        "millis": 1,
-        "cached": true
-    },
-    {
-        "label": "render.scalaJSWorkerVersion",
         "millis": 0,
         "cached": true
     },
     {
-        "label": "render.scalaJSWorkerClasspath",
+        "label": "render.scalaJSWorkerVersion",
         "millis": 1,
         "cached": true
     },
     {
+        "label": "render.scalaJSWorkerClasspath",
+        "millis": 0,
+        "cached": true
+    },
+    {
         "label": "render.scalaJSBinaryVersion",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "label": "render.scalaJSToolsClasspath",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -66,7 +66,7 @@
     },
     {
         "label": "mill.scalalib.ZincWorkerModule.worker",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -76,17 +76,17 @@
     },
     {
         "label": "render.sources",
-        "millis": 1,
+        "millis": 2,
         "cached": false
     },
     {
         "label": "render.generatedSources",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.allSources",
-        "millis": 1,
+        "millis": 2,
         "cached": false
     },
     {
@@ -101,7 +101,7 @@
     },
     {
         "label": "render.unmanagedClasspath",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
@@ -136,12 +136,12 @@
     },
     {
         "label": "render.mandatoryIvyDeps.overridden.mill.scalalib.JavaModule.mandatoryIvyDeps",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.scalaOrganization",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -191,7 +191,7 @@
     },
     {
         "label": "render.scalacPluginIvyDeps.overridden.mill.scalalib.ScalaModule.scalacPluginIvyDeps",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
@@ -201,7 +201,7 @@
     },
     {
         "label": "render.enablePluginScalacOptions",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -216,7 +216,7 @@
     },
     {
         "label": "render.scalaCompilerClasspath",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
@@ -226,22 +226,22 @@
     },
     {
         "label": "render.compile",
-        "millis": 814,
+        "millis": 785,
         "cached": false
     },
     {
         "label": "render.localClasspath",
-        "millis": 2,
+        "millis": 1,
         "cached": false
     },
     {
         "label": "render.runIvyDeps",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
         "label": "render.resolvedRunIvyDeps",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
@@ -251,22 +251,22 @@
     },
     {
         "label": "render.runClasspath",
-        "millis": 3,
+        "millis": 2,
         "cached": false
     },
     {
         "label": "render.mainClass",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.finalMainClassOpt",
-        "millis": 13,
+        "millis": 4,
         "cached": false
     },
     {
         "label": "render.scalaJSOptimizer",
-        "millis": 0,
+        "millis": 1,
         "cached": true
     },
     {
@@ -276,22 +276,22 @@
     },
     {
         "label": "render.useECMAScript2015",
-        "millis": 1,
+        "millis": 0,
         "cached": true
     },
     {
         "label": "render.esFeatures",
-        "millis": 2,
-        "cached": true
-    },
-    {
-        "label": "render.moduleSplitStyle",
         "millis": 1,
         "cached": true
     },
     {
+        "label": "render.moduleSplitStyle",
+        "millis": 0,
+        "cached": true
+    },
+    {
         "label": "render.fastOpt",
-        "millis": 514,
+        "millis": 295,
         "cached": false
     }
 ]

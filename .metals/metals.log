@@ -21290,3 +21290,1631 @@ dotty.tools.dotc.ast.Trees$UnAssignedTypeException: type of Apply(Select(New(Ide
 2023.05.22 18:23:00 INFO  compiling render (1 scala source)[0m
 2023.05.22 18:23:00 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
 2023.05.22 18:23:00 INFO  time: compiled render in 0.33s[0m
+2023.05.22 18:45:04 INFO  compiling lang (1 scala source)[0m
+2023.05.22 18:45:04 INFO  time: compiled lang in 95ms[0m
+2023.05.22 18:45:22 INFO  compiling lang (1 scala source)[0m
+2023.05.22 18:45:22 INFO  time: compiled lang in 0.11s[0m
+2023.05.22 18:45:28 INFO  compiling lang (1 scala source)[0m
+2023.05.22 18:45:28 INFO  time: compiled lang in 0.12s[0m
+2023.05.22 18:45:36 WARN  Using indexes to guess the definition of CanvasRenderingContext2D[0m
+2023.05.22 18:45:41 INFO  compiling lang (1 scala source)[0m
+2023.05.22 18:45:41 INFO  time: compiled lang in 0.69s[0m
+2023.05.22 18:46:34 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:46:34 INFO  time: compiled render in 0.64s[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:39 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:41 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:65:26: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val es = end.map(size).sum
+                         ^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:66:27: stale bloop error: Found:    String => Int
+Required: Char => <?>
+        val is = init.map(size).sum
+                          ^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:73:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:79:35: stale bloop error: Found:    Char
+Required: String
+        last = Letters.vowels.get(v.head).map(_(c2d, ww + 220, last)).getOrElse(false)
+                                  ^^^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:86:34: stale bloop error: Found:    (letter : Char)
+Required: String
+          Letters.consonants.get(letter).map(_(c2d))
+                                 ^^^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:17: stale bloop error: init is already defined as value init
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                ^^^^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:23: stale bloop error: v is already defined as value v
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                      ^[0m
+2023.05.22 18:46:43 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala:94:26: stale bloop error: end is already defined as value end
+
+Note that overloaded methods must all be defined in the same group of toplevel definitions
+        val Seq(init, v, end, suffix) = word
+                         ^^^[0m
+2023.05.22 18:46:55 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:46:55 INFO  time: compiled render in 0.61s[0m
+2023.05.22 18:47:09 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:47:09 INFO  time: compiled render in 0.84s[0m
+2023.05.22 18:47:11 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:47:11 INFO  time: compiled render in 0.14s[0m
+2023.05.22 18:47:23 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:47:23 INFO  time: compiled render in 0.17s[0m
+2023.05.22 18:47:31 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:47:31 INFO  time: compiled render in 0.35s[0m
+2023.05.22 18:47:37 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:47:37 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:47:37 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:47:37 INFO  time: compiled render in 0.47s[0m
+2023.05.22 18:47:56 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:47:56 INFO  time: compiled render in 0.11s[0m
+2023.05.22 18:48:04 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:48:04 INFO  time: compiled render in 0.16s[0m
+2023.05.22 18:48:14 WARN  Using indexes to guess the definition of CanvasRenderingContext2D[0m
+2023.05.22 18:48:14 WARN  Using indexes to guess the definition of CanvasRenderingContext2D[0m
+2023.05.22 18:48:15 INFO  compiling lang (1 scala source)[0m
+2023.05.22 18:48:15 INFO  time: compiled lang in 0.51s[0m
+2023.05.22 18:48:19 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:19 INFO  time: compiled render in 0.32s[0m
+2023.05.22 18:48:19 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:19 INFO  time: compiled render in 0.26s[0m
+2023.05.22 18:48:19 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:20 INFO  time: compiled render in 0.18s[0m
+May 22, 2023 6:48:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43184
+2023.05.22 18:48:23 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:23 INFO  time: compiled render in 0.14s[0m
+May 22, 2023 6:48:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43216
+2023.05.22 18:48:31 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:31 INFO  time: compiled render in 0.37s[0m
+May 22, 2023 6:48:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43307
+2023.05.22 18:48:46 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:46 INFO  time: compiled render in 0.43s[0m
+2023.05.22 18:48:50 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:50 INFO  time: compiled render in 0.42s[0m
+2023.05.22 18:48:56 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:48:56 INFO  time: compiled render in 0.35s[0m
+2023.05.22 18:48:58 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:48:58 INFO  time: compiled render in 0.16s[0m
+2023.05.22 18:49:37 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:49:37 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:49:37 INFO  time: compiled render in 0.32s[0m
+2023.05.22 18:50:01 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:50:01 INFO  time: compiled render in 0.29s[0m
+2023.05.22 18:50:02 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:50:02 INFO  time: compiled render in 0.34s[0m
+2023.05.22 18:50:45 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:50:45 INFO  time: compiled render in 0.43s[0m
+2023.05.22 18:50:58 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:50:58 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 18:50:58 INFO  time: compiled render in 0.34s[0m
+2023.05.22 18:51:01 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:51:01 INFO  time: compiled render in 0.27s[0m
+2023.05.22 18:52:09 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:09 INFO  time: compiled render in 84ms[0m
+2023.05.22 18:52:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:16 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:16 INFO  time: compiled render in 69ms[0m
+2023.05.22 18:52:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:17 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:17 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:17 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:19 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:20 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:20 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:20 INFO  time: compiled render in 69ms[0m
+2023.05.22 18:52:21 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:22 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:22 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:52:23 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:23 INFO  time: compiled render in 0.19s[0m
+2023.05.22 18:52:25 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:25 INFO  time: compiled render in 76ms[0m
+2023.05.22 18:52:32 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:32 INFO  time: compiled render in 74ms[0m
+2023.05.22 18:52:36 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:36 INFO  time: compiled render in 76ms[0m
+2023.05.22 18:52:41 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:41 INFO  time: compiled render in 71ms[0m
+May 22, 2023 6:52:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 43928
+2023.05.22 18:52:46 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:46 INFO  time: compiled render in 0.1s[0m
+2023.05.22 18:52:48 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:52:48 INFO  time: compiled render in 0.18s[0m
+May 22, 2023 6:52:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 18:53:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:53:10 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:53:10 INFO  time: compiled render in 0.18s[0m
+May 22, 2023 6:53:11 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 18:53:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:53:22 INFO  time: compiled render in 0.18s[0m
+May 22, 2023 6:53:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:26 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:53:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 18:53:36 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:53:42 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:53:42 INFO  time: compiled render in 0.26s[0m
+2023.05.22 18:53:51 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:53:51 INFO  time: compiled render in 0.14s[0m
+May 22, 2023 6:53:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 18:54:08 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 18:54:12 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:54:12 INFO  time: compiled render in 0.17s[0m
+2023.05.22 18:54:28 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:54:28 INFO  time: compiled render in 91ms[0m
+May 22, 2023 6:54:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44267
+2023.05.22 18:54:46 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:54:46 INFO  time: compiled render in 0.17s[0m
+2023.05.22 18:55:08 INFO  compiling render (3 scala sources)[0m
+2023.05.22 18:55:08 INFO  time: compiled render in 0.43s[0m
+May 22, 2023 6:55:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44545
+May 22, 2023 6:55:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44609
+2023.05.22 18:55:47 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:55:47 INFO  time: compiled render in 0.36s[0m
+2023.05.22 18:56:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:56:00 INFO  time: compiled render in 0.39s[0m
+2023.05.22 18:56:04 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:56:04 INFO  time: compiled render in 0.41s[0m
+2023.05.22 18:56:23 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:56:23 INFO  time: compiled render in 0.18s[0m
+May 22, 2023 6:56:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44772
+May 22, 2023 6:56:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44771
+2023.05.22 18:56:40 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:56:40 INFO  time: compiled render in 0.11s[0m
+2023.05.22 18:57:21 INFO  Shut down connection with build server.[0m
+2023.05.22 18:57:38 INFO  Started: Metals version 0.11.12 in workspace '/home/tm/Documents/dawn/dawnpowers.github.io' for client Visual Studio Code 1.77.3.[0m
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/home/tm/Documents/dawn/dawnpowers.github.io/.metals/metals (H2 2.1)
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.033s)
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 22, 2023 6:57:38 PM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.22 18:57:38 INFO  time: initialize in 0.73s[0m
+2023.05.22 18:57:41 INFO  Attempting to connect to the build server...[0m
+2023.05.22 18:57:41 INFO  Bloop uses /usr/lib64/jvm/java-11-openjdk-11 defined at /home/tm/.bloop/bloop.json[0m
+2023.05.22 18:57:41 INFO  skipping build import with status 'Installed'[0m
+2023.05.22 18:57:41 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/tm/Documents/dawn/dawnpowers.github.io/.metals/bsp.trace.json or /home/tm/.cache/metals/bsp.trace.json[0m
+2023.05.22 18:57:41 INFO  time: Connected to build server in 0.67s[0m
+2023.05.22 18:57:41 INFO  Connected to Build server: Bloop v1.5.6[0m
+2023.05.22 18:57:41 INFO  time: Imported build in 0.12s[0m
+May 22, 2023 6:57:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+May 22, 2023 6:57:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2023.05.22 18:57:45 WARN  Could not find java sources in /usr/lib64/jvm/src.zip, /usr/lib64/jvm/lib/src.zip, /usr/lib64/jvm/java/src.zip, /usr/lib64/jvm/java/lib/src.zip. Java symbols will not be available.[0m
+2023.05.22 18:57:45 WARN  Could not find java sources in /usr/lib64/jvm/src.zip, /usr/lib64/jvm/lib/src.zip, /usr/lib64/jvm/java/src.zip, /usr/lib64/jvm/java/lib/src.zip. Java symbols will not be available.[0m
+2023.05.22 18:57:45 WARN  Could not find java sources in /usr/lib64/jvm/src.zip, /usr/lib64/jvm/lib/src.zip, /usr/lib64/jvm/java/src.zip, /usr/lib64/jvm/java/lib/src.zip. Java symbols will not be available.[0m
+2023.05.22 18:57:45 INFO  time: indexed workspace in 3.97s[0m
+May 22, 2023 6:57:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "build/taskFinish",
+  "params": {
+    "taskId": {
+      "id": "1"
+    },
+    "eventTime": 1684778266059,
+    "message": "Compiled \u0027render\u0027",
+    "status": 1,
+    "dataKind": "compile-report",
+    "data": {
+      "target": {
+        "uri": "file:/home/tm/Documents/dawn/dawnpowers.github.io/render/?id\u003drender"
+      },
+      "errors": 0,
+      "warnings": 0,
+      "isNoOp": true,
+      "isLastCycle": true,
+      "clientDir": "file:///home/tm/Documents/dawn/dawnpowers.github.io/.bloop/out/render/bloop-bsp-clients-classes/classes-Metals-DXXLFKUFTgqNDRsQ4u7PGw\u003d\u003d/",
+      "analysisOut": "file:///home/tm/Documents/dawn/dawnpowers.github.io/.bloop/out/render/render-analysis.bin"
+    }
+  }
+}
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:67)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	... 11 more
+Caused by: java.lang.NullPointerException
+	at scala.meta.internal.metals.Compilers.$anonfun$didCompile$3(Compilers.scala:257)
+	at scala.meta.internal.metals.Compilers.$anonfun$didCompile$3$adapted(Compilers.scala:255)
+	at scala.Option.foreach(Option.scala:437)
+	at scala.meta.internal.metals.Compilers.$anonfun$didCompile$2(Compilers.scala:255)
+	at scala.meta.internal.metals.Compilers.$anonfun$didCompile$2$adapted(Compilers.scala:254)
+	at scala.collection.mutable.HashSet$Node.foreach(HashSet.scala:435)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:361)
+	at scala.meta.internal.metals.Compilers.didCompile(Compilers.scala:254)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$buildClient$1(MetalsLspService.scala:417)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$buildClient$1$adapted(MetalsLspService.scala:415)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.$anonfun$buildTaskFinish$2(ForwardingMetalsBuildClient.scala:165)
+	at scala.Option.foreach(Option.scala:437)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.$anonfun$buildTaskFinish$1(ForwardingMetalsBuildClient.scala:162)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.$anonfun$buildTaskFinish$1$adapted(ForwardingMetalsBuildClient.scala:161)
+	at scala.Option.foreach(Option.scala:437)
+	at scala.meta.internal.metals.clients.language.ForwardingMetalsBuildClient.buildTaskFinish(ForwardingMetalsBuildClient.scala:161)
+	... 16 more
+
+2023.05.22 18:58:02 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:02 INFO  time: compiled render in 0.15s[0m
+2023.05.22 18:58:08 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:08 INFO  time: compiled render in 0.14s[0m
+2023.05.22 18:58:12 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:12 INFO  time: compiled render in 85ms[0m
+2023.05.22 18:58:14 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:14 INFO  time: compiled render in 85ms[0m
+2023.05.22 18:58:17 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:17 INFO  time: compiled render in 0.1s[0m
+2023.05.22 18:58:19 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:19 INFO  time: compiled render in 89ms[0m
+2023.05.22 18:58:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:22 INFO  time: compiled render in 0.11s[0m
+2023.05.22 18:58:25 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:25 INFO  time: compiled render in 63ms[0m
+2023.05.22 18:58:28 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:28 INFO  time: compiled render in 69ms[0m
+2023.05.22 18:58:31 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:31 INFO  time: compiled render in 85ms[0m
+2023.05.22 18:58:33 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:33 INFO  time: compiled render in 0.1s[0m
+2023.05.22 18:58:35 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:35 INFO  time: compiled render in 84ms[0m
+2023.05.22 18:58:38 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:38 INFO  time: compiled render in 0.11s[0m
+May 22, 2023 6:58:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 6:58:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 6:58:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 300
+2023.05.22 18:58:58 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:58:58 INFO  time: compiled render in 0.11s[0m
+May 22, 2023 6:59:18 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 18:59:18 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:59:18 INFO  time: compiled render in 0.22s[0m
+May 22, 2023 6:59:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 18:59:38 INFO  compiling render (1 scala source)[0m
+2023.05.22 18:59:38 INFO  time: compiled render in 0.14s[0m
+May 22, 2023 6:59:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 491
+2023.05.22 19:00:05 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:00:05 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:00:55 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:00:55 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:01:23 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:01:23 INFO  time: compiled render in 0.16s[0m
+2023.05.22 19:01:38 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:01:38 INFO  time: compiled render in 0.16s[0m
+2023.05.22 19:01:48 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:01:48 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:03:51 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:03:51 INFO  time: compiled render in 89ms[0m
+May 22, 2023 7:04:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 19:04:31 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:04:31 INFO  time: compiled render in 76ms[0m
+2023.05.22 19:04:39 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:04:39 INFO  time: compiled render in 87ms[0m
+May 22, 2023 7:04:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:04:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:04:52 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:04:52 INFO  time: compiled render in 0.12s[0m
+2023.05.22 19:05:25 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:05:25 INFO  time: compiled render in 98ms[0m
+2023.05.22 19:05:28 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:05:28 INFO  time: compiled render in 92ms[0m
+2023.05.22 19:05:31 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:05:31 INFO  time: compiled render in 75ms[0m
+2023.05.22 19:05:37 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:05:37 INFO  time: compiled render in 91ms[0m
+2023.05.22 19:05:45 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:05:45 INFO  time: compiled render in 0.18s[0m
+May 22, 2023 7:05:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:06:01 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:01 INFO  time: compiled render in 92ms[0m
+2023.05.22 19:06:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:22 INFO  time: compiled render in 99ms[0m
+2023.05.22 19:06:24 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:24 INFO  time: compiled render in 81ms[0m
+2023.05.22 19:06:30 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:30 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:06:35 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:35 INFO  time: compiled render in 0.1s[0m
+2023.05.22 19:06:37 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:37 INFO  time: compiled render in 0.12s[0m
+2023.05.22 19:06:40 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:40 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:06:43 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:43 INFO  time: compiled render in 91ms[0m
+2023.05.22 19:06:52 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:52 INFO  time: compiled render in 0.2s[0m
+2023.05.22 19:06:55 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:06:56 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:56 INFO  time: compiled render in 79ms[0m
+2023.05.22 19:06:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:06:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:06:57 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:06:58 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:06:58 INFO  time: compiled render in 0.12s[0m
+2023.05.22 19:06:59 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:06:59 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:06:59 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:00 INFO  time: compiled render in 90ms[0m
+2023.05.22 19:07:01 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:01 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:01 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:02 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:03 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:03 INFO  time: compiled render in 92ms[0m
+2023.05.22 19:07:03 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:04 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:04 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:05 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:05 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:05 INFO  time: compiled render in 98ms[0m
+2023.05.22 19:07:06 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:06 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:07 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:07 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:08 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:08 INFO  time: compiled render in 75ms[0m
+2023.05.22 19:07:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:10 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:10 INFO  time: compiled render in 84ms[0m
+2023.05.22 19:07:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:12 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:12 INFO  time: compiled render in 0.1s[0m
+2023.05.22 19:07:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:07:17 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:17 INFO  time: compiled render in 0.14s[0m
+May 22, 2023 7:07:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1601
+2023.05.22 19:07:44 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:07:44 INFO  time: compiled render in 0.15s[0m
+May 22, 2023 7:07:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:07:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1721
+May 22, 2023 7:08:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:08:06 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 19:08:06 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:08:06 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:08:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:08:13 INFO  time: compiled render in 0.22s[0m
+2023.05.22 19:08:40 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:08:40 INFO  time: compiled render in 0.16s[0m
+May 22, 2023 7:08:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:09:01 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:09:01 INFO  time: compiled render in 0.13s[0m
+May 22, 2023 7:09:02 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:09:03 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:09:03 INFO  time: compiled render in 0.19s[0m
+2023.05.22 19:09:04 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:09:04 INFO  time: compiled render in 0.16s[0m
+May 22, 2023 7:09:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 19:09:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:09:22 INFO  time: compiled render in 0.17s[0m
+May 22, 2023 7:09:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2034
+2023.05.22 19:09:54 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:09:54 INFO  time: compiled render in 0.23s[0m
+May 22, 2023 7:09:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2060
+2023.05.22 19:10:00 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:03 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:03 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:10:04 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:04 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:05 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:06 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:06 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:07 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:07 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:08 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:08 INFO  time: compiled render in 95ms[0m
+2023.05.22 19:10:08 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:13 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:10:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:16 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:16 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:10:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:17 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:17 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+May 22, 2023 7:10:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2168
+2023.05.22 19:10:18 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:19 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:18 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:10:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:22 INFO  time: compiled render in 0.21s[0m
+2023.05.22 19:10:39 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:39 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:10:55 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:55 INFO  time: compiled render in 0.15s[0m
+2023.05.22 19:10:58 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:10:58 INFO  time: compiled render in 0.17s[0m
+2023.05.22 19:11:06 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:11:06 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:11:10 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:11:10 INFO  time: compiled render in 0.18s[0m
+2023.05.22 19:11:45 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:11:45 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:11:51 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:11:51 INFO  time: compiled render in 0.15s[0m
+2023.05.22 19:11:55 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:11:55 INFO  time: compiled render in 0.12s[0m
+2023.05.22 19:11:59 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:11:59 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:12:02 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:02 INFO  time: compiled render in 0.1s[0m
+2023.05.22 19:12:06 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:06 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:12:07 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:43: stale bloop error: pattern expected
+      case "ir" | "iaþs" | "iis" | "apt" | 
+                                          ^[0m
+2023.05.22 19:12:07 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:43: stale bloop error: pattern expected
+      case "ir" | "iaþs" | "iis" | "apt" | 
+                                          ^[0m
+2023.05.22 19:12:09 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:43: stale bloop error: pattern expected
+      case "ir" | "iaþs" | "iis" | "apt" | 
+                                          ^[0m
+2023.05.22 19:12:09 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:09 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:09 INFO  time: compiled render in 0.1s[0m
+2023.05.22 19:12:09 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:09 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:11 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:11 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:12 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:13 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+May 22, 2023 7:12:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2497
+2023.05.22 19:12:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:15 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:17 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:40:36: stale bloop error: unclosed string literal
+      case "ir" | "iaþs" | "iis" | "
+                                   ^[0m
+2023.05.22 19:12:17 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:17 INFO  time: compiled render in 0.11s[0m
+May 22, 2023 7:12:24 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:12:31 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:31 INFO  time: compiled render in 0.1s[0m
+2023.05.22 19:12:33 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:33 INFO  time: compiled render in 0.12s[0m
+2023.05.22 19:12:36 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:36 INFO  time: compiled render in 0.12s[0m
+May 22, 2023 7:12:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2601
+2023.05.22 19:12:38 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:12:38 INFO  time: compiled render in 0.13s[0m
+May 22, 2023 7:12:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2628
+2023.05.22 19:13:04 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:13:04 INFO  time: compiled render in 0.25s[0m
+May 22, 2023 7:13:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:13:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:13:08 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 19:13:39 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:13:39 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:13:49 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:49 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:50 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:50 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:50 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:50 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:50 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:50 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:52:7: stale bloop error: '=>' expected, but 'case' found
+      case _ => 
+      ^^^^[0m
+2023.05.22 19:13:56 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:13:56 INFO  time: compiled render in 0.18s[0m
+2023.05.22 19:14:01 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:02 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:04 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:04 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:14:04 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:04 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:05 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:06 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:07 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:07 INFO  time: compiled render in 0.14s[0m
+2023.05.22 19:14:07 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+May 22, 2023 7:14:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2808
+2023.05.22 19:14:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:12 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:12 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:12 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:14:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:16 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:16 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:14:17 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:18 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:19 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:21 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:21 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:22 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:22 INFO  time: compiled render in 0.15s[0m
+2023.05.22 19:14:23 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:24 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:28 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:29 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:30 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+May 22, 2023 7:14:30 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:14:31 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:14:31 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:31 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:34 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:35 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:36 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:36 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:37 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:37 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:39 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:39 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:40 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:41 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:41 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:42 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:42 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:44 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:45 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:45 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:46 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:46 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:14:46 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:47 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:48 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:49 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:54 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:54 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:55 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:58 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:14:58 INFO  time: compiled render in 0.19s[0m
+2023.05.22 19:14:58 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:58 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:14:58 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:00 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:03 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:03 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:05 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:15:05 INFO  time: compiled render in 0.12s[0m
+2023.05.22 19:15:05 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:15:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:15:13 INFO  time: compiled render in 0.16s[0m
+2023.05.22 19:15:24 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:15:24 INFO  time: compiled render in 0.16s[0m
+May 22, 2023 7:15:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3149
+2023.05.22 19:15:47 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:15:47 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:15:54 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:15:54 INFO  time: compiled render in 0.11s[0m
+2023.05.22 19:16:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:16:00 INFO  time: compiled render in 0.13s[0m
+2023.05.22 19:16:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:16:13 INFO  time: compiled render in 0.2s[0m
+May 22, 2023 7:16:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3247
+May 22, 2023 7:16:53 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:17:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:17:00 INFO  time: compiled render in 0.14s[0m
+May 22, 2023 7:17:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3308
+May 22, 2023 7:17:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3309
+2023.05.22 19:17:30 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:17:30 INFO  time: compiled render in 0.17s[0m
+May 22, 2023 7:17:48 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:18:05 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:18:14 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:18:16 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:18:16 INFO  time: compiled render in 0.16s[0m
+2023.05.22 19:18:22 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:18:22 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:18:22 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:18:22 INFO  time: compiled render in 0.2s[0m
+May 22, 2023 7:18:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:18:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:44 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:45 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:46 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:18:50 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:18:59 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:19:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3581
+2023.05.22 19:19:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:19:00 INFO  time: compiled render in 0.17s[0m
+May 22, 2023 7:19:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:19:55 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:19:55 INFO  time: compiled render in 0.21s[0m
+May 22, 2023 7:20:51 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:20:57 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:21:00 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:21:01 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:21:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:21:03 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:21:04 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:21:07 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:21:07 INFO  time: compiled render in 0.23s[0m
+May 22, 2023 7:21:07 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:21:09 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:09 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:21:09 INFO  time: compiled render in 0.14s[0m
+May 22, 2023 7:21:09 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:21:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:10 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:13 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:14 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:72: stale bloop error: '=>' expected, but string literal found
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                       ^[0m
+2023.05.22 19:21:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:70: stale bloop error: Not found: |
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                     ^[0m
+2023.05.22 19:21:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:72: stale bloop error: '=>' expected, but string literal found
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                       ^[0m
+2023.05.22 19:21:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:70: stale bloop error: Not found: |
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                     ^[0m
+2023.05.22 19:21:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:72: stale bloop error: '=>' expected, but string literal found
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                       ^[0m
+2023.05.22 19:21:14 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:70: stale bloop error: Not found: |
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                     ^[0m
+2023.05.22 19:21:15 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:15 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:72: stale bloop error: '=>' expected, but string literal found
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                       ^[0m
+2023.05.22 19:21:15 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:70: stale bloop error: Not found: |
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | | "iaþs" | "iis" =>
+                                                                     ^[0m
+2023.05.22 19:21:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:16 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:18 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:21:18 INFO  time: compiled render in 0.1s[0m
+2023.05.22 19:21:18 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:87: stale bloop error: '=>' expected, but string literal found
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | "uus" | "ir" | | "iaþs" | "iis" =>
+                                                                                      ^[0m
+2023.05.22 19:21:18 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:85: stale bloop error: Not found: |
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | "uus" | "ir" | | "iaþs" | "iis" =>
+                                                                                    ^[0m
+2023.05.22 19:21:18 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:87: stale bloop error: '=>' expected, but string literal found
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | "uus" | "ir" | | "iaþs" | "iis" =>
+                                                                                      ^[0m
+2023.05.22 19:21:18 INFO  file:///home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala:18:85: stale bloop error: Not found: |
+      case "an" | "ask'" | "aus" | "oaþs" | "oos" | "un" | "uask'" | "uus" | "ir" | | "iaþs" | "iis" =>
+                                                                                    ^[0m
+2023.05.22 19:21:18 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:19 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:20 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:20 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:21:21 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:21:21 INFO  time: compiled render in 0.16s[0m
+2023.05.22 19:22:35 INFO  compiling render (1 scala source)[0m
+May 22, 2023 7:22:35 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:22:35 INFO  time: compiled render in 0.23s[0m
+2023.05.22 19:23:27 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:23:27 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:27 INFO  time: compiled render in 0.48s[0m
+2023.05.22 19:23:28 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:40 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:41 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:41 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:42 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:42 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:43 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:45 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:46 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:46 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:50 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:51 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:51 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:53 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:55 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:55 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:56 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:56 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:58 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:58 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:23:59 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:24:00 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:24:00 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:24:00 INFO  time: compiled render in 0.17s[0m
+May 22, 2023 7:24:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4388
+May 22, 2023 7:24:16 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:24:18 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:24:18 INFO  time: compiled render in 0.21s[0m
+May 22, 2023 7:24:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4499
+2023.05.22 19:24:55 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:24:55 INFO  time: compiled render in 0.18s[0m
+2023.05.22 19:24:59 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:24:59 INFO  time: compiled render in 0.34s[0m
+2023.05.22 19:26:11 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala[0m
+2023.05.22 19:26:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:26:13 INFO  time: compiled render in 0.18s[0m
+2023.05.22 19:26:23 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:26:23 INFO  time: compiled render in 0.17s[0m
+2023.05.22 19:26:32 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:26:32 INFO  time: compiled render in 0.16s[0m
+May 22, 2023 7:26:43 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:29:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+May 22, 2023 7:29:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.HoverProvider$.hover(HoverProvider.scala:98)
+
+2023.05.22 19:29:50 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:29:50 INFO  time: compiled render in 0.2s[0m
+2023.05.22 19:30:14 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:30:14 INFO  time: compiled render in 0.13s[0m
+May 22, 2023 7:30:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+May 22, 2023 7:30:23 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 19:30:25 INFO  compiling render (1 scala source)[0m
+May 22, 2023 7:30:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: NoDenotation.owner
+java.lang.AssertionError: NoDenotation.owner
+	at dotty.tools.dotc.core.SymDenotations$NoDenotation$.owner(SymDenotations.scala:2511)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbolsWithExpressionType(MetalsInteractive.scala:261)
+	at scala.meta.internal.pc.MetalsInteractive$.enclosingSymbols(MetalsInteractive.scala:167)
+	at scala.meta.internal.pc.PcDefinitionProvider.findDefinitions(PcDefinitionProvider.scala:91)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:56)
+	at scala.meta.internal.pc.PcDefinitionProvider.definitions(PcDefinitionProvider.scala:33)
+
+2023.05.22 19:30:25 INFO  time: compiled render in 0.19s[0m
+2023.05.22 19:30:35 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:30:35 INFO  time: compiled render in 0.26s[0m
+2023.05.22 19:30:39 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:30:39 INFO  time: compiled render in 0.29s[0m
+2023.05.22 19:30:49 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:30:49 INFO  time: compiled render in 0.27s[0m
+2023.05.22 19:30:59 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:30:59 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 19:30:59 WARN  Could not load snapshot text for /home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala[0m
+2023.05.22 19:30:59 INFO  time: compiled render in 0.36s[0m
+2023.05.22 19:31:04 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:31:04 INFO  time: compiled render in 0.4s[0m
+2023.05.22 19:31:13 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:31:13 INFO  time: compiled render in 0.31s[0m
+May 22, 2023 7:31:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5158
+2023.05.22 19:31:24 INFO  compiling render (1 scala source)[0m
+2023.05.22 19:31:24 INFO  time: compiled render in 0.39s[0m

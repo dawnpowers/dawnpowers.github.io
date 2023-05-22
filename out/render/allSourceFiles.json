@@ -1,8 +1,9 @@
 {
     "value": [
-        "ref:a87ecaa6:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala",
-        "ref:a1a2a786:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala"
+        "ref:b7166f63:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala",
+        "ref:a1a2a786:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala",
+        "ref:4e9864eb:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala"
     ],
-    "valueHash": 884166668,
-    "inputsHash": -1219304210
+    "valueHash": -395178602,
+    "inputsHash": -1782059277
 }
