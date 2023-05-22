@@ -1094,7 +1094,8 @@ function $c_LLetters$() {
     c2d$4.moveTo(0.0, 100.0);
     c2d$4.lineTo(0.0, 400.0);
     c2d$4.lineTo(200.0, 400.0);
-    c2d$4.lineTo(400.0, 400.0);
+    c2d$4.lineTo(200.0, 120.0);
+    c2d$4.lineTo(400.0, 120.0);
     c2d$4.stroke()
   }));
   var $$x26 = new $c_T2("g", y$3);

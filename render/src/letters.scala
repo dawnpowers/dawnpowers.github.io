@@ -73,7 +73,8 @@ object Letters {
       c2d.moveTo(0, 100)
       c2d.lineTo(0, 400)
       c2d.lineTo(200, 400)
-      c2d.lineTo(400, 400)
+      c2d.lineTo(200, 120)
+      c2d.lineTo(400, 120)
       c2d.stroke()
     }),
     "č" -> ((c2d) => {
