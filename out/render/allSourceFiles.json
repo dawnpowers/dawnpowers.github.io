@@ -1,9 +1,14 @@
 {
     "value": [
-        "ref:b7166f63:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala",
+        "ref:6912cd35:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Main.scala",
         "ref:a1a2a786:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters.scala",
-        "ref:4e9864eb:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala"
+        "ref:0c24c412:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/Suffix.scala",
+        "ref:b77d93f7:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/letters_svg.scala",
+        "ref:31300591:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/canvasRender.scala",
+        "ref:b68889d8:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/util.scala",
+        "ref:9a570a63:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/svgRender.scala",
+        "ref:80db9baa:/home/tm/Documents/dawn/dawnpowers.github.io/render/src/SvgSuffix.scala"
     ],
-    "valueHash": -395178602,
-    "inputsHash": -1782059277
+    "valueHash": -1166207801,
+    "inputsHash": -82881691
 }

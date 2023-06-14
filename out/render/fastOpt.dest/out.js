@@ -216,13 +216,6 @@ function $dp_equals__O__Z(instance, x0) {
     }
   }
 }
-function $dp_getChars__I__I__AC__I__V(instance, x0, x1, x2, x3) {
-  if (((typeof instance) === "string")) {
-    return $f_T__getChars__I__I__AC__I__V(instance, x0, x1, x2, x3)
-  } else {
-    return instance.getChars__I__I__AC__I__V(x0, x1, x2, x3)
-  }
-}
 function $dp_hashCode__I(instance) {
   switch ((typeof instance)) {
     case "string": {
@@ -248,13 +241,6 @@ function $dp_hashCode__I(instance) {
         return $c_O.prototype.hashCode__I.call(instance)
       }
     }
-  }
-}
-function $dp_indexOf__I__I(instance, x0) {
-  if (((typeof instance) === "string")) {
-    return $f_T__indexOf__I__I(instance, x0)
-  } else {
-    return instance.indexOf__I__I(x0)
   }
 }
 function $dp_repeat__I__T(instance, x0) {
@@ -1057,6 +1043,291 @@ var $d_I = new $TypeData().initPrim(0, "I", "int", $ac_I, Int32Array);
 var $d_J = new $TypeData().initPrim(null, "J", "long", $ac_J, (void 0));
 var $d_F = new $TypeData().initPrim(0.0, "F", "float", $ac_F, Float32Array);
 var $d_D = new $TypeData().initPrim(0.0, "D", "double", $ac_D, Float64Array);
+function $p_LCanvasRender$__renderIn$1__sr_IntRef__Lorg_scalajs_dom_CanvasRenderingContext2D__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V($thiz, cl$2, c2d$2, last$2, ww$1, init, v, end) {
+  c2d$2.lineWidth = 40.0;
+  c2d$2.strokeStyle = "black";
+  var this$3 = $n($as_sc_IterableOnceOps($n(end).map__F1__O(new $c_sjsr_AnonFunction1(((s) => {
+    var s$1 = $as_T(s);
+    return $m_LLetters$().size__T__I(s$1)
+  })))));
+  var num = $m_s_math_Numeric$IntIsIntegral$();
+  var es = $uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$3, num));
+  var this$4 = $n($as_sc_IterableOnceOps($n(init).map__F1__O(new $c_sjsr_AnonFunction1(((s$2) => {
+    var s$3 = $as_T(s$2);
+    return $m_LLetters$().size__T__I(s$3)
+  })))));
+  var num$1 = $m_s_math_Numeric$IntIsIntegral$();
+  var is = $uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$4, num$1));
+  var x = ((es - is) | 0);
+  var offset1 = ((((x > 0) ? x : 0) / 2) | 0);
+  var i1 = new $c_sr_IntRef(offset1);
+  $n(init).foreach__F1__V(new $c_sjsr_AnonFunction1(((letter) => {
+    var letter$1 = $as_T(letter);
+    var x$1 = ((((("Printing (init) " + letter$1) + " @ ") + i1.sr_IntRef__f_elem) + " + ") + $n(cl$2).sr_IntRef__f_elem);
+    var this$11 = $m_s_Console$();
+    var this$12 = $n(this$11.out__Ljava_io_PrintStream());
+    this$12.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
+    c2d$2.save();
+    var x$2 = ((((25 + $n(cl$2).sr_IntRef__f_elem) | 0) + i1.sr_IntRef__f_elem) | 0);
+    c2d$2.translate(x$2, 0.0);
+    var this$14 = $n($n($m_LLetters$().LLetters$__f_consonants).get__O__s_Option(letter$1));
+    if ((!this$14.isEmpty__Z())) {
+      var arg1 = this$14.get__O();
+      var _$1 = $as_F1(arg1);
+      $n(_$1).apply__O__O(c2d$2);
+      new $c_s_Some((void 0))
+    };
+    c2d$2.restore();
+    var ev$3 = ((i1.sr_IntRef__f_elem + ((50 + $m_LLetters$().size__T__I(letter$1)) | 0)) | 0);
+    i1.sr_IntRef__f_elem = ev$3
+  })));
+  var this$15 = $n($n($m_LLetters$().LLetters$__f_vowels).get__O__s_Option($n(v).head__O()));
+  if (this$15.isEmpty__Z()) {
+    var $$x1 = $m_s_None$()
+  } else {
+    var arg1$1 = this$15.get__O();
+    var _$2 = $as_F3(arg1$1);
+    var $$x1 = new $c_s_Some($uZ($n(_$2).apply__O__O__O__O(c2d$2, ((220 + ww$1) | 0), $n(last$2).sr_BooleanRef__f_elem)))
+  };
+  var this$16 = $n($$x1);
+  var ev$4 = $uZ((this$16.isEmpty__Z() ? false : this$16.get__O()));
+  $n(last$2).sr_BooleanRef__f_elem = ev$4;
+  var x$3 = ((is - es) | 0);
+  var offset2 = ((((x$3 > 0) ? x$3 : 0) / 2) | 0);
+  var i2 = new $c_sr_IntRef(offset2);
+  $n(end).foreach__F1__V(new $c_sjsr_AnonFunction1(((letter$2) => {
+    var letter$3 = $as_T(letter$2);
+    var x$4 = ((((("Printing (end) " + letter$3) + " @ ") + i2.sr_IntRef__f_elem) + " + ") + $n(cl$2).sr_IntRef__f_elem);
+    var this$23 = $m_s_Console$();
+    var this$24 = $n(this$23.out__Ljava_io_PrintStream());
+    this$24.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$4 + "\n"));
+    c2d$2.save();
+    var x$5 = ((((25 + $n(cl$2).sr_IntRef__f_elem) | 0) + i2.sr_IntRef__f_elem) | 0);
+    c2d$2.translate(x$5, 550.0);
+    var this$26 = $n($n($m_LLetters$().LLetters$__f_consonants).get__O__s_Option(letter$3));
+    if ((!this$26.isEmpty__Z())) {
+      var arg1$2 = this$26.get__O();
+      var _$3 = $as_F1(arg1$2);
+      $n(_$3).apply__O__O(c2d$2);
+      new $c_s_Some((void 0))
+    };
+    c2d$2.restore();
+    var ev$5 = ((i2.sr_IntRef__f_elem + ((50 + $m_LLetters$().size__T__I(letter$3)) | 0)) | 0);
+    i2.sr_IntRef__f_elem = ev$5
+  })));
+  var x$6 = ((200 + ww$1) | 0);
+  c2d$2.translate(x$6, 0.0)
+}
+/** @constructor */
+function $c_LCanvasRender$() {
+  /*<skip>*/
+}
+$c_LCanvasRender$.prototype = new $h_O();
+$c_LCanvasRender$.prototype.constructor = $c_LCanvasRender$;
+/** @constructor */
+function $h_LCanvasRender$() {
+  /*<skip>*/
+}
+$h_LCanvasRender$.prototype = $c_LCanvasRender$.prototype;
+$c_LCanvasRender$.prototype.renderOnCanvas__sci_Seq__Lorg_scalajs_dom_HTMLCanvasElement__V = (function(text, canvas) {
+  var length = new $c_sr_IntRef(0);
+  var shapes = $as_sci_Seq($n(text).map__F1__O(new $c_sjsr_AnonFunction1(((word) => {
+    var word$1 = $as_sci_Seq(word);
+    if (($n(word$1).length__I() === 3)) {
+      matchResult1: {
+        var \u03b41$___1;
+        var \u03b41$___2;
+        var \u03b41$___3;
+        if ((word$1 !== null)) {
+          $n($m_s_package$().s_package$__f_Seq);
+          if (($n(word$1).lengthCompare__I__I(3) === 0)) {
+            var x3 = $as_sci_Seq($n(word$1).apply__I__O(0));
+            var x4 = $as_sci_Seq($n(word$1).apply__I__O(1));
+            var x5 = $as_sci_Seq($n(word$1).apply__I__O(2));
+            var \u03b41$___1 = x3;
+            var \u03b41$___2 = x4;
+            var \u03b41$___3 = x5;
+            break matchResult1
+          }
+        };
+        throw new $c_s_MatchError(word$1)
+      };
+      var init$2 = $as_sci_Seq(\u03b41$___1);
+      $as_sci_Seq(\u03b41$___2);
+      var end$2 = $as_sci_Seq(\u03b41$___3);
+      var this$9 = $n($as_sc_IterableOnceOps($n(end$2).map__F1__O(new $c_sjsr_AnonFunction1(((s) => {
+        var s$1 = $as_T(s);
+        return $m_LLetters$().size__T__I(s$1)
+      })))));
+      var num = $m_s_math_Numeric$IntIsIntegral$();
+      var es = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$9, num)) + Math.imul(50, (((-1) + $n(end$2).length__I()) | 0))) | 0);
+      var this$10 = $n($as_sc_IterableOnceOps($n(init$2).map__F1__O(new $c_sjsr_AnonFunction1(((s$2) => {
+        var s$3 = $as_T(s$2);
+        return $m_LLetters$().size__T__I(s$3)
+      })))));
+      var num$1 = $m_s_math_Numeric$IntIsIntegral$();
+      var is = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$10, num$1)) + Math.imul(50, (((-1) + $n(init$2).length__I()) | 0))) | 0);
+      var ww = ((es > is) ? es : is);
+      var ev$1 = ((length.sr_IntRef__f_elem + ((200 + ww) | 0)) | 0);
+      length.sr_IntRef__f_elem = ev$1;
+      return ww
+    } else if (($n(word$1).length__I() === 4)) {
+      var this$16 = $m_s_Console$();
+      var this$17 = $n(this$16.out__Ljava_io_PrintStream());
+      this$17.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Suffix\n");
+      matchResult2: {
+        var \u03b42$___1;
+        var \u03b42$___2;
+        var \u03b42$___3;
+        var \u03b42$___4;
+        if ((word$1 !== null)) {
+          $n($m_s_package$().s_package$__f_Seq);
+          if (($n(word$1).lengthCompare__I__I(4) === 0)) {
+            var x8 = $as_sci_Seq($n(word$1).apply__I__O(0));
+            var x9 = $as_sci_Seq($n(word$1).apply__I__O(1));
+            var x10 = $as_sci_Seq($n(word$1).apply__I__O(2));
+            var x11 = $as_sci_Seq($n(word$1).apply__I__O(3));
+            var \u03b42$___1 = x8;
+            var \u03b42$___2 = x9;
+            var \u03b42$___3 = x10;
+            var \u03b42$___4 = x11;
+            break matchResult2
+          }
+        };
+        throw new $c_s_MatchError(word$1)
+      };
+      var init$4 = $as_sci_Seq(\u03b42$___1);
+      $as_sci_Seq(\u03b42$___2);
+      var end$4 = $as_sci_Seq(\u03b42$___3);
+      $as_sci_Seq(\u03b42$___4);
+      var this$25 = $n($as_sc_IterableOnceOps($n(end$4).map__F1__O(new $c_sjsr_AnonFunction1(((s$3$1) => {
+        var s$4 = $as_T(s$3$1);
+        return $m_LLetters$().size__T__I(s$4)
+      })))));
+      var num$2 = $m_s_math_Numeric$IntIsIntegral$();
+      var es$2 = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$25, num$2)) + Math.imul(50, (((-1) + $n(end$4).length__I()) | 0))) | 0);
+      var this$26 = $n($as_sc_IterableOnceOps($n(init$4).map__F1__O(new $c_sjsr_AnonFunction1(((s$4$1) => {
+        var s$5 = $as_T(s$4$1);
+        return $m_LLetters$().size__T__I(s$5)
+      })))));
+      var num$3 = $m_s_math_Numeric$IntIsIntegral$();
+      var is$2 = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$26, num$3)) + Math.imul(50, (((-1) + $n(init$4).length__I()) | 0))) | 0);
+      var ww$2 = ((es$2 > is$2) ? es$2 : is$2);
+      var ev$2 = ((length.sr_IntRef__f_elem + ((235 + ww$2) | 0)) | 0);
+      length.sr_IntRef__f_elem = ev$2;
+      return ww$2
+    } else {
+      window.alert("Word found with incorrect structure");
+      $n(null)
+    }
+  }))));
+  var x = ("Set canvas width to " + length.sr_IntRef__f_elem);
+  var this$32 = $m_s_Console$();
+  var this$33 = $n(this$32.out__Ljava_io_PrintStream());
+  this$33.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+  canvas.width = ((200 + $doubleToInt((length.sr_IntRef__f_elem / 2.5))) | 0);
+  var cl = new $c_sr_IntRef(0);
+  var c2d = canvas.getContext("2d");
+  c2d.fillStyle = "white";
+  var x$1 = $uI(canvas.width);
+  var x$2 = $uI(canvas.height);
+  c2d.fillRect(0.0, 0.0, x$1, x$2);
+  c2d.translate(25.0, 0.0);
+  c2d.scale(0.4, 0.4);
+  var last = new $c_sr_BooleanRef(false);
+  $n($n($as_sc_IterableOps($n(text).zip__sc_IterableOnce__O(shapes))).withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((x$1$1) => {
+    var x$1$2 = $as_T2(x$1$1);
+    return ((x$1$2 !== null) && ($as_sci_Seq($n(x$1$2).T2__f__1), $uI($n(x$1$2).T2__f__2), true))
+  })))).foreach__F1__V(new $c_sjsr_AnonFunction1(((x$1$2$1) => {
+    var x$1$3 = $as_T2(x$1$2$1);
+    matchResult6: {
+      if ((x$1$3 !== null)) {
+        var word$3 = $as_sci_Seq($n(x$1$3).T2__f__1);
+        var ww$3 = $uI($n(x$1$3).T2__f__2);
+        if (($n(word$3).length__I() === 3)) {
+          var x$3 = ("Render: " + word$3);
+          var this$40 = $m_s_Console$();
+          var this$41 = $n(this$40.out__Ljava_io_PrintStream());
+          this$41.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$3 + "\n"));
+          matchResult4: {
+            var \u03b43$___1;
+            var \u03b43$___2;
+            var \u03b43$___3;
+            if ((word$3 !== null)) {
+              $n($m_s_package$().s_package$__f_Seq);
+              if (($n(word$3).lengthCompare__I__I(3) === 0)) {
+                var x17 = $as_sci_Seq($n(word$3).apply__I__O(0));
+                var x18 = $as_sci_Seq($n(word$3).apply__I__O(1));
+                var x19 = $as_sci_Seq($n(word$3).apply__I__O(2));
+                var \u03b43$___1 = x17;
+                var \u03b43$___2 = x18;
+                var \u03b43$___3 = x19;
+                break matchResult4
+              }
+            };
+            throw new $c_s_MatchError(word$3)
+          };
+          var init$2$1 = $as_sci_Seq(\u03b43$___1);
+          var v$2$1 = $as_sci_Seq(\u03b43$___2);
+          var end$2$1 = $as_sci_Seq(\u03b43$___3);
+          $p_LCanvasRender$__renderIn$1__sr_IntRef__Lorg_scalajs_dom_CanvasRenderingContext2D__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V(this, cl, c2d, last, ww$3, init$2$1, v$2$1, end$2$1)
+        } else {
+          matchResult5: {
+            var \u03b44$___1;
+            var \u03b44$___2;
+            var \u03b44$___3;
+            var \u03b44$___4;
+            if ((word$3 !== null)) {
+              $n($m_s_package$().s_package$__f_Seq);
+              if (($n(word$3).lengthCompare__I__I(4) === 0)) {
+                var x22 = $as_sci_Seq($n(word$3).apply__I__O(0));
+                var x23 = $as_sci_Seq($n(word$3).apply__I__O(1));
+                var x24 = $as_sci_Seq($n(word$3).apply__I__O(2));
+                var x25 = $as_sci_Seq($n(word$3).apply__I__O(3));
+                var \u03b44$___1 = x22;
+                var \u03b44$___2 = x23;
+                var \u03b44$___3 = x24;
+                var \u03b44$___4 = x25;
+                break matchResult5
+              }
+            };
+            throw new $c_s_MatchError(word$3)
+          };
+          var init$4$1 = $as_sci_Seq(\u03b44$___1);
+          var v$4$1 = $as_sci_Seq(\u03b44$___2);
+          var end$4$1 = $as_sci_Seq(\u03b44$___3);
+          var suffix$2$1 = $as_sci_Seq(\u03b44$___4);
+          var x$4 = ("Render: " + word$3);
+          var this$56 = $m_s_Console$();
+          var this$57 = $n(this$56.out__Ljava_io_PrintStream());
+          this$57.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$4 + "\n"));
+          $p_LCanvasRender$__renderIn$1__sr_IntRef__Lorg_scalajs_dom_CanvasRenderingContext2D__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V(this, cl, c2d, last, ww$3, init$4$1, v$4$1, end$4$1);
+          c2d.translate((-200.0), 0.0);
+          var $$x1 = $m_LSuffix$();
+          var this$58 = $n(suffix$2$1);
+          $n($$x1).find__Lorg_scalajs_dom_CanvasRenderingContext2D__T__V(c2d, $f_sc_IterableOnceOps__mkString__T__T__T__T(this$58, "", "", ""));
+          c2d.translate(235.0, 0.0)
+        };
+        break matchResult6
+      };
+      throw new $c_s_MatchError(x$1$3)
+    }
+  })))
+});
+var $d_LCanvasRender$ = new $TypeData().initClass({
+  LCanvasRender$: 0
+}, false, "CanvasRender$", {
+  LCanvasRender$: 1,
+  O: 1
+});
+$c_LCanvasRender$.prototype.$classData = $d_LCanvasRender$;
+var $n_LCanvasRender$;
+function $m_LCanvasRender$() {
+  if ((!$n_LCanvasRender$)) {
+    $n_LCanvasRender$ = new $c_LCanvasRender$()
+  };
+  return $n_LCanvasRender$
+}
 /** @constructor */
 function $c_LLetters$() {
   this.LLetters$__f_consonants2 = null;
@@ -1791,6 +2062,277 @@ function $m_LLetters$() {
   };
   return $n_LLetters$
 }
+/** @constructor */
+function $c_LLettersSvg$() {
+  this.LLettersSvg$__f_map = null;
+  this.LLettersSvg$__f_vowels = null;
+  $n_LLettersSvg$ = this;
+  var this$61 = $n($m_s_Predef$().s_Predef$__f_Map);
+  var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([new $c_T2("t", "<path d=\"M0 100 L300 250 L0 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>"), new $c_T2("d", "<rect x=\"0\" y=\"100\" width=\"300\" height=\"300\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>"), new $c_T2("k", "<g transform=\"translate(200, 200) rotate(135)\">\n    <path d=\"M0 -150 L100 0 L0 150 L-100 0 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    <path d=\"M100 0 L150 -75 L200 0 L150 75 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    <path d=\"M-100 0 L-150 -87.5 L-200 0 L-150 87.5 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  </g>"), new $c_T2("g", "<path d=\"M0 100 L0 400 L200 400 L200 120 L400 120\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>"), new $c_T2("\u010d", "\n    <path d=\"M0 400 L300 400 L300 100\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    <path d=\"M100 100 L100 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("j", "\n  <path d=\"M0 400 L225 175\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <path d=\"M125 100 L300 275\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("\u0161", "\n  <path d=\"M0 300 L150 230 L250 230 L400 300 L200 400 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <path d=\"M150 230 L200 100 L250 230\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("j'", "\n  <path d=\"M0 400 L225 175 M125 100 L300 275\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <circle cx=\"105\" cy=\"187.5\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("t'", "\n  <path d=\"M0 100 L300 250 L0 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <circle cx=\"70\" cy=\"250\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("d'", "\n  <rect x=\"0\" y=\"100\" width=\"300\" height=\"300\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <circle cx=\"150\" cy=\"250\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("k'", "\n    <g transform=\"translate(200, 200) rotate(135)\">\n      <path d=\"M0 -150 L100 0 L0 150 L-100 0 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M100 0 L150 -75 L200 0 L150 75 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M-100 0 L-150 -87.5 L-200 0 L-150 87.5 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n    <circle cx=\"200\" cy=\"200\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("g'", "\n  <path d=\"M0 100 L0 400 L200 400 L200 120 L400 120\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <circle cx=\"100\" cy=\"250\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("\u010d'", "\n  <path d=\"M0 400 L300 400 L300 100\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <path d=\"M100 100 L100 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <circle cx=\"200\" cy=\"250\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("\u0161'", "\n  <path d=\"M0 300 L150 230 L250 230 L400 300 L200 400 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <path d=\"M150 230 L200 100 L250 230\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  <circle cx=\"200\" cy=\"300\" r=\"20\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("\u00fe", "<path d=\"M300 225 L250 100 L50 150 L0 250 L50 350 L250 400 L300 275\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>"), new $c_T2("\u00f0", "<path d=\"M100 150 L200 250 L100 350 L0 250 Z M200 150 L300 250 L200 350 L100 250 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>"), new $c_T2("s", "\n  <path d=\"M0 275 L75 100 L150 400 L225 115 L300 385 L400 125\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  "), new $c_T2("z", "\n  <g transform=\"translate(0, -25)\">\n    <path d=\"M150 150 L250 250 L150 350 L50 250 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    <path d=\"M0 100 L150 250 L150 450\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n  </g>\n  "), new $c_T2("w", "\n    <g>\n      <rect x=\"0\" y=\"175\" width=\"300\" height=\"150\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M0 50 L0 450\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M300 50 L300 450\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("n", "\n    <g>\n      <rect x=\"0\" y=\"100\" width=\"200\" height=\"200\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M200 300 L200 400 L400 400 L400 300\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("\u014b", "\n    <g>\n      <rect x=\"0\" y=\"100\" width=\"150\" height=\"150\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M0 100 L400 100 L400 400 L-20 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("m", "\n    <g>\n      <rect x=\"125\" y=\"225\" width=\"150\" height=\"150\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M0 100 L125 225 L275 225 L400 100\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("b", "\n    <g>\n      <path d=\"M0 400 L100 150 L400 100 L300 350 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M100 150 L300 350\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("p", "\n    <g>\n      <path d=\"M0 150 L150 350 L300 250 L150 150 L0 350\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("f", "\n    <g>\n      <path d=\"M300 100 L0 100 L0 400 L300 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M150 400 L150 200\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("v", "\n    <g>\n      <path d=\"M0 415 L150 100 L300 250 L10 425 Z\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M350 50 L230 170\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("h", "\n    <g>\n      <path d=\"M0 100 L400 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n      <path d=\"M0 275 L400 275\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("r", "\n    <g>\n      <path d=\"M0 100 L150 400 L200 350 L250 400 L350 200\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("x", "\n    <g>\n      <path d=\"M0 50 L0 450 L225 450 L100 350 L250 250 L100 150\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  "), new $c_T2("y", "\n    <g>\n      <path d=\"M10 100 L10 250 L210 325 L0 400\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>\n    </g>\n  ")]));
+  this.LLettersSvg$__f_map = this$61.from__sc_IterableOnce__sci_Map(elems);
+  var this$111 = $n($m_s_Predef$().s_Predef$__f_Map);
+  var $$x16 = $m_sr_ScalaRunTime$();
+  var y = new $c_sjsr_AnonFunction2(((len, last) => {
+    $uI(len);
+    var last$1 = $uZ(last);
+    var _1 = ((last$1 ? "M-20 525 L75 525 " : "") + "M0 450 L0 600");
+    return new $c_T2(_1, false)
+  }));
+  var $$x15 = new $c_T2("i", y);
+  var y$1 = new $c_sjsr_AnonFunction2(((len$2, last$2) => {
+    var len$3 = $uI(len$2);
+    var last$3 = $uZ(last$2);
+    var path = (last$3 ? "M-20 525 L75 525 " : "");
+    var _1$1 = ((path + ("M0 450 L0 600 M0 525 L" + len$3)) + " 525");
+    return new $c_T2(_1$1, true)
+  }));
+  var $$x14 = new $c_T2("ia", y$1);
+  var y$2 = new $c_sjsr_AnonFunction2(((len$3$1, last$3$1) => {
+    $uI(len$3$1);
+    var last$4 = $uZ(last$3$1);
+    var path$1 = (last$4 ? "M-20 525 L75 525 " : "");
+    var _1$2 = (path$1 + "M0 600 L75 525");
+    return new $c_T2(_1$2, false)
+  }));
+  var $$x13 = new $c_T2("ei", y$2);
+  var y$3 = new $c_sjsr_AnonFunction2(((len$4$1, last$4$1) => {
+    var len$5 = $uI(len$4$1);
+    var last$5 = $uZ(last$4$1);
+    var path$2 = (last$5 ? "M-20 525 L75 525 " : "");
+    var _1$3 = ((path$2 + ("M0 600 L75 525 L" + len$5)) + " 525");
+    return new $c_T2(_1$3, true)
+  }));
+  var $$x12 = new $c_T2("eu", y$3);
+  var y$4 = new $c_sjsr_AnonFunction2(((len$5$1, last$5$1) => {
+    $uI(len$5$1);
+    var last$6 = $uZ(last$5$1);
+    var path$3 = (last$6 ? "M-20 525 L75 525 " : "");
+    var _1$4 = (path$3 + "M0 450 L75 525");
+    return new $c_T2(_1$4, false)
+  }));
+  var $$x11 = new $c_T2("u", y$4);
+  var y$5 = new $c_sjsr_AnonFunction2(((len$6$1, last$6$1) => {
+    var len$7 = $uI(len$6$1);
+    var last$7 = $uZ(last$6$1);
+    var path$4 = (last$7 ? "M-20 525 L75 525 " : "");
+    var _1$5 = ((path$4 + ("M0 450 L75 525 L" + len$7)) + " 525");
+    return new $c_T2(_1$5, true)
+  }));
+  var $$x10 = new $c_T2("ua", y$5);
+  var y$6 = new $c_sjsr_AnonFunction2(((len$7$1, last$7$1) => {
+    $uI(len$7$1);
+    $uZ(last$7$1);
+    return new $c_T2("M0 450 L0 600 L150 525 Z", false)
+  }));
+  var $$x9 = new $c_T2("o", y$6);
+  var y$7 = new $c_sjsr_AnonFunction2(((len$8$1, last$8$1) => {
+    var len$9 = $uI(len$8$1);
+    $uZ(last$8$1);
+    var path$5 = (("M0 450 L0 600 L150 525 Z M150 525 L" + len$9) + " 525");
+    return new $c_T2(path$5, true)
+  }));
+  var $$x8 = new $c_T2("oa", y$7);
+  var y$8 = new $c_sjsr_AnonFunction2(((len$9$1, last$9$1) => {
+    $uI(len$9$1);
+    var last$10 = $uZ(last$9$1);
+    var path$6 = (last$10 ? "M-20 525 L125 525 " : "");
+    var _1$6 = (path$6 + "M0 600 L100 450 M75 600 L175 450");
+    return new $c_T2(_1$6, false)
+  }));
+  var $$x7 = new $c_T2("a", y$8);
+  var y$9 = new $c_sjsr_AnonFunction2(((len$10$1, last$10$1) => {
+    $uI(len$10$1);
+    var last$11 = $uZ(last$10$1);
+    var path$7 = (last$11 ? "M-20 525 L75 525 " : "");
+    var _1$7 = (path$7 + "M0 600 L0 525 L75 525 L75 450");
+    return new $c_T2(_1$7, false)
+  }));
+  var $$x6 = new $c_T2("\u00e6", y$9);
+  var y$10 = new $c_sjsr_AnonFunction2(((len$11$1, last$11$1) => {
+    $uI(len$11$1);
+    var last$12 = $uZ(last$11$1);
+    var path$8 = (last$12 ? "M-20 525 L75 525 " : "");
+    var _1$8 = (path$8 + "M0 450 L75 525 L0 600");
+    return new $c_T2(_1$8, false)
+  }));
+  var $$x5 = new $c_T2("ai", y$10);
+  var y$11 = new $c_sjsr_AnonFunction2(((len$12$1, last$12$1) => {
+    $uI(len$12$1);
+    var last$13 = $uZ(last$12$1);
+    var path$9 = (last$13 ? "M-20 525 L20 525 " : "");
+    var _1$9 = (path$9 + "M0 475 L0 575 L100 575 L100 475");
+    return new $c_T2(_1$9, false)
+  }));
+  var $$x4 = new $c_T2("au", y$11);
+  var y$12 = new $c_sjsr_AnonFunction2(((len$13$1, last$13$1) => {
+    var len$14 = $uI(len$13$1);
+    var last$14 = $uZ(last$13$1);
+    var path$10 = (last$14 ? "M-20 525 L25 525 " : "");
+    var path2 = (("L100 525 L" + len$14) + " 525");
+    var _1$10 = ((path$10 + "M0 600 L50 450 ") + path2);
+    return new $c_T2(_1$10, true)
+  }));
+  var $$x3 = new $c_T2("uu", y$12);
+  var y$13 = new $c_sjsr_AnonFunction2(((len$14$1, last$14$1) => {
+    var len$15 = $uI(len$14$1);
+    var last$15 = $uZ(last$14$1);
+    var path$11 = (last$15 ? "M-20 525 L25 525 " : "");
+    var path2$1 = (("L100 525 L" + len$15) + " 525");
+    var _1$11 = ((path$11 + "M0 450 L50 600 ") + path2$1);
+    return new $c_T2(_1$11, true)
+  }));
+  var $$x2 = new $c_T2("ii", y$13);
+  var y$14 = new $c_sjsr_AnonFunction2(((len$15$1, last$15$1) => {
+    var len$16 = $uI(len$15$1);
+    var last$16 = $uZ(last$15$1);
+    var path$12 = (last$16 ? "M-20 525 L100 525 " : "");
+    var path2$2 = (("L100 525 L" + len$16) + " 525");
+    var _1$12 = ((path$12 + "M0 575 L50 575 ") + path2$2);
+    return new $c_T2(_1$12, true)
+  }));
+  var $$x1 = new $c_T2("oo", y$14);
+  var y$15 = new $c_sjsr_AnonFunction2(((len$16$1, last$16$1) => {
+    var len$17 = $uI(len$16$1);
+    var last$17 = $uZ(last$16$1);
+    var path$13 = (last$17 ? "M-20 525 L100 525 " : "");
+    var path2$3 = (("L100 525 L" + len$17) + " 525");
+    var _1$13 = ((path$13 + "M0 475 L50 475 ") + path2$3);
+    return new $c_T2(_1$13, true)
+  }));
+  var elems$1 = $n($$x16).wrapRefArray__AO__sci_ArraySeq(new ($d_T2.getArrayOf().constr)([$$x15, $$x14, $$x13, $$x12, $$x11, $$x10, $$x9, $$x8, $$x7, $$x6, $$x5, $$x4, $$x3, $$x2, $$x1, new $c_T2("ea", y$15)]));
+  this.LLettersSvg$__f_vowels = this$111.from__sc_IterableOnce__sci_Map(elems$1)
+}
+$c_LLettersSvg$.prototype = new $h_O();
+$c_LLettersSvg$.prototype.constructor = $c_LLettersSvg$;
+/** @constructor */
+function $h_LLettersSvg$() {
+  /*<skip>*/
+}
+$h_LLettersSvg$.prototype = $c_LLettersSvg$.prototype;
+$c_LLettersSvg$.prototype.size__T__I = (function(s) {
+  var this$1 = $n(s);
+  if ((this$1 === "")) {
+    return 0
+  } else {
+    var $$x2;
+    var x1 = $m_sc_StringOps$().head$extension__T__C(s);
+    switch (x1) {
+      case 116: {
+        var $$x2 = 300;
+        break
+      }
+      case 100: {
+        var $$x2 = 300;
+        break
+      }
+      case 107: {
+        var $$x2 = 400;
+        break
+      }
+      case 103: {
+        var $$x2 = 400;
+        break
+      }
+      case 269: {
+        var $$x2 = 300;
+        break
+      }
+      case 106: {
+        var $$x2 = 300;
+        break
+      }
+      case 353: {
+        var $$x2 = 400;
+        break
+      }
+      case 254: {
+        var $$x2 = 300;
+        break
+      }
+      case 240: {
+        var $$x2 = 300;
+        break
+      }
+      case 115: {
+        var $$x2 = 400;
+        break
+      }
+      case 122: {
+        var $$x2 = 250;
+        break
+      }
+      case 119: {
+        var $$x2 = 300;
+        break
+      }
+      case 110: {
+        var $$x2 = 400;
+        break
+      }
+      case 331: {
+        var $$x2 = 400;
+        break
+      }
+      case 109: {
+        var $$x2 = 400;
+        break
+      }
+      case 98: {
+        var $$x2 = 400;
+        break
+      }
+      case 112: {
+        var $$x2 = 300;
+        break
+      }
+      case 102: {
+        var $$x2 = 300;
+        break
+      }
+      case 118: {
+        var $$x2 = 375;
+        break
+      }
+      case 104: {
+        var $$x2 = 400;
+        break
+      }
+      case 121: {
+        var $$x2 = 210;
+        break
+      }
+      case 114: {
+        var $$x2 = 350;
+        break
+      }
+      case 120: {
+        var $$x2 = 250;
+        break
+      }
+      default: {
+        var $$x2 = (-50)
+      }
+    };
+    $m_sc_StringOps$();
+    var $$x1 = $m_sc_StringOps$();
+    var this$5 = $n(s);
+    return ((((50 + $$x2) | 0) + this.size__T__I($n($$x1).slice$extension__T__I__I__T(s, 1, this$5.length))) | 0)
+  }
+});
+var $d_LLettersSvg$ = new $TypeData().initClass({
+  LLettersSvg$: 0
+}, false, "LettersSvg$", {
+  LLettersSvg$: 1,
+  O: 1
+});
+$c_LLettersSvg$.prototype.$classData = $d_LLettersSvg$;
+var $n_LLettersSvg$;
+function $m_LLettersSvg$() {
+  if ((!$n_LLettersSvg$)) {
+    $n_LLettersSvg$ = new $c_LLettersSvg$()
+  };
+  return $n_LLettersSvg$
+}
 function $s_LMain__main__AT__V(args) {
   var this$1 = $m_LMain$();
   $f_s_App__main__AT__V(this$1, args)
@@ -1876,7 +2418,8 @@ $c_LSuffix$.prototype.find__Lorg_scalajs_dom_CanvasRenderingContext2D__T__V = (f
     case "uupz":
     case "ip":
     case "iaks":
-    case "iik": {
+    case "iik":
+    case "aid": {
       var init$2 = Math.imul(40, offset);
       var x$2 = ((65 + init$2) | 0);
       c2d.moveTo(x$2, 50.0);
@@ -1979,6 +2522,675 @@ function $m_LSuffix$() {
   };
   return $n_LSuffix$
 }
+function $p_LSvgRender$__renderIn$1__sr_ObjectRef__sr_IntRef__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V($thiz, it$3, width$3, last$2, ww$1, init, v, end) {
+  var this$2 = $n($as_sc_IterableOnceOps($n(end).map__F1__O(new $c_sjsr_AnonFunction1(((s) => {
+    var s$1 = $as_T(s);
+    return $m_LLettersSvg$().size__T__I(s$1)
+  })))));
+  var num = $m_s_math_Numeric$IntIsIntegral$();
+  var es = $uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$2, num));
+  var this$3 = $n($as_sc_IterableOnceOps($n(init).map__F1__O(new $c_sjsr_AnonFunction1(((s$2) => {
+    var s$3 = $as_T(s$2);
+    return $m_LLettersSvg$().size__T__I(s$3)
+  })))));
+  var num$1 = $m_s_math_Numeric$IntIsIntegral$();
+  var is = $uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$3, num$1));
+  var x = ((es - is) | 0);
+  var offset1 = ((((x > 0) ? x : 0) / 2) | 0);
+  var i1 = new $c_sr_IntRef(offset1);
+  $n(init).foreach__F1__V(new $c_sjsr_AnonFunction1(((letter) => {
+    var letter$1 = $as_T(letter);
+    var x$1 = ((((("Printing (init) " + letter$1) + " @ ") + i1.sr_IntRef__f_elem) + " + ") + $n(width$3).sr_IntRef__f_elem);
+    var this$10 = $m_s_Console$();
+    var this$11 = $n(this$10.out__Ljava_io_PrintStream());
+    this$11.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
+    var l = $as_T($n($m_LLettersSvg$().LLettersSvg$__f_map).getOrElse__O__F0__O(letter$1, new $c_sjsr_AnonFunction0((() => ""))));
+    var ev$3 = (($as_T($n(it$3).sr_ObjectRef__f_elem) + ((("\n          <g transform=\"translate(" + ((i1.sr_IntRef__f_elem + $n(width$3).sr_IntRef__f_elem) | 0)) + " 0)\">\n            ") + l)) + "\n          </g>\n          ");
+    $n(it$3).sr_ObjectRef__f_elem = ev$3;
+    ev$3 = null;
+    var ev$4 = ((i1.sr_IntRef__f_elem + ((50 + $m_LLettersSvg$().size__T__I(letter$1)) | 0)) | 0);
+    i1.sr_IntRef__f_elem = ev$4
+  })));
+  matchResult4: {
+    var \u03b43$___1;
+    var \u03b43$___2;
+    var this$12 = $n($n($m_LLettersSvg$().LLettersSvg$__f_vowels).get__O__s_Option($n(v).head__O()));
+    if (this$12.isEmpty__Z()) {
+      var $$x1 = $m_s_None$()
+    } else {
+      var arg1 = this$12.get__O();
+      var fn = $as_F2(arg1);
+      var $$x1 = new $c_s_Some($as_T2($n(fn).apply__O__O__O(((220 + ww$1) | 0), $n(last$2).sr_BooleanRef__f_elem)))
+    };
+    var this$13 = $n($$x1);
+    var x15 = $as_T2((this$13.isEmpty__Z() ? new $c_T2("", false) : this$13.get__O()));
+    if ((x15 !== null)) {
+      var path = $as_T($n(x15).T2__f__1);
+      var ln = $uZ($n(x15).T2__f__2);
+      var \u03b43$___1 = path;
+      var \u03b43$___2 = ln;
+      break matchResult4
+    };
+    throw new $c_s_MatchError(x15)
+  };
+  var path$2 = $as_T(\u03b43$___1);
+  var ln$2 = $uZ(\u03b43$___2);
+  var ev$5 = ln$2;
+  $n(last$2).sr_BooleanRef__f_elem = ev$5;
+  var ev$6 = (($as_T($n(it$3).sr_ObjectRef__f_elem) + ((("<g transform=\"translate(" + $n(width$3).sr_IntRef__f_elem) + " 0)\" ><path d=\"") + path$2)) + "\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/></g>\"\"");
+  $n(it$3).sr_ObjectRef__f_elem = ev$6;
+  ev$6 = null;
+  var x$2 = ((is - es) | 0);
+  var offset2 = ((((x$2 > 0) ? x$2 : 0) / 2) | 0);
+  var i2 = new $c_sr_IntRef(offset2);
+  $n(end).foreach__F1__V(new $c_sjsr_AnonFunction1(((letter$2) => {
+    var letter$3 = $as_T(letter$2);
+    var x$3 = ((((("Printing (end) " + letter$3) + " @ ") + i2.sr_IntRef__f_elem) + " + ") + $n(width$3).sr_IntRef__f_elem);
+    var this$22 = $m_s_Console$();
+    var this$23 = $n(this$22.out__Ljava_io_PrintStream());
+    this$23.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$3 + "\n"));
+    var l$1 = $as_T($n($m_LLettersSvg$().LLettersSvg$__f_map).getOrElse__O__F0__O(letter$3, new $c_sjsr_AnonFunction0((() => ""))));
+    var ev$7 = (($as_T($n(it$3).sr_ObjectRef__f_elem) + ((("\n          <g transform=\"translate(" + ((i2.sr_IntRef__f_elem + $n(width$3).sr_IntRef__f_elem) | 0)) + " 550)\">\n            ") + l$1)) + "\n          </g>\n          ");
+    $n(it$3).sr_ObjectRef__f_elem = ev$7;
+    ev$7 = null;
+    var ev$8 = ((i2.sr_IntRef__f_elem + ((50 + $m_LLettersSvg$().size__T__I(letter$3)) | 0)) | 0);
+    i2.sr_IntRef__f_elem = ev$8
+  })));
+  var ev$9 = (($n(width$3).sr_IntRef__f_elem + ((200 + ww$1) | 0)) | 0);
+  $n(width$3).sr_IntRef__f_elem = ev$9
+}
+/** @constructor */
+function $c_LSvgRender$() {
+  /*<skip>*/
+}
+$c_LSvgRender$.prototype = new $h_O();
+$c_LSvgRender$.prototype.constructor = $c_LSvgRender$;
+/** @constructor */
+function $h_LSvgRender$() {
+  /*<skip>*/
+}
+$h_LSvgRender$.prototype = $c_LSvgRender$.prototype;
+$c_LSvgRender$.prototype.renderOnSvg__sci_Seq__Lorg_scalajs_dom_SVGSVGElement__V = (function(text, svg) {
+  var length = new $c_sr_IntRef(100);
+  var shapes = $as_sci_Seq($n(text).map__F1__O(new $c_sjsr_AnonFunction1(((word) => {
+    var word$1 = $as_sci_Seq(word);
+    if (($n(word$1).length__I() === 3)) {
+      matchResult1: {
+        var \u03b41$___1;
+        var \u03b41$___2;
+        var \u03b41$___3;
+        if ((word$1 !== null)) {
+          $n($m_s_package$().s_package$__f_Seq);
+          if (($n(word$1).lengthCompare__I__I(3) === 0)) {
+            var x3 = $as_sci_Seq($n(word$1).apply__I__O(0));
+            var x4 = $as_sci_Seq($n(word$1).apply__I__O(1));
+            var x5 = $as_sci_Seq($n(word$1).apply__I__O(2));
+            var \u03b41$___1 = x3;
+            var \u03b41$___2 = x4;
+            var \u03b41$___3 = x5;
+            break matchResult1
+          }
+        };
+        throw new $c_s_MatchError(word$1)
+      };
+      var init$2 = $as_sci_Seq(\u03b41$___1);
+      $as_sci_Seq(\u03b41$___2);
+      var end$2 = $as_sci_Seq(\u03b41$___3);
+      var this$9 = $n($as_sc_IterableOnceOps($n(end$2).map__F1__O(new $c_sjsr_AnonFunction1(((s) => {
+        var s$1 = $as_T(s);
+        return $m_LLettersSvg$().size__T__I(s$1)
+      })))));
+      var num = $m_s_math_Numeric$IntIsIntegral$();
+      var es = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$9, num)) + Math.imul(50, (((-1) + $n(end$2).length__I()) | 0))) | 0);
+      var this$10 = $n($as_sc_IterableOnceOps($n(init$2).map__F1__O(new $c_sjsr_AnonFunction1(((s$2) => {
+        var s$3 = $as_T(s$2);
+        return $m_LLettersSvg$().size__T__I(s$3)
+      })))));
+      var num$1 = $m_s_math_Numeric$IntIsIntegral$();
+      var is = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$10, num$1)) + Math.imul(50, (((-1) + $n(init$2).length__I()) | 0))) | 0);
+      var ww = ((es > is) ? es : is);
+      var ev$1 = ((length.sr_IntRef__f_elem + ((200 + ww) | 0)) | 0);
+      length.sr_IntRef__f_elem = ev$1;
+      return ww
+    } else if (($n(word$1).length__I() === 4)) {
+      var this$16 = $m_s_Console$();
+      var this$17 = $n(this$16.out__Ljava_io_PrintStream());
+      this$17.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Suffix\n");
+      matchResult2: {
+        var \u03b42$___1;
+        var \u03b42$___2;
+        var \u03b42$___3;
+        var \u03b42$___4;
+        if ((word$1 !== null)) {
+          $n($m_s_package$().s_package$__f_Seq);
+          if (($n(word$1).lengthCompare__I__I(4) === 0)) {
+            var x8 = $as_sci_Seq($n(word$1).apply__I__O(0));
+            var x9 = $as_sci_Seq($n(word$1).apply__I__O(1));
+            var x10 = $as_sci_Seq($n(word$1).apply__I__O(2));
+            var x11 = $as_sci_Seq($n(word$1).apply__I__O(3));
+            var \u03b42$___1 = x8;
+            var \u03b42$___2 = x9;
+            var \u03b42$___3 = x10;
+            var \u03b42$___4 = x11;
+            break matchResult2
+          }
+        };
+        throw new $c_s_MatchError(word$1)
+      };
+      var init$4 = $as_sci_Seq(\u03b42$___1);
+      $as_sci_Seq(\u03b42$___2);
+      var end$4 = $as_sci_Seq(\u03b42$___3);
+      $as_sci_Seq(\u03b42$___4);
+      var this$25 = $n($as_sc_IterableOnceOps($n(end$4).map__F1__O(new $c_sjsr_AnonFunction1(((s$3$1) => {
+        var s$4 = $as_T(s$3$1);
+        return $m_LLettersSvg$().size__T__I(s$4)
+      })))));
+      var num$2 = $m_s_math_Numeric$IntIsIntegral$();
+      var es$2 = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$25, num$2)) + Math.imul(50, (((-1) + $n(end$4).length__I()) | 0))) | 0);
+      var this$26 = $n($as_sc_IterableOnceOps($n(init$4).map__F1__O(new $c_sjsr_AnonFunction1(((s$4$1) => {
+        var s$5 = $as_T(s$4$1);
+        return $m_LLettersSvg$().size__T__I(s$5)
+      })))));
+      var num$3 = $m_s_math_Numeric$IntIsIntegral$();
+      var is$2 = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$26, num$3)) + Math.imul(50, (((-1) + $n(init$4).length__I()) | 0))) | 0);
+      var ww$2 = ((es$2 > is$2) ? es$2 : is$2);
+      var ev$2 = ((length.sr_IntRef__f_elem + ((235 + ww$2) | 0)) | 0);
+      length.sr_IntRef__f_elem = ev$2;
+      return ww$2
+    } else {
+      window.alert("Word found with incorrect structure");
+      $n(null)
+    }
+  }))));
+  var mw = $uI(svg.parentNode.clientWidth);
+  var x = (mw / length.sr_IntRef__f_elem);
+  var scale = $uD(Math.max(x, 1.0));
+  svg.style.width = ((scale * mw) + "px");
+  var x$1 = (((((("Scale: " + scale) + " * ") + mw) + " (") + length.sr_IntRef__f_elem) + ")");
+  var this$36 = $m_s_Console$();
+  var this$37 = $n(this$36.out__Ljava_io_PrintStream());
+  this$37.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
+  var elem = (((((("<svg viewBox=\"0 0 " + length.sr_IntRef__f_elem) + " 1000\" transform=\"scale(") + scale) + ", ") + scale) + ")\">");
+  var it = new $c_sr_ObjectRef(elem);
+  var width = new $c_sr_IntRef(50);
+  var last = new $c_sr_BooleanRef(false);
+  $n($n($as_sc_IterableOps($n(text).zip__sc_IterableOnce__O(shapes))).withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((x$1$1) => {
+    var x$1$2 = $as_T2(x$1$1);
+    return ((x$1$2 !== null) && ($as_sci_Seq($n(x$1$2).T2__f__1), $uI($n(x$1$2).T2__f__2), true))
+  })))).foreach__F1__V(new $c_sjsr_AnonFunction1(((x$1$2$1) => {
+    var x$1$3 = $as_T2(x$1$2$1);
+    matchResult7: {
+      if ((x$1$3 !== null)) {
+        var word$3 = $as_sci_Seq($n(x$1$3).T2__f__1);
+        var ww$3 = $uI($n(x$1$3).T2__f__2);
+        if (($n(word$3).length__I() === 3)) {
+          var x$2 = ("Render: " + word$3);
+          var this$42 = $m_s_Console$();
+          var this$43 = $n(this$42.out__Ljava_io_PrintStream());
+          this$43.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$2 + "\n"));
+          matchResult5: {
+            var \u03b44$___1;
+            var \u03b44$___2;
+            var \u03b44$___3;
+            if ((word$3 !== null)) {
+              $n($m_s_package$().s_package$__f_Seq);
+              if (($n(word$3).lengthCompare__I__I(3) === 0)) {
+                var x20 = $as_sci_Seq($n(word$3).apply__I__O(0));
+                var x21 = $as_sci_Seq($n(word$3).apply__I__O(1));
+                var x22 = $as_sci_Seq($n(word$3).apply__I__O(2));
+                var \u03b44$___1 = x20;
+                var \u03b44$___2 = x21;
+                var \u03b44$___3 = x22;
+                break matchResult5
+              }
+            };
+            throw new $c_s_MatchError(word$3)
+          };
+          var init$2$1 = $as_sci_Seq(\u03b44$___1);
+          var v$2$1 = $as_sci_Seq(\u03b44$___2);
+          var end$2$1 = $as_sci_Seq(\u03b44$___3);
+          $p_LSvgRender$__renderIn$1__sr_ObjectRef__sr_IntRef__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V(this, it, width, last, ww$3, init$2$1, v$2$1, end$2$1)
+        } else {
+          matchResult6: {
+            var \u03b45$___1;
+            var \u03b45$___2;
+            var \u03b45$___3;
+            var \u03b45$___4;
+            if ((word$3 !== null)) {
+              $n($m_s_package$().s_package$__f_Seq);
+              if (($n(word$3).lengthCompare__I__I(4) === 0)) {
+                var x25 = $as_sci_Seq($n(word$3).apply__I__O(0));
+                var x26 = $as_sci_Seq($n(word$3).apply__I__O(1));
+                var x27 = $as_sci_Seq($n(word$3).apply__I__O(2));
+                var x28 = $as_sci_Seq($n(word$3).apply__I__O(3));
+                var \u03b45$___1 = x25;
+                var \u03b45$___2 = x26;
+                var \u03b45$___3 = x27;
+                var \u03b45$___4 = x28;
+                break matchResult6
+              }
+            };
+            throw new $c_s_MatchError(word$3)
+          };
+          var init$4$1 = $as_sci_Seq(\u03b45$___1);
+          var v$4$1 = $as_sci_Seq(\u03b45$___2);
+          var end$4$1 = $as_sci_Seq(\u03b45$___3);
+          var suffix$2$1 = $as_sci_Seq(\u03b45$___4);
+          var x$3 = ("Render: " + word$3);
+          var this$58 = $m_s_Console$();
+          var this$59 = $n(this$58.out__Ljava_io_PrintStream());
+          this$59.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$3 + "\n"));
+          $p_LSvgRender$__renderIn$1__sr_ObjectRef__sr_IntRef__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V(this, it, width, last, ww$3, init$4$1, v$4$1, end$4$1);
+          var $$x1 = $m_LSvgSuffix$();
+          var this$60 = $n(suffix$2$1);
+          var str = $n($$x1).find__T__T($f_sc_IterableOnceOps__mkString__T__T__T__T(this$60, "", "", ""));
+          var x$4 = ("Suffix: " + str);
+          var this$62 = $m_s_Console$();
+          var this$63 = $n(this$62.out__Ljava_io_PrintStream());
+          this$63.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$4 + "\n"));
+          var ev$10 = (($as_T(it.sr_ObjectRef__f_elem) + ((("<g transform=\"translate(" + (((-200) + width.sr_IntRef__f_elem) | 0)) + " 0)\">") + str)) + "</g>");
+          it.sr_ObjectRef__f_elem = ev$10;
+          ev$10 = null;
+          var ev$11 = ((35 + width.sr_IntRef__f_elem) | 0);
+          width.sr_IntRef__f_elem = ev$11
+        };
+        break matchResult7
+      };
+      throw new $c_s_MatchError(x$1$3)
+    }
+  })));
+  var ev$12 = ($as_T(it.sr_ObjectRef__f_elem) + "</svg>");
+  it.sr_ObjectRef__f_elem = ev$12;
+  ev$12 = null;
+  svg.innerHTML = $as_T(it.sr_ObjectRef__f_elem)
+});
+var $d_LSvgRender$ = new $TypeData().initClass({
+  LSvgRender$: 0
+}, false, "SvgRender$", {
+  LSvgRender$: 1,
+  O: 1
+});
+$c_LSvgRender$.prototype.$classData = $d_LSvgRender$;
+var $n_LSvgRender$;
+function $m_LSvgRender$() {
+  if ((!$n_LSvgRender$)) {
+    $n_LSvgRender$ = new $c_LSvgRender$()
+  };
+  return $n_LSvgRender$
+}
+/** @constructor */
+function $c_LSvgSuffix$() {
+  /*<skip>*/
+}
+$c_LSvgSuffix$.prototype = new $h_O();
+$c_LSvgSuffix$.prototype.constructor = $c_LSvgSuffix$;
+/** @constructor */
+function $h_LSvgSuffix$() {
+  /*<skip>*/
+}
+$h_LSvgSuffix$.prototype = $c_LSvgSuffix$.prototype;
+$c_LSvgSuffix$.prototype.find__T__T = (function(s) {
+  var x = ("s: " + s);
+  var this$2 = $m_s_Console$();
+  var this$3 = $n(this$2.out__Ljava_io_PrintStream());
+  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+  var offset;
+  switch (s) {
+    case "an":
+    case "un":
+    case "ir":
+    case "apt":
+    case "uapt":
+    case "ip": {
+      var offset = (-1);
+      break
+    }
+    case "ask'":
+    case "oa\u00fes":
+    case "uask'":
+    case "ia\u00fes":
+    case "aukt":
+    case "oaks":
+    case "uakt":
+    case "iaks": {
+      var offset = 0;
+      break
+    }
+    case "aus":
+    case "op":
+    case "oos":
+    case "uus":
+    case "iis":
+    case "aupz":
+    case "ook":
+    case "uupz":
+    case "iik": {
+      var offset = 1;
+      break
+    }
+    default: {
+      var offset = 0
+    }
+  };
+  var str1;
+  switch (s) {
+    case "an":
+    case "ask'":
+    case "aus":
+    case "oa\u00fes":
+    case "oos":
+    case "un":
+    case "uask'":
+    case "uus":
+    case "ir":
+    case "ia\u00fes":
+    case "iis": {
+      var init = Math.imul(75, offset);
+      var path = (((("M" + ((100 + init) | 0)) + " 50 L") + ((100 + init) | 0)) + " 1000");
+      var str1 = (("<path d=\"" + path) + "\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>");
+      break
+    }
+    case "apt":
+    case "aukt":
+    case "aupz":
+    case "op":
+    case "oaks":
+    case "ook":
+    case "uapt":
+    case "uakt":
+    case "uupz":
+    case "ip":
+    case "iaks":
+    case "iik":
+    case "aid": {
+      var init$2 = Math.imul(40, offset);
+      var path1 = (((("M" + ((65 + init$2) | 0)) + " 50 L") + ((65 + init$2) | 0)) + " 1000");
+      var path2 = (((("M" + ((135 + init$2) | 0)) + " 50 L") + ((135 + init$2) | 0)) + " 1000");
+      var str1 = (((("<path d=\"" + path1) + "\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>") + ("<path d=\"" + path2)) + "\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>");
+      break
+    }
+    default: {
+      var str1 = ""
+    }
+  };
+  var x$1 = ("St1: " + str1);
+  var this$5 = $m_s_Console$();
+  var this$6 = $n(this$5.out__Ljava_io_PrintStream());
+  this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
+  var str2;
+  switch (s) {
+    case "an":
+    case "ask'":
+    case "aus":
+    case "apt":
+    case "aukt":
+    case "aupz": {
+      var str2 = "<path d=\"M5 1000 L195 1000\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>";
+      break
+    }
+    case "ir":
+    case "ia\u00fes":
+    case "iis":
+    case "ip":
+    case "iaks":
+    case "iik": {
+      var str2 = "<path d=\"M5 50 L195 50\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>";
+      break
+    }
+    case "un":
+    case "uask":
+    case "uus":
+    case "uapt":
+    case "uakt":
+    case "uupz": {
+      var str2 = "<path d=\"M5 1000 L195 1000\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/><path d=\"M5 50 L195 50\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>";
+      break
+    }
+    case "oos": {
+      var str2 = "<path d=\"M15 440 L100 525\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>";
+      break
+    }
+    case "ook": {
+      var str2 = "<path d=\"M15 435 L105 525\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>";
+      break
+    }
+    case "op": {
+      var str2 = "<path d=\"M15 615 L105 525\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>";
+      break
+    }
+    default: {
+      var str2 = ""
+    }
+  };
+  var x$2 = ("St2: " + str2);
+  var this$8 = $m_s_Console$();
+  var this$9 = $n(this$8.out__Ljava_io_PrintStream());
+  this$9.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$2 + "\n"));
+  var str3 = ((s === "upt") ? "<path d=\"M25 50 L25 175 L175 175 L175 325 L25 325 L25 1000\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>" : ((s === "u\u010d") ? "<path d=\"M25 50 L25 700 L175 700 L175 875 L25 875 L25 1000\" stroke=\"black\" fill=\"none\" stroke-width=\"40\"/>" : ""));
+  var x$3 = ("St3: " + str3);
+  var this$11 = $m_s_Console$();
+  var this$12 = $n(this$11.out__Ljava_io_PrintStream());
+  this$12.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$3 + "\n"));
+  return ((str1 + str2) + str3)
+});
+var $d_LSvgSuffix$ = new $TypeData().initClass({
+  LSvgSuffix$: 0
+}, false, "SvgSuffix$", {
+  LSvgSuffix$: 1,
+  O: 1
+});
+$c_LSvgSuffix$.prototype.$classData = $d_LSvgSuffix$;
+var $n_LSvgSuffix$;
+function $m_LSvgSuffix$() {
+  if ((!$n_LSvgSuffix$)) {
+    $n_LSvgSuffix$ = new $c_LSvgSuffix$()
+  };
+  return $n_LSvgSuffix$
+}
+/** @constructor */
+function $c_LUtil$() {
+  /*<skip>*/
+}
+$c_LUtil$.prototype = new $h_O();
+$c_LUtil$.prototype.constructor = $c_LUtil$;
+/** @constructor */
+function $h_LUtil$() {
+  /*<skip>*/
+}
+$h_LUtil$.prototype = $c_LUtil$.prototype;
+$c_LUtil$.prototype.parseSyllable__T__sci_Seq = (function(syllable) {
+  var this$1 = $n(syllable);
+  if ((this$1 === "")) {
+    return $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().genericWrapArray__O__sci_ArraySeq(new ($d_sr_Nothing$.getArrayOf().constr)([]))))
+  } else if ($n($m_LLetters$().LLetters$__f_consonants2).contains__O__Z($m_sc_StringOps$().take$extension__T__I__T(syllable, 2))) {
+    var elem$1 = $m_sc_StringOps$().take$extension__T__I__T(syllable, 2);
+    var this$5 = $n(this.parseSyllable__T__sci_Seq($m_sc_StringOps$().drop$extension__T__I__T(syllable, 2)));
+    return $as_sci_Seq(this$5.prepended__O__O(elem$1))
+  } else {
+    var elem$2 = $m_sc_StringOps$().take$extension__T__I__T(syllable, 1);
+    var this$8 = $n(this.parseSyllable__T__sci_Seq($m_sc_StringOps$().drop$extension__T__I__T(syllable, 1)));
+    return $as_sci_Seq(this$8.prepended__O__O(elem$2))
+  }
+});
+$c_LUtil$.prototype.parseWord__T__sci_Seq = (function(word) {
+  $m_sc_StringOps$();
+  $m_sc_StringOps$();
+  $m_sc_StringOps$();
+  var from = 0;
+  _return: {
+    var this$4 = $n(word);
+    var len = this$4.length;
+    var i = from;
+    while ((i < len)) {
+      var this$5 = $n(word);
+      var index = i;
+      var arg1 = $charAt(this$5, index);
+      if ($n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1))) {
+        var x1 = i;
+        break _return
+      };
+      i = ((1 + i) | 0)
+    };
+    var x1 = (-1)
+  };
+  if ((x1 === (-1))) {
+    var x1$1___1 = word;
+    var x1$1___2 = ""
+  } else {
+    var this$6 = $n(word);
+    if ((x1 > this$6.length)) {
+      $charAt(this$6, x1)
+    };
+    if ((x1 < 0)) {
+      $charAt(this$6, (-1))
+    };
+    var _1 = $as_T(this$6.substring(0, x1));
+    var this$7 = $n(word);
+    if (((x1 < 0) || (x1 > this$7.length))) {
+      $charAt(this$7, x1)
+    };
+    var _2 = $as_T(this$7.substring(x1));
+    var x1$1___1 = _1;
+    var x1$1___2 = _2
+  };
+  var initial = $as_T(x1$1___1);
+  var rest1 = $as_T(x1$1___2);
+  var \u03b41$___1 = initial;
+  var \u03b41$___2 = rest1;
+  var initial$2 = $as_T(\u03b41$___1);
+  var rest1$2 = $as_T(\u03b41$___2);
+  $m_sc_StringOps$();
+  $m_sc_StringOps$();
+  $m_sc_StringOps$();
+  var from$1 = 0;
+  _return$1: {
+    var this$12 = $n(rest1$2);
+    var len$1 = this$12.length;
+    var i$1 = from$1;
+    while ((i$1 < len$1)) {
+      var this$13 = $n(rest1$2);
+      var index$1 = i$1;
+      var arg1$1 = $charAt(this$13, index$1);
+      if ((!$n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1$1)))) {
+        var x1$2 = i$1;
+        break _return$1
+      };
+      i$1 = ((1 + i$1) | 0)
+    };
+    var x1$2 = (-1)
+  };
+  if ((x1$2 === (-1))) {
+    var x4___1 = rest1$2;
+    var x4___2 = ""
+  } else {
+    var this$14 = $n(rest1$2);
+    if ((x1$2 > this$14.length)) {
+      $charAt(this$14, x1$2)
+    };
+    if ((x1$2 < 0)) {
+      $charAt(this$14, (-1))
+    };
+    var _1$1 = $as_T(this$14.substring(0, x1$2));
+    var this$15 = $n(rest1$2);
+    if (((x1$2 < 0) || (x1$2 > this$15.length))) {
+      $charAt(this$15, x1$2)
+    };
+    var _2$1 = $as_T(this$15.substring(x1$2));
+    var x4___1 = _1$1;
+    var x4___2 = _2$1
+  };
+  var vowel = $as_T(x4___1);
+  var rest2 = $as_T(x4___2);
+  var \u03b42$___1 = vowel;
+  var \u03b42$___2 = rest2;
+  var vowel$2 = $as_T(\u03b42$___1);
+  var rest2$2 = $as_T(\u03b42$___2);
+  $m_sc_StringOps$();
+  $m_sc_StringOps$();
+  $m_sc_StringOps$();
+  var from$2 = 0;
+  _return$2: {
+    var this$20 = $n(rest2$2);
+    var len$2 = this$20.length;
+    var i$2 = from$2;
+    while ((i$2 < len$2)) {
+      var this$21 = $n(rest2$2);
+      var index$2 = i$2;
+      var arg1$2 = $charAt(this$21, index$2);
+      if ($n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1$2))) {
+        var $$x1 = i$2;
+        break _return$2
+      };
+      i$2 = ((1 + i$2) | 0)
+    };
+    var $$x1 = (-1)
+  };
+  if (($$x1 !== (-1))) {
+    $m_sc_StringOps$();
+    $m_sc_StringOps$();
+    $m_sc_StringOps$();
+    var from$3 = 0;
+    _return$3: {
+      var this$25 = $n(rest2$2);
+      var len$3 = this$25.length;
+      var i$3 = from$3;
+      while ((i$3 < len$3)) {
+        var this$26 = $n(rest2$2);
+        var index$3 = i$3;
+        var arg1$3 = $charAt(this$26, index$3);
+        if ($n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1$3))) {
+          var x1$3 = i$3;
+          break _return$3
+        };
+        i$3 = ((1 + i$3) | 0)
+      };
+      var x1$3 = (-1)
+    };
+    if ((x1$3 === (-1))) {
+      var x7___1 = rest2$2;
+      var x7___2 = ""
+    } else {
+      var this$27 = $n(rest2$2);
+      if ((x1$3 > this$27.length)) {
+        $charAt(this$27, x1$3)
+      };
+      if ((x1$3 < 0)) {
+        $charAt(this$27, (-1))
+      };
+      var _1$2 = $as_T(this$27.substring(0, x1$3));
+      var this$28 = $n(rest2$2);
+      if (((x1$3 < 0) || (x1$3 > this$28.length))) {
+        $charAt(this$28, x1$3)
+      };
+      var _2$2 = $as_T(this$28.substring(x1$3));
+      var x7___1 = _1$2;
+      var x7___2 = _2$2
+    };
+    var post = $as_T(x7___1);
+    var rest3 = $as_T(x7___2);
+    var \u03b43$___1 = post;
+    var \u03b43$___2 = rest3;
+    var post$2 = $as_T(\u03b43$___1);
+    var rest3$2 = $as_T(\u03b43$___2);
+    return $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_sci_Seq.getArrayOf().constr)([this.parseSyllable__T__sci_Seq(initial$2), $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)([vowel$2])))), this.parseSyllable__T__sci_Seq(post$2), $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)([rest3$2]))))]))))
+  } else {
+    return $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_sci_Seq.getArrayOf().constr)([this.parseSyllable__T__sci_Seq(initial$2), $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)([vowel$2])))), this.parseSyllable__T__sci_Seq(rest2$2)]))))
+  }
+});
+var $d_LUtil$ = new $TypeData().initClass({
+  LUtil$: 0
+}, false, "Util$", {
+  LUtil$: 1,
+  O: 1
+});
+$c_LUtil$.prototype.$classData = $d_LUtil$;
+var $n_LUtil$;
+function $m_LUtil$() {
+  if ((!$n_LUtil$)) {
+    $n_LUtil$ = new $c_LUtil$()
+  };
+  return $n_LUtil$
+}
 /** @constructor */
 function $c_jl_Class(data0) {
   this.jl_Class__f_data = null;
@@ -2038,8 +3250,6 @@ function $c_jl_FloatingPointBits$() {
   this.jl_FloatingPointBits$__f_int32Array = null;
   this.jl_FloatingPointBits$__f_float64Array = null;
   this.jl_FloatingPointBits$__f_areTypedArraysBigEndian = false;
-  this.jl_FloatingPointBits$__f_highOffset = 0;
-  this.jl_FloatingPointBits$__f_lowOffset = 0;
   this.jl_FloatingPointBits$__f_java$lang$FloatingPointBits$$doublePowsOf2 = null;
   $n_jl_FloatingPointBits$ = this;
   this.jl_FloatingPointBits$__f_java$lang$FloatingPointBits$$_areTypedArraysSupported = true;
@@ -2049,8 +3259,6 @@ function $c_jl_FloatingPointBits$() {
   this.jl_FloatingPointBits$__f_float64Array = new Float64Array(this.jl_FloatingPointBits$__f_arrayBuffer, 0, 1);
   this.jl_FloatingPointBits$__f_int32Array[0] = 16909060;
   this.jl_FloatingPointBits$__f_areTypedArraysBigEndian = ($uB(new Int8Array(this.jl_FloatingPointBits$__f_arrayBuffer, 0, 8)[0]) === 1);
-  this.jl_FloatingPointBits$__f_highOffset = (this.jl_FloatingPointBits$__f_areTypedArraysBigEndian ? 0 : 1);
-  this.jl_FloatingPointBits$__f_lowOffset = (this.jl_FloatingPointBits$__f_areTypedArraysBigEndian ? 1 : 0);
   this.jl_FloatingPointBits$__f_java$lang$FloatingPointBits$$doublePowsOf2 = null
 }
 $c_jl_FloatingPointBits$.prototype = new $h_O();
@@ -2068,12 +3276,6 @@ $c_jl_FloatingPointBits$.prototype.numberHashCode__D__I = (function(value) {
     this.jl_FloatingPointBits$__f_float64Array[0] = value;
     return ($uI(this.jl_FloatingPointBits$__f_int32Array[0]) ^ $uI(this.jl_FloatingPointBits$__f_int32Array[1]))
   }
-});
-$c_jl_FloatingPointBits$.prototype.doubleToLongBits__D__J = (function(value) {
-  this.jl_FloatingPointBits$__f_float64Array[0] = value;
-  var value$1 = $uI(this.jl_FloatingPointBits$__f_int32Array[this.jl_FloatingPointBits$__f_highOffset]);
-  var value$2 = $uI(this.jl_FloatingPointBits$__f_int32Array[this.jl_FloatingPointBits$__f_lowOffset]);
-  return new $c_RTLong(value$2, value$1)
 });
 var $d_jl_FloatingPointBits$ = new $TypeData().initClass({
   jl_FloatingPointBits$: 0
@@ -2643,293 +3845,6 @@ function $m_ju_Arrays$() {
   };
   return $n_ju_Arrays$
 }
-function $is_ju_Formattable(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.ju_Formattable)))
-}
-function $as_ju_Formattable(obj) {
-  return (($is_ju_Formattable(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "java.util.Formattable"))
-}
-function $isArrayOf_ju_Formattable(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.ju_Formattable)))
-}
-function $asArrayOf_ju_Formattable(obj, depth) {
-  return (($isArrayOf_ju_Formattable(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.util.Formattable;", depth))
-}
-/** @constructor */
-function $c_ju_Formatter$() {
-  this.ju_Formatter$__f_java$util$Formatter$$FormatSpecifier = null;
-  this.ju_Formatter$__f_java$util$Formatter$$ConversionsIllegalFlags = null;
-  $n_ju_Formatter$ = this;
-  this.ju_Formatter$__f_java$util$Formatter$$FormatSpecifier = new RegExp("(?:(\\d+)\\$)?([-#+ 0,\\(<]*)(\\d+)?(?:\\.(\\d+))?[%A-Za-z]", "g");
-  this.ju_Formatter$__f_java$util$Formatter$$ConversionsIllegalFlags = new $ac_I(new Int32Array([96, 126, 638, 770, 32, 256, 2, 126, (-1), (-1), (-1), (-1), (-1), (-1), 800, (-1), (-1), (-1), 124, (-1), (-1), (-1), (-1), 544, (-1), (-1)]))
-}
-$c_ju_Formatter$.prototype = new $h_O();
-$c_ju_Formatter$.prototype.constructor = $c_ju_Formatter$;
-/** @constructor */
-function $h_ju_Formatter$() {
-  /*<skip>*/
-}
-$h_ju_Formatter$.prototype = $c_ju_Formatter$.prototype;
-$c_ju_Formatter$.prototype.java$util$Formatter$$strOfZeros__I__T = (function(count) {
-  if ((count <= 20)) {
-    if ((count > 20)) {
-      $charAt("00000000000000000000", count)
-    };
-    if ((count < 0)) {
-      $charAt("00000000000000000000", (-1))
-    };
-    return $as_T("00000000000000000000".substring(0, count))
-  } else {
-    var result = "";
-    var remaining = count;
-    while ((remaining > 20)) {
-      result = (result + "00000000000000000000");
-      remaining = (((-20) + remaining) | 0)
-    };
-    var $$x1 = result;
-    var endIndex = remaining;
-    if ((endIndex > 20)) {
-      $charAt("00000000000000000000", endIndex)
-    };
-    if ((endIndex < 0)) {
-      $charAt("00000000000000000000", (-1))
-    };
-    return (("" + $$x1) + $as_T("00000000000000000000".substring(0, endIndex)))
-  }
-});
-$c_ju_Formatter$.prototype.java$util$Formatter$$numberToDecimal__D__ju_Formatter$Decimal = (function(x) {
-  if ((x === 0.0)) {
-    var negative = ((1.0 / x) < 0.0);
-    return new $c_ju_Formatter$Decimal(negative, "0", 0)
-  } else {
-    var negative$2 = (x < 0.0);
-    var d = (negative$2 ? (-x) : x);
-    var s = ("" + d);
-    var ePos = $f_T__indexOf__I__I(s, 101);
-    if ((ePos < 0)) {
-      var e = 0
-    } else {
-      var $$x2 = parseInt;
-      var beginIndex = ((1 + ePos) | 0);
-      if (((beginIndex < 0) || (beginIndex > s.length))) {
-        $charAt(s, beginIndex)
-      };
-      var $$x1 = $$x2($as_T(s.substring(beginIndex)));
-      var e = $uI($$x1)
-    };
-    var significandEnd = ((ePos < 0) ? s.length : ePos);
-    var dotPos = $f_T__indexOf__I__I(s, 46);
-    if ((dotPos < 0)) {
-      if ((significandEnd > s.length)) {
-        $charAt(s, significandEnd)
-      };
-      if ((significandEnd < 0)) {
-        $charAt(s, (-1))
-      };
-      var unscaledValue = $as_T(s.substring(0, significandEnd));
-      var scale = ((-e) | 0);
-      return new $c_ju_Formatter$Decimal(negative$2, unscaledValue, scale)
-    } else {
-      if ((dotPos > s.length)) {
-        $charAt(s, dotPos)
-      };
-      if ((dotPos < 0)) {
-        $charAt(s, (-1))
-      };
-      var $$x3 = $as_T(s.substring(0, dotPos));
-      var beginIndex$1 = ((1 + dotPos) | 0);
-      if ((beginIndex$1 < 0)) {
-        $charAt(s, beginIndex$1)
-      };
-      if ((significandEnd > s.length)) {
-        $charAt(s, significandEnd)
-      };
-      if ((significandEnd < beginIndex$1)) {
-        $charAt(s, (-1))
-      };
-      var digits = (("" + $$x3) + $as_T(s.substring(beginIndex$1, significandEnd)));
-      var digitsLen = digits.length;
-      var i = 0;
-      while (true) {
-        if ((i < digitsLen)) {
-          var index = i;
-          var $$x4 = ($charAt(digits, index) === 48)
-        } else {
-          var $$x4 = false
-        };
-        if ($$x4) {
-          i = ((1 + i) | 0)
-        } else {
-          break
-        }
-      };
-      var beginIndex$2 = i;
-      if (((beginIndex$2 < 0) || (beginIndex$2 > digits.length))) {
-        $charAt(digits, beginIndex$2)
-      };
-      var unscaledValue$2 = $as_T(digits.substring(beginIndex$2));
-      var scale$2 = ((((-e) | 0) + ((significandEnd - ((1 + dotPos) | 0)) | 0)) | 0);
-      return new $c_ju_Formatter$Decimal(negative$2, unscaledValue$2, scale$2)
-    }
-  }
-});
-$c_ju_Formatter$.prototype.java$util$Formatter$$bigDecimalToDecimal__Ljava_math_BigDecimal__ju_Formatter$Decimal = (function(x) {
-  var unscaledValueWithSign = $n($n(x).unscaledValue__Ljava_math_BigInteger()).toString__T();
-  if ((unscaledValueWithSign === "0")) {
-    return new $c_ju_Formatter$Decimal(false, "0", 0)
-  } else {
-    var this$2 = $n(unscaledValueWithSign);
-    var negative = ($charAt(this$2, 0) === 45);
-    if (negative) {
-      var this$3 = $n(unscaledValueWithSign);
-      if ((this$3.length < 1)) {
-        $charAt(this$3, 1)
-      };
-      var unscaledValue = $as_T(this$3.substring(1))
-    } else {
-      var unscaledValue = unscaledValueWithSign
-    };
-    var scale = $n(x).scale__I();
-    return new $c_ju_Formatter$Decimal(negative, unscaledValue, scale)
-  }
-});
-var $d_ju_Formatter$ = new $TypeData().initClass({
-  ju_Formatter$: 0
-}, false, "java.util.Formatter$", {
-  ju_Formatter$: 1,
-  O: 1
-});
-$c_ju_Formatter$.prototype.$classData = $d_ju_Formatter$;
-var $n_ju_Formatter$;
-function $m_ju_Formatter$() {
-  if ((!$n_ju_Formatter$)) {
-    $n_ju_Formatter$ = new $c_ju_Formatter$()
-  };
-  return $n_ju_Formatter$
-}
-function $p_ju_Formatter$Decimal__roundAtPos__I__ju_Formatter$Decimal($thiz, roundingPos) {
-  var digits = $thiz.ju_Formatter$Decimal__f_unscaledValue;
-  var this$1 = $n(digits);
-  var digitsLen = this$1.length;
-  if ((roundingPos < 0)) {
-    var negative = $thiz.ju_Formatter$Decimal__f_negative;
-    return new $c_ju_Formatter$Decimal(negative, "0", 0)
-  } else if ((roundingPos >= digitsLen)) {
-    return $thiz
-  } else {
-    var this$3 = $n(digits);
-    if (($charAt(this$3, roundingPos) < 53)) {
-      if ((roundingPos === 0)) {
-        var negative$1 = $thiz.ju_Formatter$Decimal__f_negative;
-        return new $c_ju_Formatter$Decimal(negative$1, "0", 0)
-      } else {
-        var $$x1 = $thiz.ju_Formatter$Decimal__f_negative;
-        var this$5 = $n(digits);
-        if ((roundingPos > this$5.length)) {
-          $charAt(this$5, roundingPos)
-        };
-        if ((roundingPos < 0)) {
-          $charAt(this$5, (-1))
-        };
-        return new $c_ju_Formatter$Decimal($$x1, $as_T(this$5.substring(0, roundingPos)), (($thiz.ju_Formatter$Decimal__f_scale - ((digitsLen - roundingPos) | 0)) | 0))
-      }
-    } else {
-      var lastNonNinePos = (((-1) + roundingPos) | 0);
-      while (true) {
-        if ((lastNonNinePos >= 0)) {
-          var this$6 = $n(digits);
-          var index = lastNonNinePos;
-          var $$x2 = ($charAt(this$6, index) === 57)
-        } else {
-          var $$x2 = false
-        };
-        if ($$x2) {
-          lastNonNinePos = (((-1) + lastNonNinePos) | 0)
-        } else {
-          break
-        }
-      };
-      if ((lastNonNinePos < 0)) {
-        var newUnscaledValue = "1"
-      } else {
-        var this$7 = $n(digits);
-        var endIndex = lastNonNinePos;
-        if ((endIndex > this$7.length)) {
-          $charAt(this$7, endIndex)
-        };
-        if ((endIndex < 0)) {
-          $charAt(this$7, (-1))
-        };
-        var $$x3 = $as_T(this$7.substring(0, endIndex));
-        var this$8 = $n(digits);
-        var index$1 = lastNonNinePos;
-        var newUnscaledValue = (("" + $$x3) + $bC((65535 & ((1 + $charAt(this$8, index$1)) | 0))))
-      };
-      var pos = ((1 + lastNonNinePos) | 0);
-      var newScale = (($thiz.ju_Formatter$Decimal__f_scale - ((digitsLen - pos) | 0)) | 0);
-      return new $c_ju_Formatter$Decimal($thiz.ju_Formatter$Decimal__f_negative, newUnscaledValue, newScale)
-    }
-  }
-}
-/** @constructor */
-function $c_ju_Formatter$Decimal(negative, unscaledValue, scale) {
-  this.ju_Formatter$Decimal__f_negative = false;
-  this.ju_Formatter$Decimal__f_unscaledValue = null;
-  this.ju_Formatter$Decimal__f_scale = 0;
-  this.ju_Formatter$Decimal__f_negative = negative;
-  this.ju_Formatter$Decimal__f_unscaledValue = unscaledValue;
-  this.ju_Formatter$Decimal__f_scale = scale
-}
-$c_ju_Formatter$Decimal.prototype = new $h_O();
-$c_ju_Formatter$Decimal.prototype.constructor = $c_ju_Formatter$Decimal;
-/** @constructor */
-function $h_ju_Formatter$Decimal() {
-  /*<skip>*/
-}
-$h_ju_Formatter$Decimal.prototype = $c_ju_Formatter$Decimal.prototype;
-$c_ju_Formatter$Decimal.prototype.isZero__Z = (function() {
-  return (this.ju_Formatter$Decimal__f_unscaledValue === "0")
-});
-$c_ju_Formatter$Decimal.prototype.round__I__ju_Formatter$Decimal = (function(precision) {
-  $m_ju_Formatter$();
-  var condition = (precision > 0);
-  if ((!condition)) {
-    throw new $c_jl_AssertionError("Decimal.round() called with non-positive precision")
-  };
-  return $p_ju_Formatter$Decimal__roundAtPos__I__ju_Formatter$Decimal(this, precision)
-});
-$c_ju_Formatter$Decimal.prototype.setScale__I__ju_Formatter$Decimal = (function(newScale) {
-  var this$1 = $n(this.ju_Formatter$Decimal__f_unscaledValue);
-  var roundingPos = ((((this$1.length + newScale) | 0) - this.ju_Formatter$Decimal__f_scale) | 0);
-  var rounded = $p_ju_Formatter$Decimal__roundAtPos__I__ju_Formatter$Decimal(this, roundingPos);
-  $m_ju_Formatter$();
-  var condition = ($n(rounded).isZero__Z() || ($n(rounded).ju_Formatter$Decimal__f_scale <= newScale));
-  if ((!condition)) {
-    throw new $c_jl_AssertionError("roundAtPos returned a non-zero value with a scale too large")
-  };
-  return (($n(rounded).isZero__Z() || ($n(rounded).ju_Formatter$Decimal__f_scale === newScale)) ? rounded : new $c_ju_Formatter$Decimal(this.ju_Formatter$Decimal__f_negative, (("" + $n(rounded).ju_Formatter$Decimal__f_unscaledValue) + $m_ju_Formatter$().java$util$Formatter$$strOfZeros__I__T(((newScale - $n(rounded).ju_Formatter$Decimal__f_scale) | 0))), newScale))
-});
-$c_ju_Formatter$Decimal.prototype.toString__T = (function() {
-  return (((((("Decimal(" + this.ju_Formatter$Decimal__f_negative) + ", ") + this.ju_Formatter$Decimal__f_unscaledValue) + ", ") + this.ju_Formatter$Decimal__f_scale) + ")")
-});
-var $d_ju_Formatter$Decimal = new $TypeData().initClass({
-  ju_Formatter$Decimal: 0
-}, false, "java.util.Formatter$Decimal", {
-  ju_Formatter$Decimal: 1,
-  O: 1
-});
-$c_ju_Formatter$Decimal.prototype.$classData = $d_ju_Formatter$Decimal;
-/** @constructor */
-function $c_ju_Formatter$LocaleInfo() {
-  /*<skip>*/
-}
-$c_ju_Formatter$LocaleInfo.prototype = new $h_O();
-$c_ju_Formatter$LocaleInfo.prototype.constructor = $c_ju_Formatter$LocaleInfo;
-/** @constructor */
-function $h_ju_Formatter$LocaleInfo() {
-  /*<skip>*/
-}
-$h_ju_Formatter$LocaleInfo.prototype = $c_ju_Formatter$LocaleInfo.prototype;
 function $p_ju_regex_PatternCompiler__parseError__T__E($thiz, desc) {
   throw new $c_ju_regex_PatternSyntaxException(desc, $thiz.ju_regex_PatternCompiler__f_pattern, $thiz.ju_regex_PatternCompiler__f_java$util$regex$PatternCompiler$$pIndex)
 }
@@ -4948,6 +5863,18 @@ function $isArrayOf_F1(obj, depth) {
 function $asArrayOf_F1(obj, depth) {
   return (($isArrayOf_F1(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Function1;", depth))
 }
+function $is_F2(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.F2)))
+}
+function $as_F2(obj) {
+  return (($is_F2(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Function2"))
+}
+function $isArrayOf_F2(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.F2)))
+}
+function $asArrayOf_F2(obj, depth) {
+  return (($isArrayOf_F2(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Function2;", depth))
+}
 function $is_F3(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.F3)))
 }
@@ -5257,18 +6184,6 @@ $c_sc_StringOps$.prototype.slice$extension__T__I__I__T = (function(this$, from, 
     return $as_T(this$10.substring(start, end))
   }
 });
-$c_sc_StringOps$.prototype.unwrapArg$extension__T__O__O = (function(this$, arg) {
-  if (false) {
-    var x2 = $as_s_math_ScalaNumber(arg);
-    return $n(x2).underlying__O()
-  } else {
-    return arg
-  }
-});
-$c_sc_StringOps$.prototype.format$extension__T__sci_Seq__T = (function(this$, args) {
-  var args$1 = $asArrayOf_O($n($as_sc_IterableOnceOps($n(args).map__F1__O(new $c_sjsr_AnonFunction1(((arg$2) => $m_sc_StringOps$().unwrapArg$extension__T__O__O(this$, arg$2)))))).toArray__s_reflect_ClassTag__O($m_s_reflect_ManifestFactory$ObjectManifest$()), 1);
-  return $m_jl_String$().format__T__AO__T(this$, args$1)
-});
 $c_sc_StringOps$.prototype.head$extension__T__C = (function(this$) {
   var this$1 = $n(this$);
   if ((this$1 === "")) {
@@ -5502,13 +6417,13 @@ $h_sci_LazyList$LazyBuilder$DeferredState.prototype = $c_sci_LazyList$LazyBuilde
 $c_sci_LazyList$LazyBuilder$DeferredState.prototype.eval__sci_LazyList$State = (function() {
   var state = this.sci_LazyList$LazyBuilder$DeferredState__f__state;
   if ((state === null)) {
-    throw $ct_jl_IllegalStateException__T__(new $c_jl_IllegalStateException(), "uninitialized")
+    throw new $c_jl_IllegalStateException("uninitialized")
   };
   return $as_sci_LazyList$State($n(state).apply__O())
 });
 $c_sci_LazyList$LazyBuilder$DeferredState.prototype.init__F0__V = (function(state) {
   if ((this.sci_LazyList$LazyBuilder$DeferredState__f__state !== null)) {
-    throw $ct_jl_IllegalStateException__T__(new $c_jl_IllegalStateException(), "already initialized")
+    throw new $c_jl_IllegalStateException("already initialized")
   };
   this.sci_LazyList$LazyBuilder$DeferredState__f__state = state
 });
@@ -6888,15 +7803,6 @@ function $h_jl_Character$() {
   /*<skip>*/
 }
 $h_jl_Character$.prototype = $c_jl_Character$.prototype;
-$c_jl_Character$.prototype.toString__I__T = (function(codePoint) {
-  if (((codePoint >= 0) && (codePoint < 65536))) {
-    return $as_T(String.fromCharCode(codePoint))
-  } else if (((codePoint >= 0) && (codePoint <= 1114111))) {
-    return $as_T(String.fromCharCode((65535 & (55296 | (((-64) + (codePoint >> 10)) | 0))), (65535 & (56320 | (1023 & codePoint)))))
-  } else {
-    throw $ct_jl_IllegalArgumentException__(new $c_jl_IllegalArgumentException())
-  }
-});
 $c_jl_Character$.prototype.digitWithValidRadix__I__I__I = (function(codePoint, radix) {
   if ((codePoint < 256)) {
     var value = (((codePoint >= 48) && (codePoint <= 57)) ? (((-48) + codePoint) | 0) : (((codePoint >= 65) && (codePoint <= 90)) ? (((-55) + codePoint) | 0) : (((codePoint >= 97) && (codePoint <= 122)) ? (((-87) + codePoint) | 0) : (-1))))
@@ -7006,79 +7912,6 @@ function $m_jl_Integer$() {
   return $n_jl_Integer$
 }
 /** @constructor */
-function $c_jl_Long$() {
-  /*<skip>*/
-}
-$c_jl_Long$.prototype = new $h_O();
-$c_jl_Long$.prototype.constructor = $c_jl_Long$;
-/** @constructor */
-function $h_jl_Long$() {
-  /*<skip>*/
-}
-$h_jl_Long$.prototype = $c_jl_Long$.prototype;
-$c_jl_Long$.prototype.java$lang$Long$$toHexString__I__I__T = (function(lo, hi) {
-  if ((hi !== 0)) {
-    var $$x1 = $as_T($uD((hi >>> 0.0)).toString(16));
-    var s = $as_T($uD((lo >>> 0.0)).toString(16));
-    var this$3 = $n(s);
-    var beginIndex = this$3.length;
-    if (((beginIndex < 0) || (beginIndex > 8))) {
-      $charAt("00000000", beginIndex)
-    };
-    return ($$x1 + (("" + $as_T("00000000".substring(beginIndex))) + s))
-  } else {
-    return $as_T($uD((lo >>> 0.0)).toString(16))
-  }
-});
-$c_jl_Long$.prototype.java$lang$Long$$toOctalString__I__I__T = (function(lo, hi) {
-  var lp = (1073741823 & lo);
-  var mp = (1073741823 & ((((lo >>> 30) | 0) + (hi << 2)) | 0));
-  var hp = ((hi >>> 28) | 0);
-  if ((hp !== 0)) {
-    var $$x2 = $as_T($uD((hp >>> 0.0)).toString(8));
-    var s = $as_T($uD((mp >>> 0.0)).toString(8));
-    var this$3 = $n(s);
-    var beginIndex = this$3.length;
-    if (((beginIndex < 0) || (beginIndex > 10))) {
-      $charAt("0000000000", beginIndex)
-    };
-    var $$x1 = $as_T("0000000000".substring(beginIndex));
-    var s$1 = $as_T($uD((lp >>> 0.0)).toString(8));
-    var this$5 = $n(s$1);
-    var beginIndex$1 = this$5.length;
-    if (((beginIndex$1 < 0) || (beginIndex$1 > 10))) {
-      $charAt("0000000000", beginIndex$1)
-    };
-    return (($$x2 + (("" + $$x1) + s)) + (("" + $as_T("0000000000".substring(beginIndex$1))) + s$1))
-  } else if ((mp !== 0)) {
-    var $$x3 = $as_T($uD((mp >>> 0.0)).toString(8));
-    var s$2 = $as_T($uD((lp >>> 0.0)).toString(8));
-    var this$8 = $n(s$2);
-    var beginIndex$2 = this$8.length;
-    if (((beginIndex$2 < 0) || (beginIndex$2 > 10))) {
-      $charAt("0000000000", beginIndex$2)
-    };
-    return ($$x3 + (("" + $as_T("0000000000".substring(beginIndex$2))) + s$2))
-  } else {
-    return $as_T($uD((lp >>> 0.0)).toString(8))
-  }
-});
-var $d_jl_Long$ = new $TypeData().initClass({
-  jl_Long$: 0
-}, false, "java.lang.Long$", {
-  jl_Long$: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_jl_Long$.prototype.$classData = $d_jl_Long$;
-var $n_jl_Long$;
-function $m_jl_Long$() {
-  if ((!$n_jl_Long$)) {
-    $n_jl_Long$ = new $c_jl_Long$()
-  };
-  return $n_jl_Long$
-}
-/** @constructor */
 function $c_jl_Number() {
   /*<skip>*/
 }
@@ -7126,9 +7959,6 @@ $c_jl_String$.prototype.new__AC__I__I__T = (function(value, offset, count) {
     i = ((1 + i) | 0)
   };
   return result
-});
-$c_jl_String$.prototype.format__T__AO__T = (function(format, args) {
-  return $n($ct_ju_Formatter__(new $c_ju_Formatter()).format__T__AO__ju_Formatter(format, args)).toString__T()
 });
 var $d_jl_String$ = new $TypeData().initClass({
   jl_String$: 0
@@ -7204,35 +8034,9 @@ function $isArrayOf_jl_Throwable(obj, depth) {
 function $asArrayOf_jl_Throwable(obj, depth) {
   return (($isArrayOf_jl_Throwable(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Throwable;", depth))
 }
-/** @constructor */
-function $c_ju_Formatter$RootLocaleInfo$() {
-  /*<skip>*/
-}
-$c_ju_Formatter$RootLocaleInfo$.prototype = new $h_ju_Formatter$LocaleInfo();
-$c_ju_Formatter$RootLocaleInfo$.prototype.constructor = $c_ju_Formatter$RootLocaleInfo$;
-/** @constructor */
-function $h_ju_Formatter$RootLocaleInfo$() {
-  /*<skip>*/
-}
-$h_ju_Formatter$RootLocaleInfo$.prototype = $c_ju_Formatter$RootLocaleInfo$.prototype;
-var $d_ju_Formatter$RootLocaleInfo$ = new $TypeData().initClass({
-  ju_Formatter$RootLocaleInfo$: 0
-}, false, "java.util.Formatter$RootLocaleInfo$", {
-  ju_Formatter$RootLocaleInfo$: 1,
-  ju_Formatter$LocaleInfo: 1,
-  O: 1
-});
-$c_ju_Formatter$RootLocaleInfo$.prototype.$classData = $d_ju_Formatter$RootLocaleInfo$;
-var $n_ju_Formatter$RootLocaleInfo$;
-function $m_ju_Formatter$RootLocaleInfo$() {
-  if ((!$n_ju_Formatter$RootLocaleInfo$)) {
-    $n_ju_Formatter$RootLocaleInfo$ = new $c_ju_Formatter$RootLocaleInfo$()
-  };
-  return $n_ju_Formatter$RootLocaleInfo$
-}
 function $p_ju_regex_Matcher__ensureLastMatch__O($thiz) {
   if (($thiz.ju_regex_Matcher__f_lastMatch === null)) {
-    throw $ct_jl_IllegalStateException__T__(new $c_jl_IllegalStateException(), "No match available")
+    throw new $c_jl_IllegalStateException("No match available")
   };
   return $thiz.ju_regex_Matcher__f_lastMatch
 }
@@ -7559,9 +8363,6 @@ function $h_s_Console$() {
 $h_s_Console$.prototype = $c_s_Console$.prototype;
 $c_s_Console$.prototype.out__Ljava_io_PrintStream = (function() {
   return $as_Ljava_io_PrintStream($n(this.s_Console$__f_outVar).s_util_DynamicVariable__f_v)
-});
-$c_s_Console$.prototype.print__O__V = (function(obj) {
-  $n(this.out__Ljava_io_PrintStream()).print__T__V(((obj === null) ? "null" : $dp_toString__T($n(obj))))
 });
 var $d_s_Console$ = new $TypeData().initClass({
   s_Console$: 0
@@ -7977,86 +8778,12 @@ var $d_s_util_hashing_MurmurHash3$accum$1 = new $TypeData().initClass({
   F2: 1
 });
 $c_s_util_hashing_MurmurHash3$accum$1.prototype.$classData = $d_s_util_hashing_MurmurHash3$accum$1;
-function $p_LMain$__renderIn$1__sr_IntRef__Lorg_scalajs_dom_CanvasRenderingContext2D__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V($thiz, cl$2, c2d$2, last$2, ww$1, init, v, end) {
-  c2d$2.lineWidth = 40.0;
-  c2d$2.strokeStyle = "black";
-  var this$3 = $n($as_sc_IterableOnceOps($n(end).map__F1__O(new $c_sjsr_AnonFunction1(((s) => {
-    var s$1 = $as_T(s);
-    return $m_LLetters$().size__T__I(s$1)
-  })))));
-  var num = $m_s_math_Numeric$IntIsIntegral$();
-  var es = $uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$3, num));
-  var this$4 = $n($as_sc_IterableOnceOps($n(init).map__F1__O(new $c_sjsr_AnonFunction1(((s$2) => {
-    var s$3 = $as_T(s$2);
-    return $m_LLetters$().size__T__I(s$3)
-  })))));
-  var num$1 = $m_s_math_Numeric$IntIsIntegral$();
-  var is = $uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$4, num$1));
-  var x = ((es - is) | 0);
-  var offset1 = ((((x > 0) ? x : 0) / 2) | 0);
-  var i1 = new $c_sr_IntRef(offset1);
-  $n(init).foreach__F1__V(new $c_sjsr_AnonFunction1(((letter) => {
-    var letter$1 = $as_T(letter);
-    var x$1 = ((((("Printing (init) " + letter$1) + " @ ") + i1.sr_IntRef__f_elem) + " + ") + $n(cl$2).sr_IntRef__f_elem);
-    var this$11 = $m_s_Console$();
-    var this$12 = $n(this$11.out__Ljava_io_PrintStream());
-    this$12.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$1 + "\n"));
-    c2d$2.save();
-    var x$2 = ((((25 + $n(cl$2).sr_IntRef__f_elem) | 0) + i1.sr_IntRef__f_elem) | 0);
-    c2d$2.translate(x$2, 0.0);
-    var this$14 = $n($n($m_LLetters$().LLetters$__f_consonants).get__O__s_Option(letter$1));
-    if ((!this$14.isEmpty__Z())) {
-      var arg1 = this$14.get__O();
-      var _$3 = $as_F1(arg1);
-      $n(_$3).apply__O__O(c2d$2);
-      new $c_s_Some((void 0))
-    };
-    c2d$2.restore();
-    var ev$4 = ((i1.sr_IntRef__f_elem + ((50 + $m_LLetters$().size__T__I(letter$1)) | 0)) | 0);
-    i1.sr_IntRef__f_elem = ev$4
-  })));
-  var this$15 = $n($n($m_LLetters$().LLetters$__f_vowels).get__O__s_Option($n(v).head__O()));
-  if (this$15.isEmpty__Z()) {
-    var $$x1 = $m_s_None$()
-  } else {
-    var arg1$1 = this$15.get__O();
-    var _$4 = $as_F3(arg1$1);
-    var $$x1 = new $c_s_Some($uZ($n(_$4).apply__O__O__O__O(c2d$2, ((220 + ww$1) | 0), $n(last$2).sr_BooleanRef__f_elem)))
-  };
-  var this$16 = $n($$x1);
-  var ev$5 = $uZ((this$16.isEmpty__Z() ? false : this$16.get__O()));
-  $n(last$2).sr_BooleanRef__f_elem = ev$5;
-  var x$3 = ((is - es) | 0);
-  var offset2 = ((((x$3 > 0) ? x$3 : 0) / 2) | 0);
-  var i2 = new $c_sr_IntRef(offset2);
-  $n(end).foreach__F1__V(new $c_sjsr_AnonFunction1(((letter$2) => {
-    var letter$3 = $as_T(letter$2);
-    var x$4 = ((((("Printing (end) " + letter$3) + " @ ") + i2.sr_IntRef__f_elem) + " + ") + $n(cl$2).sr_IntRef__f_elem);
-    var this$23 = $m_s_Console$();
-    var this$24 = $n(this$23.out__Ljava_io_PrintStream());
-    this$24.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$4 + "\n"));
-    c2d$2.save();
-    var x$5 = ((((25 + $n(cl$2).sr_IntRef__f_elem) | 0) + i2.sr_IntRef__f_elem) | 0);
-    c2d$2.translate(x$5, 550.0);
-    var this$26 = $n($n($m_LLetters$().LLetters$__f_consonants).get__O__s_Option(letter$3));
-    if ((!this$26.isEmpty__Z())) {
-      var arg1$2 = this$26.get__O();
-      var _$5 = $as_F1(arg1$2);
-      $n(_$5).apply__O__O(c2d$2);
-      new $c_s_Some((void 0))
-    };
-    c2d$2.restore();
-    var ev$6 = ((i2.sr_IntRef__f_elem + ((50 + $m_LLetters$().size__T__I(letter$3)) | 0)) | 0);
-    i2.sr_IntRef__f_elem = ev$6
-  })));
-  var x$6 = ((200 + ww$1) | 0);
-  c2d$2.translate(x$6, 0.0)
-}
 /** @constructor */
 function $c_LMain$() {
   this.LMain$__f_scala$App$$initCode = null;
   this.LMain$__f_input = null;
   this.LMain$__f_canvas = null;
+  this.LMain$__f_svg = null;
   $n_LMain$ = this;
   $f_s_App__$init$__V(this);
   this.LMain$__f_input = document.getElementById("text-to-render");
@@ -8064,6 +8791,11 @@ function $c_LMain$() {
     this.renderTextContent__V()
   }))));
   this.LMain$__f_canvas = document.getElementById("render-canvas");
+  this.LMain$__f_svg = document.getElementById("render-svg");
+  var x = ((("canvas: " + this.LMain$__f_canvas) + ", svg: ") + this.LMain$__f_svg);
+  var this$3 = $m_s_Console$();
+  var this$4 = $n(this$3.out__Ljava_io_PrintStream());
+  this$4.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
   this.LMain$__f_canvas.height = 420;
   this.renderTextContent__V()
 }
@@ -8074,364 +8806,6 @@ function $h_LMain$() {
   /*<skip>*/
 }
 $h_LMain$.prototype = $c_LMain$.prototype;
-$c_LMain$.prototype.parseSyllable__T__sci_Seq = (function(syllable) {
-  var this$1 = $n(syllable);
-  if ((this$1 === "")) {
-    return $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().genericWrapArray__O__sci_ArraySeq(new ($d_sr_Nothing$.getArrayOf().constr)([]))))
-  } else if ($n($m_LLetters$().LLetters$__f_consonants2).contains__O__Z($m_sc_StringOps$().take$extension__T__I__T(syllable, 2))) {
-    var elem$1 = $m_sc_StringOps$().take$extension__T__I__T(syllable, 2);
-    var this$5 = $n(this.parseSyllable__T__sci_Seq($m_sc_StringOps$().drop$extension__T__I__T(syllable, 2)));
-    return $as_sci_Seq(this$5.prepended__O__O(elem$1))
-  } else {
-    var elem$2 = $m_sc_StringOps$().take$extension__T__I__T(syllable, 1);
-    var this$8 = $n(this.parseSyllable__T__sci_Seq($m_sc_StringOps$().drop$extension__T__I__T(syllable, 1)));
-    return $as_sci_Seq(this$8.prepended__O__O(elem$2))
-  }
-});
-$c_LMain$.prototype.parseWord__T__sci_Seq = (function(word) {
-  $m_sc_StringOps$();
-  $m_sc_StringOps$();
-  $m_sc_StringOps$();
-  var from = 0;
-  _return: {
-    var this$4 = $n(word);
-    var len = this$4.length;
-    var i = from;
-    while ((i < len)) {
-      var this$5 = $n(word);
-      var index = i;
-      var arg1 = $charAt(this$5, index);
-      if ($n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1))) {
-        var x1 = i;
-        break _return
-      };
-      i = ((1 + i) | 0)
-    };
-    var x1 = (-1)
-  };
-  if ((x1 === (-1))) {
-    var x1$1___1 = word;
-    var x1$1___2 = ""
-  } else {
-    var this$6 = $n(word);
-    if ((x1 > this$6.length)) {
-      $charAt(this$6, x1)
-    };
-    if ((x1 < 0)) {
-      $charAt(this$6, (-1))
-    };
-    var _1 = $as_T(this$6.substring(0, x1));
-    var this$7 = $n(word);
-    if (((x1 < 0) || (x1 > this$7.length))) {
-      $charAt(this$7, x1)
-    };
-    var _2 = $as_T(this$7.substring(x1));
-    var x1$1___1 = _1;
-    var x1$1___2 = _2
-  };
-  var initial = $as_T(x1$1___1);
-  var rest1 = $as_T(x1$1___2);
-  var \u03b41$___1 = initial;
-  var \u03b41$___2 = rest1;
-  var initial$2 = $as_T(\u03b41$___1);
-  var rest1$2 = $as_T(\u03b41$___2);
-  $m_sc_StringOps$();
-  $m_sc_StringOps$();
-  $m_sc_StringOps$();
-  var from$1 = 0;
-  _return$1: {
-    var this$12 = $n(rest1$2);
-    var len$1 = this$12.length;
-    var i$1 = from$1;
-    while ((i$1 < len$1)) {
-      var this$13 = $n(rest1$2);
-      var index$1 = i$1;
-      var arg1$1 = $charAt(this$13, index$1);
-      if ((!$n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1$1)))) {
-        var x1$2 = i$1;
-        break _return$1
-      };
-      i$1 = ((1 + i$1) | 0)
-    };
-    var x1$2 = (-1)
-  };
-  if ((x1$2 === (-1))) {
-    var x4___1 = rest1$2;
-    var x4___2 = ""
-  } else {
-    var this$14 = $n(rest1$2);
-    if ((x1$2 > this$14.length)) {
-      $charAt(this$14, x1$2)
-    };
-    if ((x1$2 < 0)) {
-      $charAt(this$14, (-1))
-    };
-    var _1$1 = $as_T(this$14.substring(0, x1$2));
-    var this$15 = $n(rest1$2);
-    if (((x1$2 < 0) || (x1$2 > this$15.length))) {
-      $charAt(this$15, x1$2)
-    };
-    var _2$1 = $as_T(this$15.substring(x1$2));
-    var x4___1 = _1$1;
-    var x4___2 = _2$1
-  };
-  var vowel = $as_T(x4___1);
-  var rest2 = $as_T(x4___2);
-  var \u03b42$___1 = vowel;
-  var \u03b42$___2 = rest2;
-  var vowel$2 = $as_T(\u03b42$___1);
-  var rest2$2 = $as_T(\u03b42$___2);
-  $m_sc_StringOps$();
-  $m_sc_StringOps$();
-  $m_sc_StringOps$();
-  var from$2 = 0;
-  _return$2: {
-    var this$20 = $n(rest2$2);
-    var len$2 = this$20.length;
-    var i$2 = from$2;
-    while ((i$2 < len$2)) {
-      var this$21 = $n(rest2$2);
-      var index$2 = i$2;
-      var arg1$2 = $charAt(this$21, index$2);
-      if ($n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1$2))) {
-        var $$x1 = i$2;
-        break _return$2
-      };
-      i$2 = ((1 + i$2) | 0)
-    };
-    var $$x1 = (-1)
-  };
-  if (($$x1 !== (-1))) {
-    $m_sc_StringOps$();
-    $m_sc_StringOps$();
-    $m_sc_StringOps$();
-    var from$3 = 0;
-    _return$3: {
-      var this$25 = $n(rest2$2);
-      var len$3 = this$25.length;
-      var i$3 = from$3;
-      while ((i$3 < len$3)) {
-        var this$26 = $n(rest2$2);
-        var index$3 = i$3;
-        var arg1$3 = $charAt(this$26, index$3);
-        if ($n($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapCharArray__AC__sci_ArraySeq(new $ac_C(new Uint16Array([97, 101, 105, 111, 117, 230]))))).contains__O__Z($bC(arg1$3))) {
-          var x1$3 = i$3;
-          break _return$3
-        };
-        i$3 = ((1 + i$3) | 0)
-      };
-      var x1$3 = (-1)
-    };
-    if ((x1$3 === (-1))) {
-      var x7___1 = rest2$2;
-      var x7___2 = ""
-    } else {
-      var this$27 = $n(rest2$2);
-      if ((x1$3 > this$27.length)) {
-        $charAt(this$27, x1$3)
-      };
-      if ((x1$3 < 0)) {
-        $charAt(this$27, (-1))
-      };
-      var _1$2 = $as_T(this$27.substring(0, x1$3));
-      var this$28 = $n(rest2$2);
-      if (((x1$3 < 0) || (x1$3 > this$28.length))) {
-        $charAt(this$28, x1$3)
-      };
-      var _2$2 = $as_T(this$28.substring(x1$3));
-      var x7___1 = _1$2;
-      var x7___2 = _2$2
-    };
-    var post = $as_T(x7___1);
-    var rest3 = $as_T(x7___2);
-    var \u03b43$___1 = post;
-    var \u03b43$___2 = rest3;
-    var post$2 = $as_T(\u03b43$___1);
-    var rest3$2 = $as_T(\u03b43$___2);
-    return $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_sci_Seq.getArrayOf().constr)([this.parseSyllable__T__sci_Seq(initial$2), $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)([vowel$2])))), this.parseSyllable__T__sci_Seq(post$2), $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)([rest3$2]))))]))))
-  } else {
-    return $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_sci_Seq.getArrayOf().constr)([this.parseSyllable__T__sci_Seq(initial$2), $as_sci_Seq($n($m_s_package$().s_package$__f_Seq).apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)([vowel$2])))), this.parseSyllable__T__sci_Seq(rest2$2)]))))
-  }
-});
-$c_LMain$.prototype.renderOnCanvas__sci_Seq__Lorg_scalajs_dom_HTMLCanvasElement__V = (function(text, canvas) {
-  var length = new $c_sr_IntRef(0);
-  var shapes = $as_sci_Seq($n(text).map__F1__O(new $c_sjsr_AnonFunction1(((word) => {
-    var word$1 = $as_sci_Seq(word);
-    if (($n(word$1).length__I() === 3)) {
-      matchResult4: {
-        var \u03b44$___1;
-        var \u03b44$___2;
-        var \u03b44$___3;
-        if ((word$1 !== null)) {
-          $n($m_s_package$().s_package$__f_Seq);
-          if (($n(word$1).lengthCompare__I__I(3) === 0)) {
-            var x12 = $as_sci_Seq($n(word$1).apply__I__O(0));
-            var x13 = $as_sci_Seq($n(word$1).apply__I__O(1));
-            var x14 = $as_sci_Seq($n(word$1).apply__I__O(2));
-            var \u03b44$___1 = x12;
-            var \u03b44$___2 = x13;
-            var \u03b44$___3 = x14;
-            break matchResult4
-          }
-        };
-        throw new $c_s_MatchError(word$1)
-      };
-      var init$2 = $as_sci_Seq(\u03b44$___1);
-      $as_sci_Seq(\u03b44$___2);
-      var end$2 = $as_sci_Seq(\u03b44$___3);
-      var this$9 = $n($as_sc_IterableOnceOps($n(end$2).map__F1__O(new $c_sjsr_AnonFunction1(((s) => {
-        var s$1 = $as_T(s);
-        return $m_LLetters$().size__T__I(s$1)
-      })))));
-      var num = $m_s_math_Numeric$IntIsIntegral$();
-      var es = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$9, num)) + Math.imul(50, (((-1) + $n(end$2).length__I()) | 0))) | 0);
-      var this$10 = $n($as_sc_IterableOnceOps($n(init$2).map__F1__O(new $c_sjsr_AnonFunction1(((s$2) => {
-        var s$3 = $as_T(s$2);
-        return $m_LLetters$().size__T__I(s$3)
-      })))));
-      var num$1 = $m_s_math_Numeric$IntIsIntegral$();
-      var is = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$10, num$1)) + Math.imul(50, (((-1) + $n(init$2).length__I()) | 0))) | 0);
-      var ww = ((es > is) ? es : is);
-      var ev$2 = ((length.sr_IntRef__f_elem + ((200 + ww) | 0)) | 0);
-      length.sr_IntRef__f_elem = ev$2;
-      return ww
-    } else if (($n(word$1).length__I() === 4)) {
-      var this$16 = $m_s_Console$();
-      var this$17 = $n(this$16.out__Ljava_io_PrintStream());
-      this$17.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Suffix\n");
-      matchResult5: {
-        var \u03b45$___1;
-        var \u03b45$___2;
-        var \u03b45$___3;
-        var \u03b45$___4;
-        if ((word$1 !== null)) {
-          $n($m_s_package$().s_package$__f_Seq);
-          if (($n(word$1).lengthCompare__I__I(4) === 0)) {
-            var x17 = $as_sci_Seq($n(word$1).apply__I__O(0));
-            var x18 = $as_sci_Seq($n(word$1).apply__I__O(1));
-            var x19 = $as_sci_Seq($n(word$1).apply__I__O(2));
-            var x20 = $as_sci_Seq($n(word$1).apply__I__O(3));
-            var \u03b45$___1 = x17;
-            var \u03b45$___2 = x18;
-            var \u03b45$___3 = x19;
-            var \u03b45$___4 = x20;
-            break matchResult5
-          }
-        };
-        throw new $c_s_MatchError(word$1)
-      };
-      var init$4 = $as_sci_Seq(\u03b45$___1);
-      $as_sci_Seq(\u03b45$___2);
-      var end$4 = $as_sci_Seq(\u03b45$___3);
-      $as_sci_Seq(\u03b45$___4);
-      var this$25 = $n($as_sc_IterableOnceOps($n(end$4).map__F1__O(new $c_sjsr_AnonFunction1(((s$3$1) => {
-        var s$4 = $as_T(s$3$1);
-        return $m_LLetters$().size__T__I(s$4)
-      })))));
-      var num$2 = $m_s_math_Numeric$IntIsIntegral$();
-      var es$2 = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$25, num$2)) + Math.imul(50, (((-1) + $n(end$4).length__I()) | 0))) | 0);
-      var this$26 = $n($as_sc_IterableOnceOps($n(init$4).map__F1__O(new $c_sjsr_AnonFunction1(((s$4$1) => {
-        var s$5 = $as_T(s$4$1);
-        return $m_LLetters$().size__T__I(s$5)
-      })))));
-      var num$3 = $m_s_math_Numeric$IntIsIntegral$();
-      var is$2 = (($uI($f_sc_IterableOnceOps__sum__s_math_Numeric__O(this$26, num$3)) + Math.imul(50, (((-1) + $n(init$4).length__I()) | 0))) | 0);
-      var ww$2 = ((es$2 > is$2) ? es$2 : is$2);
-      var ev$3 = ((length.sr_IntRef__f_elem + ((235 + ww$2) | 0)) | 0);
-      length.sr_IntRef__f_elem = ev$3;
-      return ww$2
-    } else {
-      window.alert("Word found with incorrect structure");
-      $n(null)
-    }
-  }))));
-  var x = ("Set canvas width to " + length.sr_IntRef__f_elem);
-  var this$32 = $m_s_Console$();
-  var this$33 = $n(this$32.out__Ljava_io_PrintStream());
-  this$33.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-  canvas.width = ((200 + $doubleToInt((length.sr_IntRef__f_elem / 2.5))) | 0);
-  var cl = new $c_sr_IntRef(0);
-  var c2d = canvas.getContext("2d");
-  c2d.fillStyle = "white";
-  var x$1 = $uI(canvas.width);
-  var x$2 = $uI(canvas.height);
-  c2d.fillRect(0.0, 0.0, x$1, x$2);
-  c2d.translate(25.0, 0.0);
-  c2d.scale(0.4, 0.4);
-  var last = new $c_sr_BooleanRef(false);
-  $n($n($as_sc_IterableOps($n(text).zip__sc_IterableOnce__O(shapes))).withFilter__F1__sc_WithFilter(new $c_sjsr_AnonFunction1(((x$1$1) => {
-    var x$1$2 = $as_T2(x$1$1);
-    return ((x$1$2 !== null) && ($as_sci_Seq($n(x$1$2).T2__f__1), $uI($n(x$1$2).T2__f__2), true))
-  })))).foreach__F1__V(new $c_sjsr_AnonFunction1(((x$1$2$1) => {
-    var x$1$3 = $as_T2(x$1$2$1);
-    matchResult9: {
-      if ((x$1$3 !== null)) {
-        var word$3 = $as_sci_Seq($n(x$1$3).T2__f__1);
-        var ww$3 = $uI($n(x$1$3).T2__f__2);
-        if (($n(word$3).length__I() === 3)) {
-          $m_s_Predef$().printf__T__sci_Seq__V(("Render: " + word$3), $m_sr_ScalaRunTime$().genericWrapArray__O__sci_ArraySeq(new $ac_O([])));
-          matchResult7: {
-            var \u03b46$___1;
-            var \u03b46$___2;
-            var \u03b46$___3;
-            if ((word$3 !== null)) {
-              $n($m_s_package$().s_package$__f_Seq);
-              if (($n(word$3).lengthCompare__I__I(3) === 0)) {
-                var x26 = $as_sci_Seq($n(word$3).apply__I__O(0));
-                var x27 = $as_sci_Seq($n(word$3).apply__I__O(1));
-                var x28 = $as_sci_Seq($n(word$3).apply__I__O(2));
-                var \u03b46$___1 = x26;
-                var \u03b46$___2 = x27;
-                var \u03b46$___3 = x28;
-                break matchResult7
-              }
-            };
-            throw new $c_s_MatchError(word$3)
-          };
-          var init$2$1 = $as_sci_Seq(\u03b46$___1);
-          var v$2$1 = $as_sci_Seq(\u03b46$___2);
-          var end$2$1 = $as_sci_Seq(\u03b46$___3);
-          $p_LMain$__renderIn$1__sr_IntRef__Lorg_scalajs_dom_CanvasRenderingContext2D__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V(this, cl, c2d, last, ww$3, init$2$1, v$2$1, end$2$1)
-        } else {
-          matchResult8: {
-            var \u03b47$___1;
-            var \u03b47$___2;
-            var \u03b47$___3;
-            var \u03b47$___4;
-            if ((word$3 !== null)) {
-              $n($m_s_package$().s_package$__f_Seq);
-              if (($n(word$3).lengthCompare__I__I(4) === 0)) {
-                var x31 = $as_sci_Seq($n(word$3).apply__I__O(0));
-                var x32 = $as_sci_Seq($n(word$3).apply__I__O(1));
-                var x33 = $as_sci_Seq($n(word$3).apply__I__O(2));
-                var x34 = $as_sci_Seq($n(word$3).apply__I__O(3));
-                var \u03b47$___1 = x31;
-                var \u03b47$___2 = x32;
-                var \u03b47$___3 = x33;
-                var \u03b47$___4 = x34;
-                break matchResult8
-              }
-            };
-            throw new $c_s_MatchError(word$3)
-          };
-          var init$4$1 = $as_sci_Seq(\u03b47$___1);
-          var v$4$1 = $as_sci_Seq(\u03b47$___2);
-          var end$4$1 = $as_sci_Seq(\u03b47$___3);
-          var suffix$2$1 = $as_sci_Seq(\u03b47$___4);
-          $m_s_Predef$().printf__T__sci_Seq__V(("Render: " + word$3), $m_sr_ScalaRunTime$().genericWrapArray__O__sci_ArraySeq(new $ac_O([])));
-          $p_LMain$__renderIn$1__sr_IntRef__Lorg_scalajs_dom_CanvasRenderingContext2D__sr_BooleanRef__I__sci_Seq__sci_Seq__sci_Seq__V(this, cl, c2d, last, ww$3, init$4$1, v$4$1, end$4$1);
-          c2d.translate((-200.0), 0.0);
-          var $$x1 = $m_LSuffix$();
-          var this$52 = $n(suffix$2$1);
-          $n($$x1).find__Lorg_scalajs_dom_CanvasRenderingContext2D__T__V(c2d, $f_sc_IterableOnceOps__mkString__T__T__T__T(this$52, "", "", ""));
-          c2d.translate(235.0, 0.0)
-        };
-        break matchResult9
-      };
-      throw new $c_s_MatchError(x$1$3)
-    }
-  })))
-});
 $c_LMain$.prototype.renderTextContent__V = (function() {
   var this$2 = $m_s_Console$();
   var this$3 = $n(this$2.out__Ljava_io_PrintStream());
@@ -8440,13 +8814,22 @@ $c_LMain$.prototype.renderTextContent__V = (function() {
   var this$5 = $m_s_Console$();
   var this$6 = $n(this$5.out__Ljava_io_PrintStream());
   this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+  var $$x1 = $m_LCanvasRender$();
   var this$7 = $n($as_T(this.LMain$__f_input.value));
   var xs = $f_T__split__T__I__AT(this$7, " ", 0);
   $m_sc_ArrayOps$();
-  this.renderOnCanvas__sci_Seq__Lorg_scalajs_dom_HTMLCanvasElement__V($as_sci_Seq($n($m_sc_ArrayOps$().toIndexedSeq$extension__O__sci_IndexedSeq(xs)).map__F1__O(new $c_sjsr_AnonFunction1(((word) => {
+  $n($$x1).renderOnCanvas__sci_Seq__Lorg_scalajs_dom_HTMLCanvasElement__V($as_sci_Seq($n($m_sc_ArrayOps$().toIndexedSeq$extension__O__sci_IndexedSeq(xs)).map__F1__O(new $c_sjsr_AnonFunction1(((word) => {
     var word$1 = $as_T(word);
-    return this.parseWord__T__sci_Seq(word$1)
-  })))), this.LMain$__f_canvas)
+    return $m_LUtil$().parseWord__T__sci_Seq(word$1)
+  })))), this.LMain$__f_canvas);
+  var $$x2 = $m_LSvgRender$();
+  var this$11 = $n($as_T(this.LMain$__f_input.value));
+  var xs$1 = $f_T__split__T__I__AT(this$11, " ", 0);
+  $m_sc_ArrayOps$();
+  $n($$x2).renderOnSvg__sci_Seq__Lorg_scalajs_dom_SVGSVGElement__V($as_sci_Seq($n($m_sc_ArrayOps$().toIndexedSeq$extension__O__sci_IndexedSeq(xs$1)).map__F1__O(new $c_sjsr_AnonFunction1(((word$2) => {
+    var word$3 = $as_T(word$2);
+    return $m_LUtil$().parseWord__T__sci_Seq(word$3)
+  })))), this.LMain$__f_svg)
 });
 var $d_LMain$ = new $TypeData().initClass({
   LMain$: 0
@@ -8500,9 +8883,6 @@ $c_s_Predef$.prototype.require__Z__V = (function(requirement) {
   if ((!requirement)) {
     throw $ct_jl_IllegalArgumentException__T__(new $c_jl_IllegalArgumentException(), "requirement failed")
   }
-});
-$c_s_Predef$.prototype.printf__T__sci_Seq__V = (function(text, xs) {
-  $m_s_Console$().print__O__V($m_sc_StringOps$().format$extension__T__sci_Seq__T(text, xs))
 });
 var $d_s_Predef$ = new $TypeData().initClass({
   s_Predef$: 0
@@ -9525,15 +9905,6 @@ var $d_sjsr_AnonFunction3 = new $TypeData().initClass({
   F3: 1
 });
 $c_sjsr_AnonFunction3.prototype.$classData = $d_sjsr_AnonFunction3;
-function $as_Ljava_io_IOException(obj) {
-  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.IOException"))
-}
-function $isArrayOf_Ljava_io_IOException(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_io_IOException)))
-}
-function $asArrayOf_Ljava_io_IOException(obj, depth) {
-  return (($isArrayOf_Ljava_io_IOException(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.IOException;", depth))
-}
 /** @constructor */
 function $c_Ljava_io_OutputStream() {
   /*<skip>*/
@@ -9684,13 +10055,6 @@ $c_jl_StringBuilder.prototype.charAt__I__C = (function(index) {
   var this$1 = $n(this.jl_StringBuilder__f_java$lang$StringBuilder$$content);
   return $charAt(this$1, index)
 });
-$c_jl_StringBuilder.prototype.getChars__I__I__AC__I__V = (function(srcBegin, srcEnd, dst, dstBegin) {
-  $f_T__getChars__I__I__AC__I__V($n(this.jl_StringBuilder__f_java$lang$StringBuilder$$content), srcBegin, srcEnd, dst, dstBegin)
-});
-$c_jl_StringBuilder.prototype.append__jl_CharSequence__jl_Appendable = (function(csq) {
-  this.jl_StringBuilder__f_java$lang$StringBuilder$$content = (("" + this.jl_StringBuilder__f_java$lang$StringBuilder$$content) + csq);
-  return this
-});
 var $d_jl_StringBuilder = new $TypeData().initClass({
   jl_StringBuilder: 0
 }, false, "java.lang.StringBuilder", {
@@ -9703,866 +10067,6 @@ var $d_jl_StringBuilder = new $TypeData().initClass({
 $c_jl_StringBuilder.prototype.$classData = $d_jl_StringBuilder;
 class $c_jl_VirtualMachineError extends $c_jl_Error {
 }
-function $as_Ljava_math_BigDecimal(obj) {
-  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "java.math.BigDecimal"))
-}
-function $isArrayOf_Ljava_math_BigDecimal(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_math_BigDecimal)))
-}
-function $asArrayOf_Ljava_math_BigDecimal(obj, depth) {
-  return (($isArrayOf_Ljava_math_BigDecimal(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.math.BigDecimal;", depth))
-}
-function $as_Ljava_math_BigInteger(obj) {
-  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "java.math.BigInteger"))
-}
-function $isArrayOf_Ljava_math_BigInteger(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_math_BigInteger)))
-}
-function $asArrayOf_Ljava_math_BigInteger(obj, depth) {
-  return (($isArrayOf_Ljava_math_BigInteger(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.math.BigInteger;", depth))
-}
-function $p_ju_Formatter__sendToDest__T__V($thiz, s) {
-  if (($thiz.ju_Formatter__f_dest === null)) {
-    $thiz.ju_Formatter__f_stringOutput = (("" + $thiz.ju_Formatter__f_stringOutput) + s)
-  } else {
-    $p_ju_Formatter__sendToDestSlowPath__O__V($thiz, [s])
-  }
-}
-function $p_ju_Formatter__sendToDest__T__T__V($thiz, s1, s2) {
-  if (($thiz.ju_Formatter__f_dest === null)) {
-    $thiz.ju_Formatter__f_stringOutput = ((("" + $thiz.ju_Formatter__f_stringOutput) + s1) + s2)
-  } else {
-    $p_ju_Formatter__sendToDestSlowPath__O__V($thiz, [s1, s2])
-  }
-}
-function $p_ju_Formatter__sendToDest__T__T__T__V($thiz, s1, s2, s3) {
-  if (($thiz.ju_Formatter__f_dest === null)) {
-    $thiz.ju_Formatter__f_stringOutput = (($thiz.ju_Formatter__f_stringOutput + (("" + s1) + s2)) + s3)
-  } else {
-    $p_ju_Formatter__sendToDestSlowPath__O__V($thiz, [s1, s2, s3])
-  }
-}
-function $p_ju_Formatter__sendToDestSlowPath__O__V($thiz, ss) {
-  try {
-    var len = $uI(ss.length);
-    var i = 0;
-    while ((i !== len)) {
-      var x$1$2 = ss[i];
-      var x$1 = $as_T(x$1$2);
-      $n($thiz.ju_Formatter__f_dest).append__jl_CharSequence__jl_Appendable(x$1);
-      i = ((1 + i) | 0)
-    }
-  } catch (e) {
-    if (false) {
-      $as_Ljava_io_IOException(e)
-    } else {
-      throw e
-    }
-  }
-}
-function $p_ju_Formatter__format__ju_Formatter$LocaleInfo__T__AO__ju_Formatter($thiz, localeInfo, format, args) {
-  if ($thiz.ju_Formatter__f_java$util$Formatter$$closed) {
-    throw new $c_ju_FormatterClosedException()
-  };
-  var lastImplicitArgIndex = 0;
-  var lastArgIndex = 0;
-  var this$1 = $n(format);
-  var fmtLength = this$1.length;
-  var fmtIndex = 0;
-  while ((fmtIndex !== fmtLength)) {
-    var this$2 = $n(format);
-    var fromIndex = fmtIndex;
-    var nextPercentIndex = $uI(this$2.indexOf("%", fromIndex));
-    if ((nextPercentIndex < 0)) {
-      var this$3 = $n(format);
-      var beginIndex = fmtIndex;
-      if (((beginIndex < 0) || (beginIndex > this$3.length))) {
-        $charAt(this$3, beginIndex)
-      };
-      $p_ju_Formatter__sendToDest__T__V($thiz, $as_T(this$3.substring(beginIndex)));
-      return $thiz
-    };
-    var this$4 = $n(format);
-    var beginIndex$1 = fmtIndex;
-    if ((beginIndex$1 < 0)) {
-      $charAt(this$4, beginIndex$1)
-    };
-    if ((nextPercentIndex > this$4.length)) {
-      $charAt(this$4, nextPercentIndex)
-    };
-    if ((nextPercentIndex < beginIndex$1)) {
-      $charAt(this$4, (-1))
-    };
-    $p_ju_Formatter__sendToDest__T__V($thiz, $as_T(this$4.substring(beginIndex$1, nextPercentIndex)));
-    var formatSpecifierIndex = ((1 + nextPercentIndex) | 0);
-    var re = $m_ju_Formatter$().ju_Formatter$__f_java$util$Formatter$$FormatSpecifier;
-    re.lastIndex = formatSpecifierIndex;
-    var execResult = re.exec(format);
-    if (((execResult === null) || ($uI(execResult.index) !== formatSpecifierIndex))) {
-      if ((formatSpecifierIndex === fmtLength)) {
-        var conversion = 37
-      } else {
-        var this$5 = $n(format);
-        var conversion = $charAt(this$5, formatSpecifierIndex)
-      };
-      $p_ju_Formatter__throwUnknownFormatConversionException__C__E($thiz, conversion)
-    };
-    fmtIndex = $uI(re.lastIndex);
-    var this$6 = $n(format);
-    var index = (((-1) + fmtIndex) | 0);
-    var conversion$2 = $charAt(this$6, index);
-    var flags = $p_ju_Formatter__parseFlags__T__C__I($thiz, $as_T(execResult[2]), conversion$2);
-    var width = $p_ju_Formatter__parsePositiveInt__O__I($thiz, execResult[3]);
-    var precision = $p_ju_Formatter__parsePositiveInt__O__I($thiz, execResult[4]);
-    if ((width === (-2))) {
-      $p_ju_Formatter__throwIllegalFormatWidthException__I__E($thiz, (-2147483648))
-    };
-    if ((precision === (-2))) {
-      $p_ju_Formatter__throwIllegalFormatPrecisionException__I__E($thiz, (-2147483648))
-    };
-    if ((conversion$2 === 110)) {
-      if ((precision !== (-1))) {
-        $p_ju_Formatter__throwIllegalFormatPrecisionException__I__E($thiz, precision)
-      };
-      if ((width !== (-1))) {
-        $p_ju_Formatter__throwIllegalFormatWidthException__I__E($thiz, width)
-      };
-      if ((flags !== 0)) {
-        $thiz.java$util$Formatter$$throwIllegalFormatFlagsException__I__E(flags)
-      };
-      $p_ju_Formatter__sendToDest__T__V($thiz, "\n")
-    } else if ((conversion$2 === 37)) {
-      if ((precision !== (-1))) {
-        $p_ju_Formatter__throwIllegalFormatPrecisionException__I__E($thiz, precision)
-      };
-      if ((((17 & flags) === 17) || ((12 & flags) === 12))) {
-        $thiz.java$util$Formatter$$throwIllegalFormatFlagsException__I__E(flags)
-      };
-      if ((((1 & flags) !== 0) && (width === (-1)))) {
-        $p_ju_Formatter__throwMissingFormatWidthException__T__E($thiz, $p_ju_Formatter__fullFormatSpecifier$1__O__T($thiz, execResult))
-      };
-      if ((((-2) & flags) !== 0)) {
-        $thiz.java$util$Formatter$$throwFormatFlagsConversionMismatchException__C__I__I__E(37, flags, (-2))
-      };
-      $p_ju_Formatter__padAndSendToDestNoZeroPad__I__I__T__V($thiz, flags, width, "%")
-    } else {
-      var conversionLower = (((256 & flags) !== 0) ? (65535 & ((32 + conversion$2) | 0)) : conversion$2);
-      var illegalFlags = $n($m_ju_Formatter$().ju_Formatter$__f_java$util$Formatter$$ConversionsIllegalFlags).get((((-97) + conversionLower) | 0));
-      if (((illegalFlags === (-1)) || (((256 & flags) & illegalFlags) !== 0))) {
-        $p_ju_Formatter__throwUnknownFormatConversionException__C__E($thiz, conversion$2)
-      };
-      if ((((17 & flags) !== 0) && (width === (-1)))) {
-        $p_ju_Formatter__throwMissingFormatWidthException__T__E($thiz, $p_ju_Formatter__fullFormatSpecifier$1__O__T($thiz, execResult))
-      };
-      if ((((17 & flags) === 17) || ((12 & flags) === 12))) {
-        $thiz.java$util$Formatter$$throwIllegalFormatFlagsException__I__E(flags)
-      };
-      if (((precision !== (-1)) && ((512 & illegalFlags) !== 0))) {
-        $p_ju_Formatter__throwIllegalFormatPrecisionException__I__E($thiz, precision)
-      };
-      if (((flags & illegalFlags) !== 0)) {
-        $thiz.java$util$Formatter$$throwFormatFlagsConversionMismatchException__C__I__I__E(conversionLower, flags, illegalFlags)
-      };
-      if (((128 & flags) !== 0)) {
-        var argIndex = lastArgIndex
-      } else {
-        var i = $p_ju_Formatter__parsePositiveInt__O__I($thiz, execResult[1]);
-        if ((i === (-1))) {
-          lastImplicitArgIndex = ((1 + lastImplicitArgIndex) | 0);
-          var argIndex = lastImplicitArgIndex
-        } else {
-          if ((i <= 0)) {
-            $p_ju_Formatter__throwIllegalFormatArgumentIndexException__I__E($thiz, i)
-          };
-          var argIndex = i
-        }
-      };
-      if (((argIndex <= 0) || (argIndex > $n(args).u.length))) {
-        $p_ju_Formatter__throwMissingFormatArgumentException__T__E($thiz, $p_ju_Formatter__fullFormatSpecifier$1__O__T($thiz, execResult))
-      };
-      lastArgIndex = argIndex;
-      var arg = $n(args).get((((-1) + argIndex) | 0));
-      if ((((arg === null) && (conversionLower !== 98)) && (conversionLower !== 115))) {
-        $p_ju_Formatter__formatNonNumericString__ju_Formatter$LocaleInfo__I__I__I__T__V($thiz, $m_ju_Formatter$RootLocaleInfo$(), flags, width, precision, "null")
-      } else {
-        $p_ju_Formatter__formatArg__ju_Formatter$LocaleInfo__O__C__I__I__I__V($thiz, localeInfo, arg, conversionLower, flags, width, precision)
-      }
-    }
-  };
-  return $thiz
-}
-function $p_ju_Formatter__parseFlags__T__C__I($thiz, flags, conversion) {
-  var bits = (((conversion >= 65) && (conversion <= 90)) ? 256 : 0);
-  var this$1 = $n(flags);
-  var len = this$1.length;
-  var i = 0;
-  while ((i !== len)) {
-    var this$2 = $n(flags);
-    var index = i;
-    var f = $charAt(this$2, index);
-    switch (f) {
-      case 45: {
-        var bit = 1;
-        break
-      }
-      case 35: {
-        var bit = 2;
-        break
-      }
-      case 43: {
-        var bit = 4;
-        break
-      }
-      case 32: {
-        var bit = 8;
-        break
-      }
-      case 48: {
-        var bit = 16;
-        break
-      }
-      case 44: {
-        var bit = 32;
-        break
-      }
-      case 40: {
-        var bit = 64;
-        break
-      }
-      case 60: {
-        var bit = 128;
-        break
-      }
-      default: {
-        var bit;
-        throw new $c_jl_AssertionError($bC(f))
-      }
-    };
-    if (((bits & bit) !== 0)) {
-      $p_ju_Formatter__throwDuplicateFormatFlagsException__C__E($thiz, f)
-    };
-    bits = (bits | bit);
-    i = ((1 + i) | 0)
-  };
-  return bits
-}
-function $p_ju_Formatter__parsePositiveInt__O__I($thiz, capture) {
-  if ((capture !== (void 0))) {
-    var s = $as_T(capture);
-    var x = $uD(parseInt(s, 10));
-    return ((x <= 2.147483647E9) ? $doubleToInt(x) : (-2))
-  } else {
-    return (-1)
-  }
-}
-function $p_ju_Formatter__formatArg__ju_Formatter$LocaleInfo__O__C__I__I__I__V($thiz, localeInfo, arg, conversionLower, flags, width, precision) {
-  switch (conversionLower) {
-    case 98: {
-      var str = (((arg === false) || (arg === null)) ? "false" : "true");
-      $p_ju_Formatter__formatNonNumericString__ju_Formatter$LocaleInfo__I__I__I__T__V($thiz, $m_ju_Formatter$RootLocaleInfo$(), flags, width, precision, str);
-      break
-    }
-    case 104: {
-      var i = $dp_hashCode__I($n(arg));
-      var str$2 = $as_T($uD((i >>> 0.0)).toString(16));
-      $p_ju_Formatter__formatNonNumericString__ju_Formatter$LocaleInfo__I__I__I__T__V($thiz, $m_ju_Formatter$RootLocaleInfo$(), flags, width, precision, str$2);
-      break
-    }
-    case 115: {
-      if ($is_ju_Formattable(arg)) {
-        var x2 = $as_ju_Formattable(arg);
-        var formattableFlags = (((((1 & flags) !== 0) ? 1 : 0) | (((2 & flags) !== 0) ? 4 : 0)) | (((256 & flags) !== 0) ? 2 : 0));
-        $n(x2).formatTo__ju_Formatter__I__I__I__V($thiz, formattableFlags, width, precision)
-      } else {
-        if (((2 & flags) !== 0)) {
-          $thiz.java$util$Formatter$$throwFormatFlagsConversionMismatchException__C__I__I__E(conversionLower, flags, 2)
-        };
-        var str$3 = ("" + arg);
-        $p_ju_Formatter__formatNonNumericString__ju_Formatter$LocaleInfo__I__I__I__T__V($thiz, localeInfo, flags, width, precision, str$3)
-      };
-      break
-    }
-    case 99: {
-      if ((arg instanceof $Char)) {
-        var x2$2 = $uC(arg);
-        var str$4 = $as_T(String.fromCharCode(x2$2))
-      } else {
-        if ((!$isInt(arg))) {
-          $thiz.java$util$Formatter$$throwIllegalFormatConversionException__C__O__E(conversionLower, arg)
-        };
-        var x3 = $uI(arg);
-        if ((!((x3 >= 0) && (x3 <= 1114111)))) {
-          $p_ju_Formatter__throwIllegalFormatCodePointException__I__E($thiz, x3)
-        };
-        var str$4 = ((x3 < 65536) ? $as_T(String.fromCharCode(x3)) : $as_T(String.fromCharCode((55296 | (((-64) + (x3 >> 10)) | 0)), (56320 | (1023 & x3)))))
-      };
-      $p_ju_Formatter__formatNonNumericString__ju_Formatter$LocaleInfo__I__I__I__T__V($thiz, localeInfo, flags, width, (-1), str$4);
-      break
-    }
-    case 100: {
-      if ($isInt(arg)) {
-        var x2$3 = $uI(arg);
-        var str$5 = ("" + x2$3)
-      } else if ((arg instanceof $c_RTLong)) {
-        var t = $uJ(arg);
-        var lo = t.RTLong__f_lo;
-        var hi = t.RTLong__f_hi;
-        var str$5 = $m_RTLong$().org$scalajs$linker$runtime$RuntimeLong$$toString__I__I__T(lo, hi)
-      } else {
-        if ((!false)) {
-          $thiz.java$util$Formatter$$throwIllegalFormatConversionException__C__O__E(conversionLower, arg)
-        };
-        var x4 = $as_Ljava_math_BigInteger(arg);
-        var str$5 = $n(x4).toString__T()
-      };
-      $p_ju_Formatter__formatNumericString__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, localeInfo, flags, width, str$5, "");
-      break
-    }
-    case 111:
-    case 120: {
-      var isOctal = (conversionLower === 111);
-      var prefix = (((2 & flags) === 0) ? "" : (isOctal ? "0" : (((256 & flags) !== 0) ? "0X" : "0x")));
-      if (false) {
-        var x2$4 = $as_Ljava_math_BigInteger(arg);
-        var radix = (isOctal ? 8 : 16);
-        $p_ju_Formatter__formatNumericString__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, $m_ju_Formatter$RootLocaleInfo$(), flags, width, $n(x2$4).toString__I__T(radix), prefix)
-      } else {
-        if ($isInt(arg)) {
-          var x2$5 = $uI(arg);
-          var str$6 = (isOctal ? $as_T($uD((x2$5 >>> 0.0)).toString(8)) : $as_T($uD((x2$5 >>> 0.0)).toString(16)))
-        } else {
-          if ((!(arg instanceof $c_RTLong))) {
-            $thiz.java$util$Formatter$$throwIllegalFormatConversionException__C__O__E(conversionLower, arg)
-          };
-          var t$1 = $uJ(arg);
-          var lo$1 = t$1.RTLong__f_lo;
-          var hi$1 = t$1.RTLong__f_hi;
-          if (isOctal) {
-            var this$14 = $m_jl_Long$();
-            var str$6 = this$14.java$lang$Long$$toOctalString__I__I__T(lo$1, hi$1)
-          } else {
-            var this$15 = $m_jl_Long$();
-            var str$6 = this$15.java$lang$Long$$toHexString__I__I__T(lo$1, hi$1)
-          }
-        };
-        if (((76 & flags) !== 0)) {
-          $thiz.java$util$Formatter$$throwFormatFlagsConversionMismatchException__C__I__I__E(conversionLower, flags, 76)
-        };
-        $p_ju_Formatter__padAndSendToDest__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, $m_ju_Formatter$RootLocaleInfo$(), flags, width, prefix, $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, str$6))
-      };
-      break
-    }
-    case 101:
-    case 102:
-    case 103: {
-      if (((typeof arg) === "number")) {
-        var x2$6 = $uD(arg);
-        if (((x2$6 !== x2$6) || ((x2$6 === Infinity) || (x2$6 === (-Infinity))))) {
-          $p_ju_Formatter__formatNaNOrInfinite__I__I__D__V($thiz, flags, width, x2$6)
-        } else {
-          $p_ju_Formatter__formatDecimal$1__ju_Formatter$Decimal__I__I__C__ju_Formatter$LocaleInfo__I__V($thiz, $m_ju_Formatter$().java$util$Formatter$$numberToDecimal__D__ju_Formatter$Decimal(x2$6), flags, precision, conversionLower, localeInfo, width)
-        }
-      } else if (false) {
-        var x3$4 = $as_Ljava_math_BigDecimal(arg);
-        $p_ju_Formatter__formatDecimal$1__ju_Formatter$Decimal__I__I__C__ju_Formatter$LocaleInfo__I__V($thiz, $m_ju_Formatter$().java$util$Formatter$$bigDecimalToDecimal__Ljava_math_BigDecimal__ju_Formatter$Decimal(x3$4), flags, precision, conversionLower, localeInfo, width)
-      } else {
-        $thiz.java$util$Formatter$$throwIllegalFormatConversionException__C__O__E(conversionLower, arg)
-      };
-      break
-    }
-    case 97: {
-      if (((typeof arg) === "number")) {
-        var x2$7 = $uD(arg);
-        $p_ju_Formatter__formatHexFloatingPoint__I__I__I__D__V($thiz, flags, width, precision, x2$7)
-      } else {
-        $thiz.java$util$Formatter$$throwIllegalFormatConversionException__C__O__E(conversionLower, arg)
-      };
-      break
-    }
-    default: {
-      throw new $c_jl_AssertionError((("Unknown conversion '" + $bC(conversionLower)) + "' was not rejected earlier"))
-    }
-  }
-}
-function $p_ju_Formatter__flagsToString__I__T($thiz, flags) {
-  return ((((((((((1 & flags) !== 0) ? "-" : "") + (((2 & flags) !== 0) ? "#" : "")) + (((4 & flags) !== 0) ? "+" : "")) + (((8 & flags) !== 0) ? " " : "")) + (((16 & flags) !== 0) ? "0" : "")) + (((32 & flags) !== 0) ? "," : "")) + (((64 & flags) !== 0) ? "(" : "")) + (((128 & flags) !== 0) ? "<" : ""))
-}
-function $p_ju_Formatter__computerizedScientificNotation__ju_Formatter$Decimal__I__Z__T($thiz, x, digitsAfterDot, forceDecimalSep) {
-  var rounded = $n(x).round__I__ju_Formatter$Decimal(((1 + digitsAfterDot) | 0));
-  var signStr = ($n(rounded).ju_Formatter$Decimal__f_negative ? "-" : "");
-  var intStr = $n(rounded).ju_Formatter$Decimal__f_unscaledValue;
-  var this$1 = $n(intStr);
-  var fractionalDigitCount = (((-1) + this$1.length) | 0);
-  var missingZeros = ((digitsAfterDot - fractionalDigitCount) | 0);
-  var this$2 = $n(intStr);
-  if ((this$2.length < 1)) {
-    $charAt(this$2, 1)
-  };
-  var integerPart = $as_T(this$2.substring(0, 1));
-  var this$3 = $n(intStr);
-  if ((this$3.length < 1)) {
-    $charAt(this$3, 1)
-  };
-  var fractionalPart = (("" + $as_T(this$3.substring(1))) + $m_ju_Formatter$().java$util$Formatter$$strOfZeros__I__T(missingZeros));
-  var significandStr = (((fractionalPart === "") && (!forceDecimalSep)) ? integerPart : ((integerPart + ".") + fractionalPart));
-  var exponent = ((fractionalDigitCount - $n(rounded).ju_Formatter$Decimal__f_scale) | 0);
-  var exponentSign = ((exponent < 0) ? "-" : "+");
-  var this$5 = ((exponent < 0) ? ((-exponent) | 0) : exponent);
-  var exponentAbsStr0 = ("" + this$5);
-  var exponentAbsStr = ((exponentAbsStr0.length === 1) ? ("0" + exponentAbsStr0) : exponentAbsStr0);
-  return ((((signStr + significandStr) + "e") + exponentSign) + exponentAbsStr)
-}
-function $p_ju_Formatter__decimalNotation__ju_Formatter$Decimal__I__Z__T($thiz, x, scale, forceDecimalSep) {
-  var rounded = $n(x).setScale__I__ju_Formatter$Decimal(scale);
-  var signStr = ($n(rounded).ju_Formatter$Decimal__f_negative ? "-" : "");
-  var intStr = $n(rounded).ju_Formatter$Decimal__f_unscaledValue;
-  var this$1 = $n(intStr);
-  var intStrLen = this$1.length;
-  var minDigits = ((1 + scale) | 0);
-  var expandedIntStr = ((intStrLen >= minDigits) ? intStr : (("" + $m_ju_Formatter$().java$util$Formatter$$strOfZeros__I__T(((minDigits - intStrLen) | 0))) + intStr));
-  var this$2 = $n(expandedIntStr);
-  var dotPos = ((this$2.length - scale) | 0);
-  var this$3 = $n(expandedIntStr);
-  if ((dotPos > this$3.length)) {
-    $charAt(this$3, dotPos)
-  };
-  if ((dotPos < 0)) {
-    $charAt(this$3, (-1))
-  };
-  var integerPart = (signStr + $as_T(this$3.substring(0, dotPos)));
-  if (((scale === 0) && (!forceDecimalSep))) {
-    return integerPart
-  } else {
-    var this$4 = $n(expandedIntStr);
-    if (((dotPos < 0) || (dotPos > this$4.length))) {
-      $charAt(this$4, dotPos)
-    };
-    return ((integerPart + ".") + $as_T(this$4.substring(dotPos)))
-  }
-}
-function $p_ju_Formatter__generalScientificNotation__ju_Formatter$Decimal__I__Z__T($thiz, x, precision, forceDecimalSep) {
-  var p = ((precision === 0) ? 1 : precision);
-  var rounded = $n(x).round__I__ju_Formatter$Decimal(p);
-  var this$1 = $n(rounded);
-  var this$2 = $n(this$1.ju_Formatter$Decimal__f_unscaledValue);
-  var orderOfMagnitude = (((((-1) + this$2.length) | 0) - $n(rounded).ju_Formatter$Decimal__f_scale) | 0);
-  if (((orderOfMagnitude >= (-4)) && (orderOfMagnitude < p))) {
-    var b = (((-1) + ((p - orderOfMagnitude) | 0)) | 0);
-    return $p_ju_Formatter__decimalNotation__ju_Formatter$Decimal__I__Z__T($thiz, rounded, ((b < 0) ? 0 : b), forceDecimalSep)
-  } else {
-    return $p_ju_Formatter__computerizedScientificNotation__ju_Formatter$Decimal__I__Z__T($thiz, rounded, (((-1) + p) | 0), forceDecimalSep)
-  }
-}
-function $p_ju_Formatter__formatHexFloatingPoint__I__I__I__D__V($thiz, flags, width, precision, arg) {
-  if (((arg !== arg) || ((arg === Infinity) || (arg === (-Infinity))))) {
-    $p_ju_Formatter__formatNaNOrInfinite__I__I__D__V($thiz, flags, width, arg)
-  } else {
-    var t = $m_jl_FloatingPointBits$().doubleToLongBits__D__J(arg);
-    var lo = t.RTLong__f_lo;
-    var hi = t.RTLong__f_hi;
-    var negative = (hi < 0);
-    var hi$1 = (1048575 & hi);
-    var lo$1 = ((hi >>> 20) | 0);
-    var biasedExponent = (2047 & lo$1);
-    var actualPrecision = ((precision === 0) ? 1 : ((precision > 12) ? (-1) : precision));
-    var signStr = (negative ? "-" : (((4 & flags) !== 0) ? "+" : (((8 & flags) !== 0) ? " " : "")));
-    if ((biasedExponent === 0)) {
-      if (((lo === 0) && (hi$1 === 0))) {
-        var x1___1 = "0";
-        var x1___2 = $L0;
-        var x1___3 = 0
-      } else if ((actualPrecision === (-1))) {
-        var x1___1 = "0";
-        var x1___2 = new $c_RTLong(lo, hi$1);
-        var x1___3 = (-1022)
-      } else {
-        var leadingZeros = ((hi$1 !== 0) ? $uI(Math.clz32(hi$1)) : ((32 + $uI(Math.clz32(lo))) | 0));
-        var shift = (((-11) + leadingZeros) | 0);
-        var lo$2 = (((32 & shift) === 0) ? (lo << shift) : 0);
-        var hi$2 = (((32 & shift) === 0) ? (((((lo >>> 1) | 0) >>> ((31 - shift) | 0)) | 0) | (hi$1 << shift)) : (lo << shift));
-        var hi$3 = (1048575 & hi$2);
-        var normalizedExponent = (((-1022) - shift) | 0);
-        var x1___1 = "1";
-        var x1___2 = new $c_RTLong(lo$2, hi$3);
-        var x1___3 = normalizedExponent
-      }
-    } else {
-      var _3 = (((-1023) + biasedExponent) | 0);
-      var x1___1 = "1";
-      var x1___2 = new $c_RTLong(lo, hi$1);
-      var x1___3 = _3
-    };
-    var implicitBitStr = $as_T(x1___1);
-    var t$1 = $uJ(x1___2);
-    var lo$3 = t$1.RTLong__f_lo;
-    var hi$4 = t$1.RTLong__f_hi;
-    var exponent = $uI(x1___3);
-    var t$2 = $uJ(new $c_RTLong(lo$3, hi$4));
-    var lo$4 = t$2.RTLong__f_lo;
-    var hi$5 = t$2.RTLong__f_hi;
-    if ((actualPrecision === (-1))) {
-      var roundedMantissa__lo = lo$4;
-      var roundedMantissa__hi = hi$5
-    } else {
-      var n = ((52 - (actualPrecision << 2)) | 0);
-      var lo$5 = (((32 & n) === 0) ? (1 << n) : 0);
-      var hi$6 = (((32 & n) === 0) ? 0 : (1 << n));
-      var lo$6 = (((-1) + lo$5) | 0);
-      var hi$7 = ((lo$6 !== (-1)) ? hi$6 : (((-1) + hi$6) | 0));
-      var lo$7 = (((lo$5 >>> 1) | 0) | (hi$6 << 31));
-      var hi$8 = (hi$6 >> 1);
-      var lo$8 = (~lo$6);
-      var hi$9 = (~hi$7);
-      var lo$9 = (lo$4 & lo$8);
-      var hi$10 = (hi$5 & hi$9);
-      var lo$10 = (lo$4 & lo$6);
-      var hi$11 = (hi$5 & hi$7);
-      if (((hi$11 === hi$8) ? (((-2147483648) ^ lo$10) < ((-2147483648) ^ lo$7)) : (hi$11 < hi$8))) {
-        var roundedMantissa__lo = lo$9;
-        var roundedMantissa__hi = hi$10
-      } else if (((hi$11 === hi$8) ? (((-2147483648) ^ lo$10) > ((-2147483648) ^ lo$7)) : (hi$11 > hi$8))) {
-        var lo$11 = ((lo$9 + lo$5) | 0);
-        var hi$12 = ((((-2147483648) ^ lo$11) < ((-2147483648) ^ lo$9)) ? ((1 + ((hi$10 + hi$6) | 0)) | 0) : ((hi$10 + hi$6) | 0));
-        var roundedMantissa__lo = lo$11;
-        var roundedMantissa__hi = hi$12
-      } else {
-        var lo$12 = (lo$9 & lo$5);
-        var hi$13 = (hi$10 & hi$6);
-        if (((lo$12 === 0) && (hi$13 === 0))) {
-          var roundedMantissa__lo = lo$9;
-          var roundedMantissa__hi = hi$10
-        } else {
-          var lo$13 = ((lo$9 + lo$5) | 0);
-          var hi$14 = ((((-2147483648) ^ lo$13) < ((-2147483648) ^ lo$9)) ? ((1 + ((hi$10 + hi$6) | 0)) | 0) : ((hi$10 + hi$6) | 0));
-          var roundedMantissa__lo = lo$13;
-          var roundedMantissa__hi = hi$14
-        }
-      }
-    };
-    var this$12 = $m_jl_Long$();
-    var hi$15 = roundedMantissa__hi;
-    var baseStr = this$12.java$lang$Long$$toHexString__I__I__T(roundedMantissa__lo, hi$15);
-    var this$13 = $n(baseStr);
-    var beginIndex = this$13.length;
-    if (((beginIndex < 0) || (beginIndex > 13))) {
-      $charAt("0000000000000", beginIndex)
-    };
-    var padded = (("" + $as_T("0000000000000".substring(beginIndex))) + baseStr);
-    $m_ju_Formatter$();
-    var condition = (padded.length === 13);
-    if ((!condition)) {
-      throw new $c_jl_AssertionError("padded mantissa does not have the right number of bits")
-    };
-    var minLength = ((actualPrecision < 1) ? 1 : actualPrecision);
-    var len = padded.length;
-    while (true) {
-      if ((len > minLength)) {
-        var index = (((-1) + len) | 0);
-        var $$x1 = ($charAt(padded, index) === 48)
-      } else {
-        var $$x1 = false
-      };
-      if ($$x1) {
-        len = (((-1) + len) | 0)
-      } else {
-        break
-      }
-    };
-    var endIndex = len;
-    if ((endIndex > padded.length)) {
-      $charAt(padded, endIndex)
-    };
-    if ((endIndex < 0)) {
-      $charAt(padded, (-1))
-    };
-    var mantissaStr = $as_T(padded.substring(0, endIndex));
-    var exponentStr = ("" + exponent);
-    var prefix = (signStr + (((256 & flags) !== 0) ? "0X" : "0x"));
-    var rest = ((((implicitBitStr + ".") + mantissaStr) + "p") + exponentStr);
-    $p_ju_Formatter__padAndSendToDest__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, $m_ju_Formatter$RootLocaleInfo$(), flags, width, prefix, $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, rest))
-  }
-}
-function $p_ju_Formatter__formatNonNumericString__ju_Formatter$LocaleInfo__I__I__I__T__V($thiz, localeInfo, flags, width, precision, str) {
-  if ((precision < 0)) {
-    var $$x1 = true
-  } else {
-    var this$1 = $n(str);
-    var $$x1 = (precision >= this$1.length)
-  };
-  if ($$x1) {
-    var truncatedStr = str
-  } else {
-    var this$2 = $n(str);
-    if ((precision > this$2.length)) {
-      $charAt(this$2, precision)
-    };
-    if ((precision < 0)) {
-      $charAt(this$2, (-1))
-    };
-    var truncatedStr = $as_T(this$2.substring(0, precision))
-  };
-  $p_ju_Formatter__padAndSendToDestNoZeroPad__I__I__T__V($thiz, flags, width, $p_ju_Formatter__applyUpperCase__ju_Formatter$LocaleInfo__I__T__T($thiz, localeInfo, flags, truncatedStr))
-}
-function $p_ju_Formatter__formatNaNOrInfinite__I__I__D__V($thiz, flags, width, x) {
-  var str = ((x !== x) ? "NaN" : ((x > 0.0) ? (((4 & flags) !== 0) ? "+Infinity" : (((8 & flags) !== 0) ? " Infinity" : "Infinity")) : (((64 & flags) !== 0) ? "(Infinity)" : "-Infinity")));
-  $p_ju_Formatter__padAndSendToDestNoZeroPad__I__I__T__V($thiz, flags, width, $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, str))
-}
-function $p_ju_Formatter__formatNumericString__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, localeInfo, flags, width, str, basePrefix) {
-  var this$1 = $n(str);
-  if (((this$1.length >= width) && ((110 & flags) === 0))) {
-    $n(localeInfo);
-    var str$1 = $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, str);
-    $p_ju_Formatter__sendToDest__T__V($thiz, str$1)
-  } else if (((126 & flags) === 0)) {
-    $p_ju_Formatter__padAndSendToDestNoZeroPad__I__I__T__V($thiz, flags, width, $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, str))
-  } else {
-    var this$5 = $n(str);
-    if (($charAt(this$5, 0) !== 45)) {
-      if (((4 & flags) !== 0)) {
-        var x1___1 = "+";
-        var x1___2 = str
-      } else if (((8 & flags) !== 0)) {
-        var x1___1 = " ";
-        var x1___2 = str
-      } else {
-        var x1___1 = "";
-        var x1___2 = str
-      }
-    } else if (((64 & flags) !== 0)) {
-      var this$9 = $n(str);
-      if ((this$9.length < 1)) {
-        $charAt(this$9, 1)
-      };
-      var _2 = ($as_T(this$9.substring(1)) + ")");
-      var x1___1 = "(";
-      var x1___2 = _2
-    } else {
-      var this$10 = $n(str);
-      if ((this$10.length < 1)) {
-        $charAt(this$10, 1)
-      };
-      var _2$1 = $as_T(this$10.substring(1));
-      var x1___1 = "-";
-      var x1___2 = _2$1
-    };
-    var numberPrefix = $as_T(x1___1);
-    var rest0 = $as_T(x1___2);
-    var prefix = (("" + numberPrefix) + basePrefix);
-    var rest = (((32 & flags) !== 0) ? $p_ju_Formatter__insertGroupingCommas__ju_Formatter$LocaleInfo__T__T($thiz, localeInfo, rest0) : rest0);
-    $n(localeInfo);
-    var str$2 = $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, rest);
-    $p_ju_Formatter__padAndSendToDest__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, localeInfo, flags, width, prefix, str$2)
-  }
-}
-function $p_ju_Formatter__insertGroupingCommas__ju_Formatter$LocaleInfo__T__T($thiz, localeInfo, s) {
-  $n(localeInfo);
-  var groupingSize = 3;
-  var this$1 = $n(s);
-  var len = this$1.length;
-  var index = 0;
-  while (true) {
-    if ((index !== len)) {
-      var this$2 = $n(s);
-      var index$1 = index;
-      var c = $charAt(this$2, index$1);
-      var $$x1 = ((c >= 48) && (c <= 57))
-    } else {
-      var $$x1 = false
-    };
-    if ($$x1) {
-      index = ((1 + index) | 0)
-    } else {
-      break
-    }
-  };
-  index = ((index - groupingSize) | 0);
-  if ((index <= 0)) {
-    return s
-  } else {
-    var this$3 = $n(s);
-    var beginIndex = index;
-    if (((beginIndex < 0) || (beginIndex > this$3.length))) {
-      $charAt(this$3, beginIndex)
-    };
-    var result = $as_T(this$3.substring(beginIndex));
-    while ((index > groupingSize)) {
-      var next = ((index - groupingSize) | 0);
-      var this$4 = $n(s);
-      var endIndex = index;
-      if ((next < 0)) {
-        $charAt(this$4, next)
-      };
-      if ((endIndex > this$4.length)) {
-        $charAt(this$4, endIndex)
-      };
-      if ((endIndex < next)) {
-        $charAt(this$4, (-1))
-      };
-      result = (($as_T(this$4.substring(next, endIndex)) + ",") + result);
-      index = next
-    };
-    var this$5 = $n(s);
-    var endIndex$1 = index;
-    if ((endIndex$1 > this$5.length)) {
-      $charAt(this$5, endIndex$1)
-    };
-    if ((endIndex$1 < 0)) {
-      $charAt(this$5, (-1))
-    };
-    return (($as_T(this$5.substring(0, endIndex$1)) + ",") + result)
-  }
-}
-function $p_ju_Formatter__applyNumberUpperCase__I__T__T($thiz, flags, str) {
-  if (((256 & flags) !== 0)) {
-    var this$2 = $n(str);
-    return $as_T(this$2.toUpperCase())
-  } else {
-    return str
-  }
-}
-function $p_ju_Formatter__applyUpperCase__ju_Formatter$LocaleInfo__I__T__T($thiz, localeInfo, flags, str) {
-  if (((256 & flags) !== 0)) {
-    $n(localeInfo);
-    var this$3 = $n(str);
-    return $as_T(this$3.toUpperCase())
-  } else {
-    return str
-  }
-}
-function $p_ju_Formatter__padAndSendToDestNoZeroPad__I__I__T__V($thiz, flags, width, str) {
-  var this$1 = $n(str);
-  var len = this$1.length;
-  if ((len >= width)) {
-    $p_ju_Formatter__sendToDest__T__V($thiz, str)
-  } else if (((1 & flags) !== 0)) {
-    $p_ju_Formatter__sendToDest__T__T__V($thiz, str, $p_ju_Formatter__strRepeat__T__I__T($thiz, " ", ((width - len) | 0)))
-  } else {
-    $p_ju_Formatter__sendToDest__T__T__V($thiz, $p_ju_Formatter__strRepeat__T__I__T($thiz, " ", ((width - len) | 0)), str)
-  }
-}
-function $p_ju_Formatter__padAndSendToDest__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, localeInfo, flags, width, prefix, str) {
-  var this$1 = $n(prefix);
-  var this$2 = $n(str);
-  var len = ((this$1.length + this$2.length) | 0);
-  if ((len >= width)) {
-    $p_ju_Formatter__sendToDest__T__T__V($thiz, prefix, str)
-  } else if (((16 & flags) !== 0)) {
-    $p_ju_Formatter__sendToDest__T__T__T__V($thiz, prefix, $p_ju_Formatter__strRepeat__T__I__T($thiz, ($n(localeInfo), "0"), ((width - len) | 0)), str)
-  } else if (((1 & flags) !== 0)) {
-    $p_ju_Formatter__sendToDest__T__T__T__V($thiz, prefix, str, $p_ju_Formatter__strRepeat__T__I__T($thiz, " ", ((width - len) | 0)))
-  } else {
-    $p_ju_Formatter__sendToDest__T__T__T__V($thiz, $p_ju_Formatter__strRepeat__T__I__T($thiz, " ", ((width - len) | 0)), prefix, str)
-  }
-}
-function $p_ju_Formatter__strRepeat__T__I__T($thiz, s, times) {
-  var result = "";
-  var i = 0;
-  while ((i !== times)) {
-    result = (("" + result) + s);
-    i = ((1 + i) | 0)
-  };
-  return result
-}
-function $p_ju_Formatter__throwDuplicateFormatFlagsException__C__E($thiz, flag) {
-  throw new $c_ju_DuplicateFormatFlagsException($as_T(String.fromCharCode(flag)))
-}
-function $p_ju_Formatter__throwUnknownFormatConversionException__C__E($thiz, conversion) {
-  throw new $c_ju_UnknownFormatConversionException($as_T(String.fromCharCode(conversion)))
-}
-function $p_ju_Formatter__throwIllegalFormatPrecisionException__I__E($thiz, precision) {
-  throw new $c_ju_IllegalFormatPrecisionException(precision)
-}
-function $p_ju_Formatter__throwIllegalFormatWidthException__I__E($thiz, width) {
-  throw new $c_ju_IllegalFormatWidthException(width)
-}
-function $p_ju_Formatter__throwIllegalFormatArgumentIndexException__I__E($thiz, index) {
-  var msg = ((index === 0) ? "Illegal format argument index = 0" : "Format argument index: (not representable as int)");
-  throw new $c_ju_IllegalFormatArgumentIndexException(msg)
-}
-function $p_ju_Formatter__throwMissingFormatWidthException__T__E($thiz, fullFormatSpecifier) {
-  throw new $c_ju_MissingFormatWidthException(fullFormatSpecifier)
-}
-function $p_ju_Formatter__throwMissingFormatArgumentException__T__E($thiz, fullFormatSpecifier) {
-  throw new $c_ju_MissingFormatArgumentException(fullFormatSpecifier)
-}
-function $p_ju_Formatter__throwIllegalFormatCodePointException__I__E($thiz, arg) {
-  throw new $c_ju_IllegalFormatCodePointException(arg)
-}
-function $p_ju_Formatter__fullFormatSpecifier$1__O__T($thiz, execResult$1) {
-  return ("%" + execResult$1[0])
-}
-function $p_ju_Formatter__formatDecimal$1__ju_Formatter$Decimal__I__I__C__ju_Formatter$LocaleInfo__I__V($thiz, x, flags$1, precision$1, conversionLower$1, localeInfo$1, width$1) {
-  var forceDecimalSep = ((2 & flags$1) !== 0);
-  var actualPrecision = ((precision$1 >= 0) ? precision$1 : 6);
-  switch (conversionLower$1) {
-    case 101: {
-      var notation = $p_ju_Formatter__computerizedScientificNotation__ju_Formatter$Decimal__I__Z__T($thiz, x, actualPrecision, forceDecimalSep);
-      break
-    }
-    case 102: {
-      var notation = $p_ju_Formatter__decimalNotation__ju_Formatter$Decimal__I__Z__T($thiz, x, actualPrecision, forceDecimalSep);
-      break
-    }
-    default: {
-      var notation = $p_ju_Formatter__generalScientificNotation__ju_Formatter$Decimal__I__Z__T($thiz, x, actualPrecision, forceDecimalSep)
-    }
-  };
-  $p_ju_Formatter__formatNumericString__ju_Formatter$LocaleInfo__I__I__T__T__V($thiz, localeInfo$1, flags$1, width$1, notation, "")
-}
-function $ct_ju_Formatter__jl_Appendable__ju_Formatter$LocaleInfo__($thiz, dest, formatterLocaleInfo) {
-  $thiz.ju_Formatter__f_dest = dest;
-  $thiz.ju_Formatter__f_formatterLocaleInfo = formatterLocaleInfo;
-  $thiz.ju_Formatter__f_stringOutput = "";
-  $thiz.ju_Formatter__f_java$util$Formatter$$closed = false;
-  return $thiz
-}
-function $ct_ju_Formatter__($thiz) {
-  $ct_ju_Formatter__jl_Appendable__ju_Formatter$LocaleInfo__($thiz, null, $m_ju_Formatter$RootLocaleInfo$());
-  return $thiz
-}
-/** @constructor */
-function $c_ju_Formatter() {
-  this.ju_Formatter__f_dest = null;
-  this.ju_Formatter__f_formatterLocaleInfo = null;
-  this.ju_Formatter__f_stringOutput = null;
-  this.ju_Formatter__f_java$util$Formatter$$closed = false
-}
-$c_ju_Formatter.prototype = new $h_O();
-$c_ju_Formatter.prototype.constructor = $c_ju_Formatter;
-/** @constructor */
-function $h_ju_Formatter() {
-  /*<skip>*/
-}
-$h_ju_Formatter.prototype = $c_ju_Formatter.prototype;
-$c_ju_Formatter.prototype.format__T__AO__ju_Formatter = (function(format, args) {
-  return $p_ju_Formatter__format__ju_Formatter$LocaleInfo__T__AO__ju_Formatter(this, this.ju_Formatter__f_formatterLocaleInfo, format, args)
-});
-$c_ju_Formatter.prototype.toString__T = (function() {
-  if (this.ju_Formatter__f_java$util$Formatter$$closed) {
-    throw new $c_ju_FormatterClosedException()
-  };
-  return ((this.ju_Formatter__f_dest === null) ? this.ju_Formatter__f_stringOutput : $n(this.ju_Formatter__f_dest).toString__T())
-});
-$c_ju_Formatter.prototype.java$util$Formatter$$throwIllegalFormatFlagsException__I__E = (function(flags) {
-  throw new $c_ju_IllegalFormatFlagsException($p_ju_Formatter__flagsToString__I__T(this, flags))
-});
-$c_ju_Formatter.prototype.java$util$Formatter$$throwFormatFlagsConversionMismatchException__C__I__I__E = (function(conversionLower, flags, illegalFlags) {
-  throw new $c_ju_FormatFlagsConversionMismatchException($p_ju_Formatter__flagsToString__I__T(this, (flags & illegalFlags)), conversionLower)
-});
-$c_ju_Formatter.prototype.java$util$Formatter$$throwIllegalFormatConversionException__C__O__E = (function(conversionLower, arg) {
-  var this$1 = $n(arg);
-  throw new $c_ju_IllegalFormatConversionException(conversionLower, $objectGetClass(this$1))
-});
-var $d_ju_Formatter = new $TypeData().initClass({
-  ju_Formatter: 0
-}, false, "java.util.Formatter", {
-  ju_Formatter: 1,
-  O: 1,
-  Ljava_io_Closeable: 1,
-  jl_AutoCloseable: 1,
-  Ljava_io_Flushable: 1
-});
-$c_ju_Formatter.prototype.$classData = $d_ju_Formatter;
 /** @constructor */
 function $c_sc_AbstractIterator() {
   /*<skip>*/
@@ -10600,9 +10104,6 @@ $c_sc_AbstractIterator.prototype.copyToArray__O__I__I__I = (function(xs, start, 
 });
 $c_sc_AbstractIterator.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
-});
-$c_sc_AbstractIterator.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
-  return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2)
 });
 $c_sc_AbstractIterator.prototype.knownSize__I = (function() {
   return (-1)
@@ -11139,11 +10640,11 @@ var $d_jl_IllegalArgumentException = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_jl_IllegalArgumentException.prototype.$classData = $d_jl_IllegalArgumentException;
-function $ct_jl_IllegalStateException__T__($thiz, s) {
-  $ct_jl_Throwable__T__jl_Throwable__Z__Z__($thiz, s, null, true, true);
-  return $thiz
-}
 class $c_jl_IllegalStateException extends $c_jl_RuntimeException {
+  constructor(s) {
+    super();
+    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, s, null, true, true)
+  };
 }
 var $d_jl_IllegalStateException = new $TypeData().initClass({
   jl_IllegalStateException: 0
@@ -12654,9 +12155,6 @@ $c_sci_MapKeyValueTupleHashIterator.prototype.copyToArray__O__I__I__I = (functio
 $c_sci_MapKeyValueTupleHashIterator.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
 });
-$c_sci_MapKeyValueTupleHashIterator.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
-  return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2)
-});
 $c_sci_MapKeyValueTupleHashIterator.prototype.knownSize__I = (function() {
   return (-1)
 });
@@ -12729,9 +12227,6 @@ $c_sci_MapKeyValueTupleIterator.prototype.copyToArray__O__I__I__I = (function(xs
 });
 $c_sci_MapKeyValueTupleIterator.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
-});
-$c_sci_MapKeyValueTupleIterator.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
-  return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2)
 });
 $c_sci_MapKeyValueTupleIterator.prototype.knownSize__I = (function() {
   return (-1)
@@ -12931,9 +12426,6 @@ $c_sci_NewVectorIterator.prototype.reduceLeft__F2__O = (function(op) {
 });
 $c_sci_NewVectorIterator.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
-});
-$c_sci_NewVectorIterator.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
-  return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2)
 });
 $c_sci_NewVectorIterator.prototype.knownSize__I = (function() {
   return ((this.sci_NewVectorIterator__f_scala$collection$immutable$NewVectorIterator$$len1 - this.sci_NewVectorIterator__f_scala$collection$immutable$NewVectorIterator$$i1) | 0)
@@ -14247,24 +13739,6 @@ function $f_T__hashCode__I($thiz) {
 function $f_T__equals__O__Z($thiz, that) {
   return ($thiz === that)
 }
-function $f_T__getChars__I__I__AC__I__V($thiz, srcBegin, srcEnd, dst, dstBegin) {
-  if (((((srcEnd > $thiz.length) || (srcBegin < 0)) || (srcEnd < 0)) || (srcBegin > srcEnd))) {
-    throw $ct_jl_StringIndexOutOfBoundsException__T__(new $c_jl_StringIndexOutOfBoundsException(), "Index out of Bound")
-  };
-  var offset = ((dstBegin - srcBegin) | 0);
-  var i = srcBegin;
-  while ((i < srcEnd)) {
-    var $$x2 = $n(dst);
-    var $$x1 = i;
-    var index = i;
-    $$x2.set((($$x1 + offset) | 0), $charAt($thiz, index));
-    i = ((1 + i) | 0)
-  }
-}
-function $f_T__indexOf__I__I($thiz, ch) {
-  var str = $m_jl_Character$().toString__I__T(ch);
-  return $uI($thiz.indexOf(str))
-}
 function $f_T__repeat__I__T($thiz, count) {
   if ((count < 0)) {
     throw $ct_jl_IllegalArgumentException__(new $c_jl_IllegalArgumentException())
@@ -14299,10 +13773,6 @@ var $d_T = new $TypeData().initClass({
   jl_constant_Constable: 1,
   jl_constant_ConstantDesc: 1
 }, (void 0), (void 0), ((x) => ((typeof x) === "string")));
-function $ct_jl_StringIndexOutOfBoundsException__T__($thiz, s) {
-  $ct_jl_Throwable__T__jl_Throwable__Z__Z__($thiz, s, null, true, true);
-  return $thiz
-}
 function $ct_jl_StringIndexOutOfBoundsException__I__($thiz, index) {
   var s = ("String index out of range: " + index);
   $ct_jl_Throwable__T__jl_Throwable__Z__Z__($thiz, s, null, true, true);
@@ -14326,26 +13796,6 @@ var $d_jl_StringIndexOutOfBoundsException = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_jl_StringIndexOutOfBoundsException.prototype.$classData = $d_jl_StringIndexOutOfBoundsException;
-class $c_ju_FormatterClosedException extends $c_jl_IllegalStateException {
-  constructor() {
-    super();
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true)
-  };
-}
-var $d_ju_FormatterClosedException = new $TypeData().initClass({
-  ju_FormatterClosedException: 0
-}, false, "java.util.FormatterClosedException", {
-  ju_FormatterClosedException: 1,
-  jl_IllegalStateException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_FormatterClosedException.prototype.$classData = $d_ju_FormatterClosedException;
-class $c_ju_IllegalFormatException extends $c_jl_IllegalArgumentException {
-}
 class $c_ju_regex_PatternSyntaxException extends $c_jl_IllegalArgumentException {
   constructor(desc, regex, index) {
     super();
@@ -14540,9 +13990,6 @@ $c_sc_AbstractIterable.prototype.copyToArray__O__I__I__I = (function(xs, start, 
 });
 $c_sc_AbstractIterable.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
-});
-$c_sc_AbstractIterable.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
-  return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2)
 });
 $c_sc_AbstractIterable.prototype.knownSize__I = (function() {
   return (-1)
@@ -15092,13 +14539,6 @@ function $h_Ljava_io_PrintStream() {
   /*<skip>*/
 }
 $h_Ljava_io_PrintStream.prototype = $c_Ljava_io_PrintStream.prototype;
-$c_Ljava_io_PrintStream.prototype.append__jl_CharSequence__Ljava_io_PrintStream = (function(csq) {
-  this.print__T__V(((csq === null) ? "null" : $dp_toString__T($n(csq))));
-  return this
-});
-$c_Ljava_io_PrintStream.prototype.append__jl_CharSequence__jl_Appendable = (function(csq) {
-  return this.append__jl_CharSequence__Ljava_io_PrintStream(csq)
-});
 function $as_Ljava_io_PrintStream(obj) {
   return (((obj instanceof $c_Ljava_io_PrintStream) || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.PrintStream"))
 }
@@ -15108,299 +14548,6 @@ function $isArrayOf_Ljava_io_PrintStream(obj, depth) {
 function $asArrayOf_Ljava_io_PrintStream(obj, depth) {
   return (($isArrayOf_Ljava_io_PrintStream(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.PrintStream;", depth))
 }
-class $c_ju_DuplicateFormatFlagsException extends $c_ju_IllegalFormatException {
-  constructor(f) {
-    super();
-    this.ju_DuplicateFormatFlagsException__f_f = null;
-    this.ju_DuplicateFormatFlagsException__f_f = f;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((f === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    return (("Flags = '" + this.ju_DuplicateFormatFlagsException__f_f) + "'")
-  };
-}
-var $d_ju_DuplicateFormatFlagsException = new $TypeData().initClass({
-  ju_DuplicateFormatFlagsException: 0
-}, false, "java.util.DuplicateFormatFlagsException", {
-  ju_DuplicateFormatFlagsException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_DuplicateFormatFlagsException.prototype.$classData = $d_ju_DuplicateFormatFlagsException;
-class $c_ju_FormatFlagsConversionMismatchException extends $c_ju_IllegalFormatException {
-  constructor(f, c) {
-    super();
-    this.ju_FormatFlagsConversionMismatchException__f_f = null;
-    this.ju_FormatFlagsConversionMismatchException__f_c = 0;
-    this.ju_FormatFlagsConversionMismatchException__f_f = f;
-    this.ju_FormatFlagsConversionMismatchException__f_c = c;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((f === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    return ((("Conversion = " + $bC(this.ju_FormatFlagsConversionMismatchException__f_c)) + ", Flags = ") + this.ju_FormatFlagsConversionMismatchException__f_f)
-  };
-}
-var $d_ju_FormatFlagsConversionMismatchException = new $TypeData().initClass({
-  ju_FormatFlagsConversionMismatchException: 0
-}, false, "java.util.FormatFlagsConversionMismatchException", {
-  ju_FormatFlagsConversionMismatchException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_FormatFlagsConversionMismatchException.prototype.$classData = $d_ju_FormatFlagsConversionMismatchException;
-class $c_ju_IllegalFormatArgumentIndexException extends $c_ju_IllegalFormatException {
-  constructor(msg) {
-    super();
-    this.ju_IllegalFormatArgumentIndexException__f_msg = null;
-    this.ju_IllegalFormatArgumentIndexException__f_msg = msg;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true)
-  };
-  getMessage__T() {
-    return this.ju_IllegalFormatArgumentIndexException__f_msg
-  };
-}
-var $d_ju_IllegalFormatArgumentIndexException = new $TypeData().initClass({
-  ju_IllegalFormatArgumentIndexException: 0
-}, false, "java.util.IllegalFormatArgumentIndexException", {
-  ju_IllegalFormatArgumentIndexException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_IllegalFormatArgumentIndexException.prototype.$classData = $d_ju_IllegalFormatArgumentIndexException;
-class $c_ju_IllegalFormatCodePointException extends $c_ju_IllegalFormatException {
-  constructor(c) {
-    super();
-    this.ju_IllegalFormatCodePointException__f_c = 0;
-    this.ju_IllegalFormatCodePointException__f_c = c;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true)
-  };
-  getMessage__T() {
-    var i = this.ju_IllegalFormatCodePointException__f_c;
-    return ("Code point = 0x" + $as_T($uD((i >>> 0.0)).toString(16)))
-  };
-}
-var $d_ju_IllegalFormatCodePointException = new $TypeData().initClass({
-  ju_IllegalFormatCodePointException: 0
-}, false, "java.util.IllegalFormatCodePointException", {
-  ju_IllegalFormatCodePointException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_IllegalFormatCodePointException.prototype.$classData = $d_ju_IllegalFormatCodePointException;
-class $c_ju_IllegalFormatConversionException extends $c_ju_IllegalFormatException {
-  constructor(c, arg) {
-    super();
-    this.ju_IllegalFormatConversionException__f_c = 0;
-    this.ju_IllegalFormatConversionException__f_arg = null;
-    this.ju_IllegalFormatConversionException__f_c = c;
-    this.ju_IllegalFormatConversionException__f_arg = arg;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((arg === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    var this$1 = this.ju_IllegalFormatConversionException__f_c;
-    return (($as_T(String.fromCharCode(this$1)) + " != ") + $n(this.ju_IllegalFormatConversionException__f_arg).getName__T())
-  };
-}
-var $d_ju_IllegalFormatConversionException = new $TypeData().initClass({
-  ju_IllegalFormatConversionException: 0
-}, false, "java.util.IllegalFormatConversionException", {
-  ju_IllegalFormatConversionException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_IllegalFormatConversionException.prototype.$classData = $d_ju_IllegalFormatConversionException;
-class $c_ju_IllegalFormatFlagsException extends $c_ju_IllegalFormatException {
-  constructor(f) {
-    super();
-    this.ju_IllegalFormatFlagsException__f_f = null;
-    this.ju_IllegalFormatFlagsException__f_f = f;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((f === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    return (("Flags = '" + this.ju_IllegalFormatFlagsException__f_f) + "'")
-  };
-}
-var $d_ju_IllegalFormatFlagsException = new $TypeData().initClass({
-  ju_IllegalFormatFlagsException: 0
-}, false, "java.util.IllegalFormatFlagsException", {
-  ju_IllegalFormatFlagsException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_IllegalFormatFlagsException.prototype.$classData = $d_ju_IllegalFormatFlagsException;
-class $c_ju_IllegalFormatPrecisionException extends $c_ju_IllegalFormatException {
-  constructor(p) {
-    super();
-    this.ju_IllegalFormatPrecisionException__f_p = 0;
-    this.ju_IllegalFormatPrecisionException__f_p = p;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true)
-  };
-  getMessage__T() {
-    var i = this.ju_IllegalFormatPrecisionException__f_p;
-    return ("" + i)
-  };
-}
-var $d_ju_IllegalFormatPrecisionException = new $TypeData().initClass({
-  ju_IllegalFormatPrecisionException: 0
-}, false, "java.util.IllegalFormatPrecisionException", {
-  ju_IllegalFormatPrecisionException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_IllegalFormatPrecisionException.prototype.$classData = $d_ju_IllegalFormatPrecisionException;
-class $c_ju_IllegalFormatWidthException extends $c_ju_IllegalFormatException {
-  constructor(w) {
-    super();
-    this.ju_IllegalFormatWidthException__f_w = 0;
-    this.ju_IllegalFormatWidthException__f_w = w;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true)
-  };
-  getMessage__T() {
-    var i = this.ju_IllegalFormatWidthException__f_w;
-    return ("" + i)
-  };
-}
-var $d_ju_IllegalFormatWidthException = new $TypeData().initClass({
-  ju_IllegalFormatWidthException: 0
-}, false, "java.util.IllegalFormatWidthException", {
-  ju_IllegalFormatWidthException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_IllegalFormatWidthException.prototype.$classData = $d_ju_IllegalFormatWidthException;
-class $c_ju_MissingFormatArgumentException extends $c_ju_IllegalFormatException {
-  constructor(s) {
-    super();
-    this.ju_MissingFormatArgumentException__f_s = null;
-    this.ju_MissingFormatArgumentException__f_s = s;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((s === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    return (("Format specifier '" + this.ju_MissingFormatArgumentException__f_s) + "'")
-  };
-}
-var $d_ju_MissingFormatArgumentException = new $TypeData().initClass({
-  ju_MissingFormatArgumentException: 0
-}, false, "java.util.MissingFormatArgumentException", {
-  ju_MissingFormatArgumentException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_MissingFormatArgumentException.prototype.$classData = $d_ju_MissingFormatArgumentException;
-class $c_ju_MissingFormatWidthException extends $c_ju_IllegalFormatException {
-  constructor(s) {
-    super();
-    this.ju_MissingFormatWidthException__f_s = null;
-    this.ju_MissingFormatWidthException__f_s = s;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((s === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    return this.ju_MissingFormatWidthException__f_s
-  };
-}
-var $d_ju_MissingFormatWidthException = new $TypeData().initClass({
-  ju_MissingFormatWidthException: 0
-}, false, "java.util.MissingFormatWidthException", {
-  ju_MissingFormatWidthException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_MissingFormatWidthException.prototype.$classData = $d_ju_MissingFormatWidthException;
-class $c_ju_UnknownFormatConversionException extends $c_ju_IllegalFormatException {
-  constructor(s) {
-    super();
-    this.ju_UnknownFormatConversionException__f_s = null;
-    this.ju_UnknownFormatConversionException__f_s = s;
-    $ct_jl_Throwable__T__jl_Throwable__Z__Z__(this, null, null, true, true);
-    if ((s === null)) {
-      throw new $c_jl_NullPointerException()
-    }
-  };
-  getMessage__T() {
-    return (("Conversion = '" + this.ju_UnknownFormatConversionException__f_s) + "'")
-  };
-}
-var $d_ju_UnknownFormatConversionException = new $TypeData().initClass({
-  ju_UnknownFormatConversionException: 0
-}, false, "java.util.UnknownFormatConversionException", {
-  ju_UnknownFormatConversionException: 1,
-  ju_IllegalFormatException: 1,
-  jl_IllegalArgumentException: 1,
-  jl_RuntimeException: 1,
-  jl_Exception: 1,
-  jl_Throwable: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_UnknownFormatConversionException.prototype.$classData = $d_ju_UnknownFormatConversionException;
 /** @constructor */
 function $c_sc_ArrayOps$ArrayIterator$mcB$sp(xs$mcB$sp) {
   this.sc_ArrayOps$ArrayIterator__f_xs = null;
@@ -15989,9 +15136,6 @@ function $h_jl_JSConsoleBasedPrintStream() {
   /*<skip>*/
 }
 $h_jl_JSConsoleBasedPrintStream.prototype = $c_jl_JSConsoleBasedPrintStream.prototype;
-$c_jl_JSConsoleBasedPrintStream.prototype.print__T__V = (function(s) {
-  this.java$lang$JSConsoleBasedPrintStream$$printString__T__V(((s === null) ? "null" : s))
-});
 $c_jl_JSConsoleBasedPrintStream.prototype.java$lang$JSConsoleBasedPrintStream$$printString__T__V = (function(s) {
   var rest = s;
   while ((rest !== "")) {
@@ -18254,9 +17398,6 @@ $c_sjsr_WrappedVarArgs.prototype.copyToArray__O__I__I__I = (function(xs, start, 
 });
 $c_sjsr_WrappedVarArgs.prototype.addString__scm_StringBuilder__T__T__T__scm_StringBuilder = (function(b, start, sep, end) {
   return $f_sc_IterableOnceOps__addString__scm_StringBuilder__T__T__T__scm_StringBuilder(this, b, start, sep, end)
-});
-$c_sjsr_WrappedVarArgs.prototype.toArray__s_reflect_ClassTag__O = (function(evidence$2) {
-  return $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, evidence$2)
 });
 $c_sjsr_WrappedVarArgs.prototype.iterableFactory__sc_SeqFactory = (function() {
   return $m_sjsr_WrappedVarArgs$()
@@ -23929,16 +23070,6 @@ $c_scm_StringBuilder.prototype.addOne__C__scm_StringBuilder = (function(x) {
 });
 $c_scm_StringBuilder.prototype.toString__T = (function() {
   return $n(this.scm_StringBuilder__f_underlying).jl_StringBuilder__f_java$lang$StringBuilder$$content
-});
-$c_scm_StringBuilder.prototype.toArray__s_reflect_ClassTag__O = (function(ct) {
-  var x1 = $n(ct).runtimeClass__jl_Class();
-  return ((x1 === $d_C.getClassOf()) ? this.toCharArray__AC() : $f_sc_IterableOnceOps__toArray__s_reflect_ClassTag__O(this, ct))
-});
-$c_scm_StringBuilder.prototype.toCharArray__AC = (function() {
-  var len = $n(this.scm_StringBuilder__f_underlying).length__I();
-  var arr = new $ac_C(len);
-  $n(this.scm_StringBuilder__f_underlying).getChars__I__I__AC__I__V(0, len, arr, 0);
-  return arr
 });
 $c_scm_StringBuilder.prototype.isEmpty__Z = (function() {
   return ($n(this.scm_StringBuilder__f_underlying).length__I() === 0)

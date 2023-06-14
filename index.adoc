@@ -3,9 +3,6 @@
 :toclevels: 5
 :toc:
 
-== Post & Comment Archive
-* *21/05/2023*: link:https://www.reddit.com/r/DawnPowers/comments/13nwx1b/claim_pufspæj[[Claim\] Pufspæj']
-
 == Tech
 Techs in *bold* are sustenance techs
 
@@ -211,3 +208,10 @@ include::language.html[]
 ++++
 
 == History
+=== Week 0
+* link:https://www.reddit.com/r/DawnPowers/comments/13nwx1b/claim_pufsp%C3%A6j/[Claim: Pufspuj]
+* link:https://www.reddit.com/r/DawnPowers/comments/13t9zho/the_3_people_of_3_lands/[Lore: The 3 people of 3 lands]
+
+==== Week 1
+* link:https://www.reddit.com/r/DawnPowers/comments/13uudbu/tradeposting/[Lore: Tradeposting™]
+* link:https://www.reddit.com/r/DawnPowers/comments/13vlxda/hurricaneposting/[Lore: Hurricaneposting™]

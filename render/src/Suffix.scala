@@ -21,7 +21,7 @@ object Suffix {
         c2d.lineTo(100 + init, 1000)
         c2d.stroke()
       // Pl
-      case "apt" | "aukt" | "aupz" | "op" | "oaks" | "ook" | "uapt" | "uakt" | "uupz" | "ip" | "iaks" | "iik" =>
+      case "apt" | "aukt" | "aupz" | "op" | "oaks" | "ook" | "uapt" | "uakt" | "uupz" | "ip" | "iaks" | "iik" | "aid" =>
         val init = offset * 40
         c2d.moveTo(65 + init, 50)
         c2d.lineTo(65 + init, 1000)
